@@ -25,7 +25,6 @@
 ### implementation
 
 	- a list of questions that user can click to answer
-
 	- ranking of correctness 
 	- interesting result display
 	- web page only
