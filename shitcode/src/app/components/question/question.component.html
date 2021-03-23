@@ -1,0 +1,17 @@
+<p id="principle">{{data.principle}}</p>
+<hr>
+
+<div>
+
+  <span *ngFor="let item of data.options" class = "questionContent">
+    {{item.optionId}}
+
+    <p>{{item.content}}</p>
+  </span>
+
+  <hr>
+
+  <button type="button" routerLink="/question" (click)="getNextQuestion()">next question</button>
+  <button type="button" (click)="checkAnswer()">confirm</button>
+  <button type="button" routerLink="/report">get report</button>
+</div>
