@@ -1,24 +1,85 @@
 const express = require('express');
 const router = express.Router();
-const data1 = require('../json/question1.json')
-const data2 = require('../json/question2.json')
+const mongoose = require('mongoose');
+
+const {
+  MONGO_USERNAME,
+  MONGO_PASSWORD,
+  MONGO_HOSTNAME,
+  MONGO_PORT,
+  MONGO_DB
+} = process.env;
+
+const options = {
+  useNewUrlParser: true,
+  reconnectTries: Number.MAX_VALUE,
+  reconnectInterval: 500,
+  connectTimeoutMS: 10000,
+};
+
+//const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
+const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
+
+mongoose.connect(url, options).then(function () {
+  //console.log(url);
+  console.log('MongoDB is connected');
+})
+  .catch(function (err) {
+    console.log(err);
+  });
+
+//Define a schema
+var Schema = mongoose.Schema;
+
+var QuestionSchema = new Schema({
+  questionId: Number,
+  numOfAnswer: Number,
+  numOfCorrect: Number
+});
+
+// Compile model from schema
+var Question = mongoose.model('Question', QuestionSchema );
+
 
 /* GET api listing. */
 router.get('/', (req, res) => {
-  res.send('api works');
+  res.send("api works");
 });
 
 router.get('/question',(req, res) => {
   res.header("Content-Type",'application/json');
-  let questionId;
-  if (!req.query.id){
+  let url = '../json/question';
+  //default questionId if no argument detected
+  let questionId = 1;
+  if (req.query.id !== undefined){
     questionId = parseInt(req.query.id);
   }
-  if (questionId === 1){
-    res.send(JSON.stringify(data1));
-  }else {
-    res.send(JSON.stringify(data2));
-  }
+  url = url + questionId.toString() + '.json';
+  let data = require(url);
+  //get history info from database
+  Question.find({questionId:data.questionId},function (err, question) {
+    if (err) return console.error(err);
+    if (question.length===0){
+      let q = new Question({
+        questionId: data.questionId,
+        numOfAnswer: 1,
+        numOfCorrect: 1 });
+      q.save(function (err) {
+        if (err) return handleError(err);
+        // saved!
+      });
+    }else{
+      data.historyAnswerNum = question[0].numOfAnswer;
+      data.historyCorrectNum = question[0].numOfCorrect;
+    }
+    res.send(JSON.stringify(data));
+  })
 });
 
 module.exports = router;
+
+// Question.find(function (err, questions) {
+//   if (err) return console.error(err);
+//   console.log(questions);
+// })
+

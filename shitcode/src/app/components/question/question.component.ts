@@ -7,6 +7,9 @@ import {DataService} from '../../data.service';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
+
+  public flag = 1;
+
   public data: any =  {
       questionId: 1,
       principle: 'shitcode rule one: use variable name with no actual meaning',
@@ -42,6 +45,7 @@ export class QuestionComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   checkAnswer() {
+    this.flag = 2;
     alert('thanks for answer');
     const elementById = document.getElementById('principle');
     if (elementById != null){
