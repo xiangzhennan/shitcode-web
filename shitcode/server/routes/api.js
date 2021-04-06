@@ -76,6 +76,25 @@ router.get('/question',(req, res) => {
   })
 });
 
+router.post('/submit',(req,res)=> {
+  console.log(req.body);
+  Question.find({questionId: req.body.questionId}, function (err, question) {
+    if (err) return console.error(err);
+    if (question.length === 1) {
+      question[0].numOfAnswer++;
+      if (req.body.isCorrect === 'true') {
+        question[0].numOfCorrect++;
+      }
+      console.log(question[0]);
+      question[0].save(function (err) {
+        if (err) return handleError(err);
+        // saved!
+      });
+    }
+    res.send('ok');
+  })
+})
+
 module.exports = router;
 
 // Question.find(function (err, questions) {
