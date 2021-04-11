@@ -1,0 +1,15 @@
+{
+    "questionId":2,
+    "principle": "2222222",
+    "realPrinciple": "coding rule one: use variable with valid meaning",
+    "options": [{
+      "optionId": 1,
+      "content": "222222"
+    },
+      {"optionId": 2,
+        "content": "222222"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+}
