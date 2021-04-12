@@ -1,17 +1,29 @@
-<p id="principle">{{data.principle}}</p>
-<hr>
+<head>
+  <meta charset="UTF-8">
+  <title>shitcode tutorial</title>
+  <link rel="stylesheet" type="text/css" href="question.component.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="navBox" *ngFor="let questionId of questionIDArray">
+        <button type="button" class="navButton" id="questionID" (click)="jumpTo(questionId)">{{questionId}}</button>
+    </div>
+  </div>
+  <p class="principle" >{{data.principle}}</p>
+  <p class="realPrinciple" [hidden]="!flag">{{data.realPrinciple}}</p>
+  <p>which one is shitcode?</p>
+  <div class="container">
+    <button class="question left" type="button" (click)="chooseLeft()">{{data.options[0].content}}</button>
+    <button class="question right" type="button" (click)="chooseRight()">{{data.options[1].content}}</button>
+  </div>
 
-<div>
+  <div class="footer">
+    <button class="confirm" type="button" (click)="getNextQuestion()">confirm</button>
+    <button class="report" type="button" (click)="getReport()">get report</button>
+  </div>
+</body>
 
-  <span *ngFor="let item of data.options" class = "questionContent">
-    {{item.optionId}}
 
-    <p>{{item.content}}</p>
-  </span>
 
-  <hr>
 
-  <button type="button" routerLink="/question" (click)="getNextQuestion()">next question</button>
-  <button type="button" (click)="checkAnswer()">confirm</button>
-  <button type="button" routerLink="/report">get report</button>
-</div>
+

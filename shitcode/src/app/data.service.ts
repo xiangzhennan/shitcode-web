@@ -9,14 +9,14 @@ import { map, filter, switchMap } from 'rxjs/operators';
 })
 export class DataService {
 
-  private REST_API_SERVER = 'http://localhost:3000/api/question?id=';
+  public server = 'http://localhost:3000/api/question?id=';
 
   constructor(private httpClient: HttpClient) { }
 
 
   // tslint:disable-next-line:typedef
   public getAll(id: number){
-    const url = this.REST_API_SERVER + id;
+    const url = this.server + id;
     return this.httpClient.get(url);
   }
 }
