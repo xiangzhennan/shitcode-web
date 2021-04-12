@@ -17,7 +17,7 @@ const options = {
   connectTimeoutMS: 10000,
 };
 
-//const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
+const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
 const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
 
 mongoose.connect(url, options).then(function () {
@@ -101,15 +101,14 @@ router.get('/report', (req,res)=> {
   const num = req.query.correctNum;
   let url = '../json/report.json';
   let data = require(url);
-  let correctPer = num/13*100;
+  let correctPercent = num/10*100;
 
   data.correctNum = num;
-  const formatter = new Intl.NumberFormat("en", {style: "percent"});
-  data.accuracy = formatter.format(correctPer);
-  if(correctPer >= 0.8){
+  data.accuracy = correctPercent + '%';
+  if(correctPercent >= 80){
     data.badge = 'Excellent';
   }
-  else if(correctPer >= 0.6 && correctPer < 0.8){
+  else if(correctPercent >= 60 && correctPercent < 80){
     data.badge = 'Nice work';
   }
   else{

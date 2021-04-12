@@ -1,13 +1,13 @@
 {
   "questionId":1,
-  "principle": "shitcode rule one: use variable name with no actual meaning",
-  "realPrinciple": "coding rule one: use variable with valid meaning",
+  "principle": "shitcode one: Name variables in an obfuscated way",
+  "realPrinciple": "coding rule one: Name variables with valid meaning",
   "options": [{
     "optionId": 1,
-    "content": "int i = 0"
+    "content": "int a = 42;"
   },
     {"optionId": 2,
-      "content": "int numOfStudent = 0"
+      "content": "int age = 42;"
     }],
   "correctId":2,
   "historyCorrectNum": 0,

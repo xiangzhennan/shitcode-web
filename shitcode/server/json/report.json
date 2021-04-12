@@ -1,7 +1,5 @@
 {
-  "data":{
-    "correctNum": "5",
-    "accuracy": "50%",
-    "badge": "Try harder"
-  }
+  "correctNum": 5,
+  "accuracy": "50%",
+  "badge": "Try harder"
 }

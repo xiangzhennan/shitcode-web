@@ -1,0 +1,15 @@
+{
+  "questionId":7,
+  "principle": "shitcode seven: Use global variables extensively",
+  "realPrinciple": "coding rule seven: Only use global variables when necessary",
+  "options": [{
+    "optionId": 1,
+    "content": "let x = 5;\n\nfunction square() {\n  x = x ** 2;\n}\n\nsquare(); // Now x is 25."
+  },
+    {"optionId": 2,
+      "content": "let x = 5;\n\nfunction square(num) {\n  return num ** 2;\n}\n\nx = square(x); // Now x is 25."
+    }],
+  "correctId":2,
+  "historyCorrectNum": 0,
+  "historyAnswerNum": 0
+}

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {DataService} from './data.service';
-import {ReportService} from './report.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +21,7 @@ import { ReportComponent } from './components/report/report.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [DataService, ReportService],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
