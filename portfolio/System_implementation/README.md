@@ -1,3 +1,4 @@
+![Logo](portfolio/images/game_logo.jpeg)
 # System Implementation
 
 ## Contents
