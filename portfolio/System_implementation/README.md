@@ -43,7 +43,10 @@ In the MEAN stack, MongoDB stores the application’s data. When in production w
 <a name="_middle"></a>
 ## Middle Tier - Express, Node, the RESTful API
 
-Node.js is the backbone of the MEAN stack and Express is a web application framework for Node.js. Express handles all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
+Node.js is the backbone of the MEAN stack. We choose Express as a web application framework for Node.js. We use Express to handle all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
+
+We build up three APIs in api.js file to operate data between frontend and backend. Read our REST API documents for details.
+
 
 
 <a name="_frontend"></a>
