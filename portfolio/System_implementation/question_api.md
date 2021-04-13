@@ -6,11 +6,11 @@ The API is used for fetching data for question.
 
   api/question/{id}
 
-**Method**
+* **Method**
 
   get
 
-**URL Params**
+* **URL Params**
 
   Required:
  
