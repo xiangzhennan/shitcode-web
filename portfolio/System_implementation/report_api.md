@@ -1,17 +1,34 @@
-# System Implementation
+# Document for report API
 
-## Contents
+The API is used for fetching data for final report.
 
-## Stack architecture and system design
+* **URL**
 
-We worked on a quiz challenge single page application that comprises of animation interaction to make the learning process more fun. After discussion of function and implementation, we decided to choose MEAN stack to develop the application in terms of its benefit of flexibility, scalability and extensibility. 
+  api/report/{correctNum}
 
-The client side is the web page which runs in the browser. On the client, we use Angular to render the content in JS and complete client-side operations.
+* **Method**
 
-As for backend, we use Node, Express and MongoDB for the serving of pages, the business logic and storage. We make requests over RESTful APIs and pass data in JSON format between the client and server.
-<br/><br/>
-<p float="left">
-  <img src="../images/MEAN_stack1.jpeg" width="500" />&nbsp;
-  <img src="../images/MEAN_stack2.jpeg" width="500" />
-</p>
-<br/><br/>
+  `GET`
+
+* **URL Params**
+
+  **Required:**
+  
+  `correctNum=[integer]`
+
+* **Sample Return:**
+
+  ```javascript
+  {
+    "correctNum": 5,
+    "accuracy": "50%",
+    "badge": "Try harder"
+  }
+  ```
+* **Return Params**
+  | Params            | Type          | Comment                                                         |
+  | ----------------- | ------------- | --------------------------------------------------------------- |
+  | correctNum        | int           | Number of correct answers                                       |
+  | accuracy          | string        | correctNum/total number of questions, shown in percentage       | 
+  | badge             | string        | accuracy>=80%,"Excellent"; >=60%,"Nice work"; <60%,"Try harder" |
+  
