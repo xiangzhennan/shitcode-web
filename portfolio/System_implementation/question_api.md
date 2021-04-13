@@ -2,7 +2,7 @@
 
 The API is used for fetching data for question.
 
-* **URL**
+**URL**
 
 api/question/{id}
 
