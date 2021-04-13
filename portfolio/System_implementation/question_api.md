@@ -9,3 +9,9 @@ api/question/{id}
 **Method**
 
 get
+
+**URL Params**
+
+Required:
+ 
+`id=[integer]`
