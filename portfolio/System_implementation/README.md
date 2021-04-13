@@ -1,4 +1,4 @@
-![Logo](portfolio/images/game_logo.jpeg)
+![Logo](../images/game_logo.jpeg)
 # System Implementation
 
 ## Contents
