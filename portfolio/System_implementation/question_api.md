@@ -6,3 +6,6 @@ The API is used for fetching data for question.
 
 api/question/{id}
 
+**Method**
+
+get
