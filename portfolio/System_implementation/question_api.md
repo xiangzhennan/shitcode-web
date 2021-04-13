@@ -16,7 +16,7 @@ The API is used for fetching data for question.
   
   `id=[integer]`
 
-* **Sample Call:**
+* **Sample Return:**
 
   ```javascript
   {
@@ -35,3 +35,9 @@ The API is used for fetching data for question.
      "historyAnswerNum": 0
   }
   ```
+* **Return Params**
+  | Tables        | Are           | Cool  |
+  | ------------- |:-------------:| -----:|
+  | col 3 is      | right-aligned | $1600 |
+  | col 2 is      | centered      |   $12 |
+  | zebra stripes | are neat      |    $1 |
