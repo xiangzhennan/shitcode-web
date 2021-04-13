@@ -51,7 +51,7 @@ c. Middle Tier - Express, Node, the RESTful API
 
 d. Front End - Angular
 
-f. Deployment details - Docker
+e. Deployment details - Docker
 
 <a name="_UX"></a>
 ## 5.  UX Design
