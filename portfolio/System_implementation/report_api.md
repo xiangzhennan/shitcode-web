@@ -26,9 +26,9 @@ The API is used for fetching data for final report.
   }
   ```
 * **Return Params**
-  | Params            | Type          | Comment                                                         |
-  | ----------------- | ------------- | --------------------------------------------------------------- |
-  | correctNum        | int           | Number of correct answers                                       |
-  | accuracy          | string        | correctNum/total number of questions, shown in percentage       | 
-  | badge             | string        | accuracy>=80%,"Excellent"; >=60%,"Nice work"; <60%,"Try harder" |
+  | Params            | Type          | Comment                                                            |
+  | ----------------- | ------------- | ------------------------------------------------------------------ |
+  | correctNum        | int           | Number of correct answers                                          | 
+  | accuracy          | string        | correctNum/total number of questions, shown in percentage          | 
+  | badge             | string        | accuracy>=80%, "Excellent"; >=60%, "Nice work"; <60%, "Try harder" |
   
