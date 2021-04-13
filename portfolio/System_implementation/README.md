@@ -48,9 +48,9 @@ Node.js is the backbone of the MEAN stack. We choose Express as a web applicatio
 <a name="_api"></a>
 ### Document for API
 We build up three APIs in api.js file to operate data between frontend and backend. Read our REST API documents for details.
-* [Document for submit API](/submit_api.md)
-* [Document for question API](/question_api.md)
-* [Document for report API](/report_api.md)
+* [Document for submit API](submit_api.md)
+* [Document for question API](question_api.md)
+* [Document for report API](report_api.md)
 
 
 <a name="_frontend"></a>
@@ -61,4 +61,4 @@ We use AngularJS to build the user-facing side of the application.
 <a name="_deploy"></a>
 ## Deployment details - Docker
 
-To improve portability and ease deployment we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
+To improve portability and ease deployment, we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
