@@ -2,16 +2,16 @@
 
 The API is used for fetching data for question.
 
-**URL**
+* **URL**
 
-&ensp;api/question/{id}
+  api/question/{id}
 
 **Method**
 
-&ensp;get
+  get
 
 **URL Params**
 
-&ensp;Required:
+  Required:
  
-&ensp;`id=[integer]`
+  `id=[integer]`
