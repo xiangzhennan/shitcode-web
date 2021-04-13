@@ -19,15 +19,15 @@ A quiz challenge aimed to help new coders get rid of bad coding habit in a playf
 <a name="_team"></a>
 ## 1.  Team
 
-Zhennan Xiang: <oh20840@bristol.ac.uk>
+Zhennan Xiang: <oh20840@bristol.ac.uk> [Backend]
 
-Shujie Liu: <xk20359@bristol.ac.uk>
+Shujie Liu: <xk20359@bristol.ac.uk> [Backend]
 
-Karine Liang: <eb20033@bristol.ac.uk>
+Karine Liang: <eb20033@bristol.ac.uk> [Frontend]
 
-Sheng Guo: <ka20939@bristol.ac.uk>
+Sheng Guo: <ka20939@bristol.ac.uk> [Frontend]
 
-Shengzhe Qin: <fb20957@bristol.ac.uk>
+Shengzhe Qin: <fb20957@bristol.ac.uk> [Frontend]
 
 <a name="_intro"></a>
 ## 2.  Introduction
