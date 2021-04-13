@@ -36,8 +36,8 @@ The API is used for fetching data for question.
   }
   ```
 * **Return Params**
-  | Tables        | Are           | Cool  |
-  | ------------- |:-------------:| -----:|
-  | col 3 is      | right-aligned | $1600 |
+  | Params        | Type          | Comment  |
+  | ------------- | ------------- | ----- |
+  | questionId      | right-aligned | $1600 |
   | col 2 is      | centered      |   $12 |
   | zebra stripes | are neat      |    $1 |
