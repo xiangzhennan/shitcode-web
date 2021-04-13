@@ -21,8 +21,8 @@ The API is used for fetching data for question.
   ```javascript
   {
     "questionId":1,
-    "principle": "shitcode rule one: use variable name with no actual meaning",
-    "realPrinciple": "coding rule one: use variable with valid meaning",
+    "principle": "shitcode one: Name variables in an obfuscated way",
+    "realPrinciple": "coding rule one: Name variables with valid meaning",
     "options": [{
        "optionId": 1,
        "content": "int i = 0"
@@ -36,8 +36,14 @@ The API is used for fetching data for question.
   }
   ```
 * **Return Params**
-  | Params        | Type          | Comment  |
-  | ------------- | ------------- | ----- |
-  | questionId      | right-aligned | $1600 |
-  | col 2 is      | centered      |   $12 |
-  | zebra stripes | are neat      |    $1 |
+  | Params            | Type          | 
+  | ----------------- | ------------- | 
+  | questionId        | int           | 
+  | principle         | string        |   
+  | realPrinciple     | string        |
+  | options           | list          |
+  | optionId          | int           |
+  | content           | string        |
+  | correctId         | int           |
+  | historyCorrectNum | int           |
+  | historyAnswerNum  | int           |
