@@ -10,4 +10,4 @@ The client side is the web page which runs in the browser. On the client, we use
 
 As for backend, we use Node, Express and MongoDB for the serving of pages, the business logic and storage. We make requests over RESTful APIs and pass data in JSON format between the client and server.
 
-<img src="../images/MEAN_stack1.jpeg" width="200" height="200">
+<img src="../images/MEAN_stack1.jpeg" width="500" height="200">
