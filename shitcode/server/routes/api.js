@@ -17,8 +17,8 @@ const options = {
   connectTimeoutMS: 10000,
 };
 
-//const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
-const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
+const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
+//const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
 
 mongoose.connect(url, options).then(function () {
   //console.log(url);
@@ -95,10 +95,26 @@ router.post('/submit',(req,res)=> {
   })
 })
 
-module.exports = router;
+router.get('/report', (req,res)=> {
+  res.header("Content-Type",'application/json');
+  const num = req.query.correctNum;
+  let url = '../json/report.json';
+  let data = require(url);
+  let correctPercent = num/10*100;
 
-// Question.find(function (err, questions) {
-//   if (err) return console.error(err);
-//   console.log(questions);
-// })
+  data.correctNum = num;
+  data.accuracy = correctPercent + '%';
+  if(correctPercent >= 80){
+    data.badge = 'You may not be a master of shitcode, but guess what, you can be a good coder!';
+  }
+  else if(correctPercent >= 60 && correctPercent < 80){
+    data.badge = 'great job, try to learn more about how to write elegant code!';
+  }
+  else{
+    data.badge = 'congratulations, you were born to be a shitcode writer!';
+  }
+  res.send(JSON.stringify(data));
+})
+
+  module.exports = router;
 
