@@ -3,6 +3,8 @@
 ## Contents
 
 * [Stack architecture and system design](#_stack)
+    * [sequence diagram](#_sequence)
+    * [class diagram](#_class)
 
 * [Back End - MongoDB - database implementation](#_backend)
 
@@ -26,6 +28,12 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
   <img src="../images/MEAN_stack2.jpeg" width="500" />
 </p>
 <br/><br/>
+
+<a name="_sequence"></a>
+### sequence diagram
+
+<a name="_class"></a>
+### class diagram
 
 <a name="_backend"></a>
 ## Back End - MongoDB - database implementation
