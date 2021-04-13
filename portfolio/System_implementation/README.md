@@ -3,12 +3,13 @@
 ## Contents
 
 * [Stack architecture and system design](#_stack)
-    * [sequence diagram](#_sequence)
-    * [class diagram](#_class)
+    * [Sequence diagram](#_sequence)
+    * [Class diagram](#_class)
 
 * [Back End - MongoDB - database implementation](#_backend)
 
 * [Middle Tier - Express, Node, the RESTful API](#_middle)
+    * [Document for API](#_api)
 
 * [Front End - Angular](#_frontend)
 
@@ -30,10 +31,10 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
 <br/><br/>
 
 <a name="_sequence"></a>
-### sequence diagram
+### Sequence diagram
 
 <a name="_class"></a>
-### class diagram
+### Class diagram
 
 <a name="_backend"></a>
 ## Back End - MongoDB - database implementation
@@ -44,9 +45,12 @@ In the MEAN stack, MongoDB stores the application’s data. When in production w
 ## Middle Tier - Express, Node, the RESTful API
 
 Node.js is the backbone of the MEAN stack. We choose Express as a web application framework for Node.js. We use Express to handle all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
-
+<a name="_api"></a>
+### Document for API
 We build up three APIs in api.js file to operate data between frontend and backend. Read our REST API documents for details.
 * [Document for submit API](/submit_api.md)
+* [Document for question API](/question_api.md)
+* [Document for report API](/report_api.md)
 
 
 <a name="_frontend"></a>
