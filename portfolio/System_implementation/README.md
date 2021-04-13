@@ -15,3 +15,23 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
   <img src="../images/MEAN_stack2.jpeg" width="500" />
 </p>
 <br/><br/>
+
+## Back End - MongoDB - database implementation
+
+In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
+
+
+## Middle Tier - Express, Node, the RESTful API
+
+Node.js is the backbone of the MEAN stack and Express is a web application framework for Node.js. Express handles all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
+
+
+
+## Front End - Angular
+
+We use AngularJS to build the user-facing side of the application.
+
+
+## Deployment details - Docker
+
+To improve portability and ease deployment we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
