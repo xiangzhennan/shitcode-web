@@ -41,6 +41,18 @@ Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-ar
 <a name="_implementation"></a>
 ## 4.  System Implementation
 
+[Click here](portfolio/System_implementation/README.md) to see:
+
+a. Stack architecture and system design
+
+b. Back End - MongoDB - database implementation
+
+c. Middle Tier - Express, Node, the RESTful API
+
+d. Front End - Angular
+
+f. Deployment details - Docker
+
 <a name="_UX"></a>
 ## 5.  UX Design
 
