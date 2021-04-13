@@ -12,6 +12,4 @@ The API is used for fetching data for question.
 
 * **URL Params**
 
-  Required:
- 
-  `id=[integer]`
+  Required: `id=[integer]`
