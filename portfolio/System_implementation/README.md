@@ -19,15 +19,15 @@ A quiz challenge aimed to help new coders get rid of bad coding habit in a playf
 <a name="_team"></a>
 ## 1.  Team
 
-Zhennan Xiang: <oh20840@bristol.ac.uk> [Backend]
+Zhennan Xiang: <oh20840@bristol.ac.uk>
 
-Shujie Liu: <xk20359@bristol.ac.uk> [Backend]
+Shujie Liu: <xk20359@bristol.ac.uk>
 
-Karine Liang: <eb20033@bristol.ac.uk> [Frontend]
+Karine Liang: <eb20033@bristol.ac.uk>
 
-Sheng Guo: <ka20939@bristol.ac.uk> [Frontend]
+Sheng Guo: <ka20939@bristol.ac.uk>
 
-Shengzhe Qin: <fb20957@bristol.ac.uk> [Frontend]
+Shengzhe Qin: <fb20957@bristol.ac.uk>
 
 <a name="_intro"></a>
 ## 2.  Introduction
@@ -40,18 +40,6 @@ Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-ar
 
 <a name="_implementation"></a>
 ## 4.  System Implementation
-
-[Click here](portfolio/System_implementation/README.md) to see:
-
-a. Stack architecture and system design
-
-b. Back End - MongoDB - database implementation
-
-c. Middle Tier - Express, Node, the RESTful API
-
-d. Front End - Angular
-
-e. Deployment details - Docker
 
 <a name="_UX"></a>
 ## 5.  UX Design
