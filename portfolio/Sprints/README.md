@@ -52,7 +52,7 @@ The key development activities we take in the Agile development including:
 
 * **Teams** - We use Teams to have our weekly meeting and schedule team standups.
 * **GitHub** - We use GitHub to share documents, implement version control and merge our outputs for effective collaboration.
-* **Kanban** - We use Kanban for task allocation and progress monitoring. It makes the progress of our project transparent and helps us more better monitor how far we've come and what's left to do.
+* **Kanban** - We use Kanban Board for task allocation and progress monitoring. It makes the progress of our project transparent and helps us more better monitor how far we've come and what's left to do.
 
 
 <a name="_team"></a>
