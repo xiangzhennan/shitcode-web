@@ -33,9 +33,11 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
 
 <a name="_sequence"></a>
 ### Sequence diagram
+![Sequence](sequence_diagram.jpeg)
 
 <a name="_class"></a>
 ### Class diagram
+![Class](class_diagram.jpeg)
 
 <a name="_backend"></a>
 ## Back End - MongoDB - database implementation
