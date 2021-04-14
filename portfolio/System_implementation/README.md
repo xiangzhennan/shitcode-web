@@ -64,6 +64,19 @@ We use Angular components to amend the HTML, styling and logic for user interfac
 ### List of components
 The following table lists the components we design and create. Then we develop frontend web pages based on these components.
 
+| No.  | Page      | Component   | Implementation                                                                                                     |
+| ---- | --------- | ----------- | ------------------------------------------------------------------------------------------------------------------ |
+| 1    | index     | intro       | Text box, the content is fixed in html                                                                             | 
+| 2    | index     | start-exam  | Start answer button                                                                                                | 
+| 3    | question  | principle   | 1. Text box, the content is obtained from json<br>2. After the confirm button is triggered, display code principle |
+| 4    | question  | option      |
+| 5    | question  | confirm     |
+| 6    | question  | getreport
+| 7    | question  | status-bar
+| 8    | question  | history
+| 9    | report    | report
+| 9    | report    | goback
+
 <a name="_deploy"></a>
 ## Deployment details - Docker
 
