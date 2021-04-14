@@ -38,13 +38,13 @@ We take an iterative approach to workflow management and break down larger issue
 By contrasting the different models for software development, we decide to go for the Agile approach to develop application in incremental and rapid cycles. 
 Following Agile model, we decide what can be accomplished in the timeframe at the beginning of a sprint and sets out to build a series of features, deliver working software that can be installed in a production environment at the end of the sprint, which meets the demand for faster software development.
 
-The stages in the Agile process including:
-•	Requirements - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
-•	Design - Work with stakeholders to define requirements and new features when the application has been identified. 
-•	Development - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
-•	Testing - Unit testing, functional testing, user acceptance testing.
-•	Deployment - Integrate and deliver the working iteration into production.
-•	Review - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
+The key development activities we take in the Agile development including:
+* **Requirements** - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
+* **Design** - Work with stakeholders to define requirements and new features when the application has been identified. 
+* **Development** - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
+* **Testing** - Unit testing, functional testing, user acceptance testing.
+* **Deployment** - Integrate and deliver the working iteration into production.
+* **Review** - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
 
 
 <a name="_communication"></a>
