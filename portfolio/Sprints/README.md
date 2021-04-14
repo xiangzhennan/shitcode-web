@@ -22,8 +22,8 @@ To develop an application in a group, we apply the principles of DevOps and stic
 <a name="_workflow"></a>
 ### Workflow
 We take an iterative approach to workflow management and break down larger issues into smaller units of work to help us meet our goals faster. Our workflow includes the following four states.
-* **TO DO**
-   Work that has not been started
+* **TO DO**<br/>
+  Work that has not been started
 * **IN PROGRESS**
   Work that is actively being looked at by the team
 * **CODE REVIEW**
