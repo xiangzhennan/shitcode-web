@@ -12,6 +12,7 @@
     * [Document for API](#_api)
 
 * [Front End - Angular](#_frontend)
+    * [List of components](#_list)
 
 * [Deployment details - Docker](#_deploy)
 
@@ -57,6 +58,11 @@ We build up three APIs in api.js file to operate data between frontend and backe
 ## Front End - Angular
 
 We use AngularJS to build the user-facing side of the application.
+
+We use Angular components to amend the HTML, styling and logic for user interface which is rendered. After designing the function of the application, we build three main components to define areas of responsibility in the user interface. Each component controls a patch of screen view. We interact with these views via properties and methods contained within those components.
+<a name="_list"></a>
+### List of components
+The following table lists the components we design and create. Then we develop frontend web pages based on these components.
 
 <a name="_deploy"></a>
 ## Deployment details - Docker
