@@ -1,10 +1,129 @@
-.questionContent{
-  width: 500px;
-  display: inline-block;
-  border: solid;
-  margin: 10px 30px 30px 10px;
+body{
+  padding: 50px;
+  background-repeat: no-repeat;
+  position: relative;
 }
-button{
-  margin-left: 20px;
-  margin-right: 20px;
+
+.nav{
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
 }
+
+.navBox{
+  margin-left: 200px;
+}
+
+.navButton{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color:black;
+  margin: 0 -1px -1px 0;
+  border:1px solid dimgrey;
+  float: left;
+}
+
+.navButton:hover{
+  box-shadow: 0 1px grey;
+}
+
+p{
+  text-align: center;
+}
+
+.principle{
+  margin: 40px auto;
+  font-style: italic;
+  color:red;
+  height: 20px;
+  clear:both;
+}
+
+.realPrinciple{
+  font-style: italic;
+  color:green;
+  height: 20px;
+  transition: all 1s ease-out 0.5s;
+}
+
+.container{
+  max-width: 1400px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.question{
+  width:45%;
+  height: 400px;
+  padding: 10px 10px;
+  font-size: 30px;
+  outline: none;
+  position: relative;
+  border:1px solid grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.left{
+  background-color: pink;
+  float:left
+}
+
+.right{
+  background-color: lightblue;
+  float: right;
+}
+
+.left:hover{
+  box-shadow:0 5px 5px pink;
+}
+
+.right:hover{
+  box-shadow: 0 5px 5px lightblue;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.report{
+  width:100px;
+  height: 4em;
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-right: 100px;
+}
+
+.confirm{
+  width:100px;
+  height: 4em;
+  font-weight: bold;
+  color: black;
+  margin-left: 1000px;
+}
+
+.report:hover{
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+}
+
+.confirm:hover{
+  background-color: #f038ff;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+  box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+}
+
+

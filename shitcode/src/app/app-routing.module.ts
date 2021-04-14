@@ -5,9 +5,10 @@ import {ReportComponent} from './components/report/report.component';
 import {QuestionComponent} from './components/question/question.component';
 
 const routes: Routes = [
+  {path: 'welcome', component: WelcomeComponent},
   {path: 'question', component: QuestionComponent},
   {path: 'report', component: ReportComponent},
-  {path: '**', component: WelcomeComponent}
+  {path: '**', redirectTo: 'welcome'},
 ];
 
 @NgModule({

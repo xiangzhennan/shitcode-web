@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../../data.service';
+import {Router} from '@angular/router';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-question',
@@ -8,10 +11,8 @@ import {DataService} from '../../data.service';
 })
 export class QuestionComponent implements OnInit {
 
-  public flag = 1;
-
-  public data: any =  {
-      questionId: 1,
+  public data: any = {
+      questionId: -1,
       principle: 'shitcode rule one: use variable name with no actual meaning',
       realPrinciple: 'coding rule one: use variable with valid meaning',
       options: [{
@@ -26,13 +27,132 @@ export class QuestionComponent implements OnInit {
       historyAnswerNum: 10
     };
 
-  constructor( private dataService: DataService) { }
+  public questionIDArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  public isAnswered = false;
+  public selectedOption = -1;
+  // -1 for not answered, 0 for false, 1 for true
+  public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+
+  constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
+
+  }
 
   ngOnInit(): void {
+    const answers: any = localStorage.getItem('answerStatus');
+    console.log(answers);
+    if (answers){
+      this.answerStatus = JSON.parse(answers);
+      let i = 0;
+      // get first unanswered question from server
+      for (; i < 10; i++){
+        if (this.answerStatus[i] === -1){
+          this.loadQuestion(i + 1);
+          break;
+        }
+      }
+      // if all questions have been answered
+      if (this.data.questionId === -1){
+        this.isAnswered = true;
+        this.loadQuestion(1 );
+      }
+      // init nav bar, gray for not answered, green for correct, red for wrong
+      for (i = 0; i < 10; i++){
+        console.log((i + 1).toString());
+        const navBox: any = document.getElementById((i + 1).toString());
+        if (this.answerStatus[i] === 1){
+          navBox.style.backgroundColor = 'green';
+        } else if ( this.answerStatus[i] === 0){
+          navBox.style.backgroundColor = 'red';
+        }else {
+          navBox.style.backgroundColor = 'gray';
+        }
+      }
+    }else{
+      localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
+    }
+  }
+
+  chooseLeft(): void{
+    this.selectedOption = 1;
+    const left = document.getElementById('left');
+    // @ts-ignore
+    left.style.boxShadow = '0 5px 5px pink';
+    const right = document.getElementById('right');
+    // @ts-ignore
+    right.style.boxShadow = '';
+  }
+
+  chooseRight(): void{
+    this.selectedOption = 2;
+    const left = document.getElementById('left');
+    // @ts-ignore
+    left.style.boxShadow = '';
+    const right = document.getElementById('right');
+    // @ts-ignore
+    right.style.boxShadow = '0 5px 5px lightblue';
+  }
+
+  jumpTo(id: number): void{
+    setTimeout(() => {
+        this.dataService.getQuestion(id).subscribe(
+          data => {
+            this.data = data;
+            console.log(data);
+          },
+          error => {
+            console.log(error);
+          }
+        ); }, 2000);
+    // reset style
+    this.isAnswered = false;
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = '';
   }
 
   getNextQuestion(): void {
-    this.dataService.getAll(2).subscribe(
+    if (this.selectedOption === -1){
+      alert('please choose an answer!');
+      return;
+    }
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = 'line-through';
+    this.isAnswered = true;
+    this.checkAnswer();
+    if (this.data.questionId === 10){
+      alert('there is no more question, go back to review your answer or get your report now!');
+      return;
+    }
+    this.jumpTo(this.data.questionId + 1);
+  }
+
+  // tslint:disable-next-line:typedef
+  getReport(){
+    alert('thanks for answer!');
+    const httpOptions = {headers: new HttpHeaders({'Content-type': 'application/json'})};
+    const api = this.dataService.REST_API_QUESTION;
+    this.http.post(api, localStorage.getItem('answers'), httpOptions);
+    this.router.navigate(['/report']);
+  }
+
+
+  // tslint:disable-next-line:typedef
+  checkAnswer() {
+    let color: string;
+    if (this.selectedOption === this.data.correctId){
+      color = 'green';
+      this.answerStatus[this.data.questionId - 1] = 1;
+    }
+    else{
+      color = 'red';
+      this.answerStatus[this.data.questionId - 1] = 0;
+    }
+    localStorage.setItem('answers', JSON.stringify(this.answerStatus));
+    const navBox: any = document.getElementById(this.data.questionId.toString());
+    navBox.style.backgroundColor = color;
+  }
+
+  loadQuestion( id: number ): void{
+    this.dataService.getQuestion(id).subscribe(
       data => {
         this.data = data;
         console.log(data);
@@ -42,14 +162,11 @@ export class QuestionComponent implements OnInit {
       }
     );
   }
-
-  // tslint:disable-next-line:typedef
-  checkAnswer() {
-    this.flag = 2;
-    alert('thanks for answer');
-    const elementById = document.getElementById('principle');
-    if (elementById != null){
-      elementById.innerHTML = this.data.realPrinciple;
-    }
+  // reset component to origin state when no answer is selected
+  resetAnswerState(): void{
+    this.isAnswered = false;
+    this.selectedOption = -1;
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = '';
   }
 }
