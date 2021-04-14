@@ -100,6 +100,7 @@ The following table lists the components we design and create. Then we develop f
 | 10   | report    | goback      | Button, return to the question page |   |
 
 
+
 <a name="_additional"></a>
 ## Additional element - cookie/session or local storage
 
