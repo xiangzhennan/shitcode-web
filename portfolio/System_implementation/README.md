@@ -10,8 +10,8 @@
     * [Data model](#_model)
 
 * [Middle Tier - Express, Node, the RESTful API](#_middle)
-    * [Document for API](#_api)
-    * [Technical problem](#_problem)
+    * [RESTful API](#_api)
+    * [Technical challenge](#_problem)
 
 * [Front End - Angular](#_frontend)
     * [List of components](#_list)
@@ -68,7 +68,7 @@ Node.js is the backbone of the MEAN stack. We choose Express as a web applicatio
 Since the whole project takes a separated front-end and back-end method to implement. Early confirmation of api interface and data model becomes really vital. This part is finished by back-end team so that front-end team can focus more on displaying. 
 
 <a name="_api"></a>
-### - Document for API
+### - RESTful API
 Our group use the Express framework for our APIs. We build up three APIs in api.js file to operate data between frontend and backend. A total of three APIs were set before the group began to implement the whole thing. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
 Read the following API documents for details.
 * [Document for submit API](submit_api.md)
@@ -76,9 +76,27 @@ Read the following API documents for details.
 * [Document for report API](report_api.md)
 
 API document had only some little change over the implementing process. To be specific, only some details of json data were changed. This allows the whole team being quite efficient when implementing.
+
+<a name="_connect"></a>
+### Connect Component to API
+We define a service to handle the http calls and hook it up to our application components. In the service, we create function `getQuestion()` and `getReport()` to make the right call to our APIs.
+```javascript
+  public getQuestion(id: number){
+    const url = this.REST_API_QUESTION + id;
+    return this.httpClient.get(url);
+  }
+```
+
+```javascript
+  public getReport(correctNum: number){
+    const url = this.REST_API_REPORT + correctNum;
+    return this.httpClient.get(url);
+  }
+```
+
 <a name="_problem"></a>
-### - Technical problem
-There are 2 major problems the backend team met. 
+### - Technical challenge
+There are two major problems the backend team met. 
 
 First, how to get params from a get request. In the workbook, only get request without any params was taught, but our project needs more than that. For example, a get question request will need to clarify which question the user asks for.
 
