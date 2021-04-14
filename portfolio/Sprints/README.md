@@ -48,7 +48,7 @@ The key development activities we take in the Agile development including:
 * **Deployment** - Integrate and deliver the working iteration into production.
 * **Review** - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
 
-<img src="../images/agile_model.jpeg" width="500" />
+<img src="../images/Agile_model.jpeg" width="500" />
 
 <a name="_communication"></a>
 ### - Communication channel
