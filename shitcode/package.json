@@ -21,12 +21,15 @@
     "@angular/router": "~11.1.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "chart.js": "^3.1.0",
+    "ejs": "^2.6.1",
     "express": "^4.17.1",
+    "mongoose": "^5.4.10",
+    "ng2-charts": "^2.4.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3",
-    "ejs": "^2.6.1",
-    "mongoose": "^5.4.10"
+    "zone.js": "~0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1101.2",

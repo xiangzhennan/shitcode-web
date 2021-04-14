@@ -18,8 +18,13 @@
   </div>
 
   <div class="footer">
-    <button class="confirm" type="button" (click)="getNextQuestion()">confirm</button>
-    <button class="report" type="button" (click)="getReport()">get report</button>
+    <button class="confirm" type="button" (click)="confirm()">confirm</button>
+    <button class="report" type="button" (click)="report()">get report</button>
+  </div>
+
+  <div *ngIf="isAnswered === true">
+    <h4>Total number of correct: {{data.historyCorrectNum}}</h4>
+    <h4>Total number of answers: {{data.historyAnswerNum}}</h4>
   </div>
 </body>
 

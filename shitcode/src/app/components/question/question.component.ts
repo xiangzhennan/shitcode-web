@@ -32,6 +32,7 @@ export class QuestionComponent implements OnInit {
   public selectedOption = -1;
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+  historyAccuracy: number = 0;
 
   constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
 
@@ -75,6 +76,27 @@ export class QuestionComponent implements OnInit {
     }
   }
 
+  // load next question, reset
+  loadQuestion( id: number ): void{
+    this.dataService.getQuestion(id).subscribe(
+      data => {
+        this.data = data;
+        this.resetAnswerState();
+        console.log(data);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  // reset component to origin state when no answer is selected
+  resetAnswerState(): void{
+    this.isAnswered = false;
+    this.selectedOption = -1;
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = '';
+  }
 
   chooseLeft(): void{
     this.selectedOption = 1;
@@ -96,33 +118,26 @@ export class QuestionComponent implements OnInit {
     right.style.boxShadow = '0 5px 5px lightblue';
   }
 
-  getNextQuestion(): void {
+  confirm(): void {
     if (this.selectedOption === -1){
       alert('please choose an answer!');
       return;
     }
-    const principle: any = document.getElementById('principle');
-    principle.style.textDecoration = 'line-through';
+    this.updateAnswer();
+    if (this.data.questionId != 10){
+      this.getNextQuestion();
+    } else {
+      this.report();
+    }
+  }
+
+  updateAnswer(): void {
     this.isAnswered = true;
     this.checkAnswer();
-    if (this.data.questionId === 10){
-      alert('there is no more question, go back to review your answer or get your report now!');
-      return;
-    }
-    // load next question, reset
-    setTimeout(() => {
-      this.loadQuestion(this.data.questionId + 1); }, 2000);
+    this.dataService.submitAnswer(
+      {id: this.data.questionId, isCorrect: localStorage.getItem('answerStatus')});
+    this.feedbackAnswer();
   }
-
-  // tslint:disable-next-line:typedef
-  getReport(){
-    alert('thanks for answer!');
-    const httpOptions = {headers: new HttpHeaders({'Content-type': 'application/json'})};
-    const api = this.dataService.REST_API_QUESTION;
-    this.http.post(api, localStorage.getItem('answerStatus'), httpOptions);
-    this.router.navigate(['/report']);
-  }
-
 
   // tslint:disable-next-line:typedef
   checkAnswer() {
@@ -140,23 +155,34 @@ export class QuestionComponent implements OnInit {
     navBox.style.backgroundColor = color;
   }
 
-  loadQuestion( id: number ): void{
-    this.dataService.getQuestion(id).subscribe(
-      data => {
-        this.data = data;
-        this.resetAnswerState();
-        console.log(data);
-      },
-      error => {
-        console.log(error);
-      }
-    );
-  }
-  // reset component to origin state when no answer is selected
-  resetAnswerState(): void{
-    this.isAnswered = false;
-    this.selectedOption = -1;
+  feedbackAnswer(): void {
     const principle: any = document.getElementById('principle');
-    principle.style.textDecoration = '';
+    principle.style.textDecoration = 'line-through';
+    this.getAccuracy();
+    // 动画
+  }
+
+  getNextQuestion(): void {
+    setTimeout(() => {
+      this.loadQuestion(this.data.questionId + 1); }, 2000);
+  }
+
+  // tslint:disable-next-line:typedef
+  report(): void{
+    if (this.selectedOption === -1){
+      alert('please choose an answer!');
+      return;
+    }
+    alert('thanks for answer!');
+    this.updateAnswer();
+    setTimeout(() => {
+      this.router.navigate(['/report']); },2500);
+  }
+
+  getAccuracy(): void{
+    // transfer to percentage form
+    if(this.data.historyAnswerNum != 0) {
+      this.historyAccuracy = this.data.historyCorrectNum/this.data.historyAnswerNum * 100 ;
+    }
   }
 }
