@@ -15,7 +15,7 @@
 * [Front End - Angular](#_frontend)
     * [List of components](#_list)
 
-* [Cookie/session or local storage](#_additional)
+* [Additional element - cookie/session or local storage](#_additional)
 
 * [Deployment details - Docker](#_deploy)
 
@@ -101,7 +101,7 @@ The following table lists the components we design and create. Then we develop f
 
 
 <a name="_additional"></a>
-## Cookie/session or local storage
+## Additional element - cookie/session or local storage
 
 In the project, we tried to avoid the user to repetitively answer the questions, so session technic and local storage were taken into consideration.
 
