@@ -31,6 +31,8 @@ We take an iterative approach to workflow management and break down larger issue
 * **DONE**<br/>
   Work that is completely finished and meets the team's definition of done
 
+![workflow](../images/workflow.jpeg)
+
 
 <a name="_agile"></a>
 ### - Agile development
@@ -46,6 +48,7 @@ The key development activities we take in the Agile development including:
 * **Deployment** - Integrate and deliver the working iteration into production.
 * **Review** - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
 
+![agile](../images/agile_model.jpeg)
 
 <a name="_communication"></a>
 ### - Communication channel
