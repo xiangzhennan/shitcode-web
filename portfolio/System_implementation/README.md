@@ -7,6 +7,7 @@
     * [Class diagram](#_class)
 
 * [Back End - MongoDB - database implementation](#_backend)
+    * [Data model](#_model)
 
 * [Middle Tier - Express, Node, the RESTful API](#_middle)
     * [Document for API](#_api)
@@ -45,6 +46,8 @@ We create three main components "welcome", "question" and "report" to render rel
 ## Back End - MongoDB - database implementation
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
+<a name="_model"></a>
+### Data Model
 
 Data format of the project was set early from API documenting stage. However, for backend, the problem is where to store and get those json data.
 
