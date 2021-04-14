@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {DataService} from '../../data.service';
 import {Router} from '@angular/router';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import { Observable } from 'rxjs';
+import {element} from 'protractor';
 
 @Component({
   selector: 'app-question',
@@ -37,40 +37,44 @@ export class QuestionComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void{}
+
+  // tslint:disable-next-line:use-lifecycle-interface
+  ngAfterViewInit(): void {
     const answers: any = localStorage.getItem('answerStatus');
     console.log(answers);
-    if (answers){
+    if (answers) {
       this.answerStatus = JSON.parse(answers);
       let i = 0;
       // get first unanswered question from server
-      for (; i < 10; i++){
-        if (this.answerStatus[i] === -1){
+      for (; i < 10; i++) {
+        if (this.answerStatus[i] === -1) {
           this.loadQuestion(i + 1);
           break;
         }
       }
       // if all questions have been answered
-      if (this.data.questionId === -1){
+      if (i === 10) {
         this.isAnswered = true;
-        this.loadQuestion(1 );
+        this.loadQuestion(1);
       }
       // init nav bar, gray for not answered, green for correct, red for wrong
-      for (i = 0; i < 10; i++){
+      for (i = 0; i < 10; i++) {
         console.log((i + 1).toString());
         const navBox: any = document.getElementById((i + 1).toString());
-        if (this.answerStatus[i] === 1){
+        if (this.answerStatus[i] === 1) {
           navBox.style.backgroundColor = 'green';
-        } else if ( this.answerStatus[i] === 0){
+        } else if (this.answerStatus[i] === 0) {
           navBox.style.backgroundColor = 'red';
-        }else {
+        } else {
           navBox.style.backgroundColor = 'gray';
         }
       }
-    }else{
+    } else {
       localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     }
   }
+
 
   chooseLeft(): void{
     this.selectedOption = 1;
@@ -92,23 +96,6 @@ export class QuestionComponent implements OnInit {
     right.style.boxShadow = '0 5px 5px lightblue';
   }
 
-  jumpTo(id: number): void{
-    setTimeout(() => {
-        this.dataService.getQuestion(id).subscribe(
-          data => {
-            this.data = data;
-            console.log(data);
-          },
-          error => {
-            console.log(error);
-          }
-        ); }, 2000);
-    // reset style
-    this.isAnswered = false;
-    const principle: any = document.getElementById('principle');
-    principle.style.textDecoration = '';
-  }
-
   getNextQuestion(): void {
     if (this.selectedOption === -1){
       alert('please choose an answer!');
@@ -122,7 +109,9 @@ export class QuestionComponent implements OnInit {
       alert('there is no more question, go back to review your answer or get your report now!');
       return;
     }
-    this.jumpTo(this.data.questionId + 1);
+    // load next question, reset
+    setTimeout(() => {
+      this.loadQuestion(this.data.questionId + 1); }, 2000);
   }
 
   // tslint:disable-next-line:typedef
@@ -130,7 +119,7 @@ export class QuestionComponent implements OnInit {
     alert('thanks for answer!');
     const httpOptions = {headers: new HttpHeaders({'Content-type': 'application/json'})};
     const api = this.dataService.REST_API_QUESTION;
-    this.http.post(api, localStorage.getItem('answers'), httpOptions);
+    this.http.post(api, localStorage.getItem('answerStatus'), httpOptions);
     this.router.navigate(['/report']);
   }
 
@@ -146,7 +135,7 @@ export class QuestionComponent implements OnInit {
       color = 'red';
       this.answerStatus[this.data.questionId - 1] = 0;
     }
-    localStorage.setItem('answers', JSON.stringify(this.answerStatus));
+    localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     const navBox: any = document.getElementById(this.data.questionId.toString());
     navBox.style.backgroundColor = color;
   }
@@ -155,6 +144,7 @@ export class QuestionComponent implements OnInit {
     this.dataService.getQuestion(id).subscribe(
       data => {
         this.data = data;
+        this.resetAnswerState();
         console.log(data);
       },
       error => {

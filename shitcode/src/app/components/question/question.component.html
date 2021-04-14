@@ -6,7 +6,7 @@
 <body>
   <div class="nav">
     <div class="navBox" *ngFor="let questionId of questionIDArray">
-        <button type="button" class="navButton" [id] = "questionId" (click)="jumpTo(questionId)">{{questionId}}</button>
+        <button type="button" class="navButton" [id] = "questionId" (click)="loadQuestion(questionId)">{{questionId}}</button>
     </div>
   </div>
   <p id = "principle" class="principle" >{{data.principle}}</p>
