@@ -11,6 +11,7 @@
 
 * [Middle Tier - Express, Node, the RESTful API](#_middle)
     * [Document for API](#_api)
+    * [Technical problem](#_problem)
 
 * [Front End - Angular](#_frontend)
     * [List of components](#_list)
@@ -68,13 +69,24 @@ Since the whole project takes a separated front-end and back-end method to imple
 
 <a name="_api"></a>
 ### - Document for API
-Our group used a website called show-doc(https://www.showdoc.com.cn/) to help with documenting apis. We build up three APIs in api.js file to operate data between frontend and backend. A total of three APIs were set before the group began to implement the whole thing. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
+Our group use the Express framework for our APIs. We build up three APIs in api.js file to operate data between frontend and backend. A total of three APIs were set before the group began to implement the whole thing. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
 Read the following API documents for details.
 * [Document for submit API](submit_api.md)
 * [Document for question API](question_api.md)
 * [Document for report API](report_api.md)
 
 API document had only some little change over the implementing process. To be specific, only some details of json data were changed. This allows the whole team being quite efficient when implementing.
+<a name="_problem"></a>
+### - Technical problem
+There are 2 major problems the backend team met. 
+
+First, how to get params from a get request. In the workbook, only get request without any params was taught, but our project needs more than that. For example, a get question request will need to clarify which question the user asks for.
+
+After doing some research into HTTP protocol and express framework, we finally figured out how to use express to get params and deal with it in api.js.
+
+Second, there is a post request in the API design, which submits the information of whether user answered a specific question correctly. This request can sure be changed to a get request but the request will have influence on the database, so we think get request can be dangerous. Malicious attack can make use of get request to ruin the validity of data inside database, which is designed to provide history answering info.  
+
+We used post request so that every data the server needs hides safely in request body instead of url. Also, this practice cost us some more time on understanding a post request and how to get param from request body.
 
 <a name="_frontend"></a>
 ## Front End - Angular
