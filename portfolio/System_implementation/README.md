@@ -64,9 +64,9 @@ We use Angular components to amend the HTML, styling and logic for user interfac
 ### List of components
 The following table lists the components we design and create. Then we develop frontend web pages based on these components.
 
-| No.  | Page      | Component   | Implementation                                                                                                     | Binding event (request or function) |
-| ---- | --------- | ----------- | ------------------------------------------------------------------------------------------------------------------ |
-| 1    | index     | intro       | Text box, the content is fixed in html                                                                             | 
+| No.  | Page      | Component   | Implementation                                                                   | Binding event (request or function) |
+| ---- | --------- | ----------- | -------------------------------------------------------------------------------- | ----------------------------------- |
+| 1    | index     | intro       | Text box, the content is fixed in html                                           | ----------------------------------- |
 | 2    | index     | start-exam  | Start answer button                                                                                                | 
 | 3    | question  | principle   | 1. Text box, the content is obtained from json<br>2. After the confirm button is triggered, display code principle |
 | 4    | question  | option      |
