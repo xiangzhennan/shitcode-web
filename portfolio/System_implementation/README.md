@@ -37,6 +37,8 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
 
 <a name="_class"></a>
 ### Class diagram
+We create three main components "welcome", "question" and "report" to render related pages and process business logic. We also create a data service to fetch and modify data between server and frontend. Read the following sessions for detail of each part.
+
 ![Class](class_diagram.jpeg)
 
 <a name="_backend"></a>
