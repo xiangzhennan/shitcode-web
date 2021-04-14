@@ -24,16 +24,28 @@ To develop an application in a group, we apply the principles of DevOps and stic
 We take an iterative approach to workflow management and break down larger issues into smaller units of work to help us meet our goals faster. Our workflow includes the following four states.
 * **TO DO**<br/>
   Work that has not been started
-* **IN PROGRESS**
+* **IN PROGRESS**<br/>
   Work that is actively being looked at by the team
-* **CODE REVIEW**
+* **CODE REVIEW**<br/>
   Work that is completed and awaiting review
-* **DONE**
+* **DONE**<br/>
   Work that is completely finished and meets the team's definition of done
 
 
 <a name="_agile"></a>
 ### - Agile development
+
+By contrasting the different models for software development, we decide to go for the Agile approach to develop application in incremental and rapid cycles. 
+Following Agile model, we decide what can be accomplished in the timeframe at the beginning of a sprint and sets out to build a series of features, deliver working software that can be installed in a production environment at the end of the sprint, which meets the demand for faster software development.
+
+The stages in the Agile process including:
+•	Requirements - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
+•	Design - Work with stakeholders to define requirements and new features when the application has been identified. 
+•	Development - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
+•	Testing - Unit testing, functional testing, user acceptance testing.
+•	Deployment - Integrate and deliver the working iteration into production.
+•	Review - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
+
 
 <a name="_communication"></a>
 ### - Communication channel
