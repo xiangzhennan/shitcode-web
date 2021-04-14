@@ -60,6 +60,7 @@ Read the following API documents for details.
 * [Document for submit API](submit_api.md)
 * [Document for question API](question_api.md)
 * [Document for report API](report_api.md)
+
 API document had only some little change over the implementing process. To be specific, only some details of json data were changed. This allows the whole team being quite efficient when implementing.
 
 <a name="_frontend"></a>
