@@ -20,7 +20,7 @@
 To develop an application in a group, we apply the principles of DevOps and stick to the selected methodology to keep out project on track and moving at a constant pace.
 
 <a name="_workflow"></a>
-### Workflow
+### - Workflow
 We take an iterative approach to workflow management and break down larger issues into smaller units of work to help us meet our goals faster. Our workflow includes the following four states.
 * **TO DO**<br/>
   Work that has not been started
@@ -49,6 +49,11 @@ The key development activities we take in the Agile development including:
 
 <a name="_communication"></a>
 ### - Communication channel
+
+* **Teams** - We use Teams to have our weekly meeting and schedule team standups.
+* **GitHub** - We use GitHub to share documents, implement version control and merge our outputs for effective collaboration.
+* **Kanban** - We use Kanban for task allocation and progress monitoring. It makes the progress of our project transparent and helps us more better monitor how far we've come and what's left to do.
+
 
 <a name="_team"></a>
 ## A summary of team roles and individual contributions
