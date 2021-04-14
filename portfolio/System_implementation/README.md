@@ -50,13 +50,17 @@ In the MEAN stack, MongoDB stores the application’s data. When in production w
 ## Middle Tier - Express, Node, the RESTful API
 
 Node.js is the backbone of the MEAN stack. We choose Express as a web application framework for Node.js. We use Express to handle all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
+
+Since the whole project takes a separated front-end and back-end method to implement. Early confirmation of api interface and data model becomes really vital. This part is finished by back-end team so that front-end team can focus more on displaying. 
+
 <a name="_api"></a>
 ### Document for API
-We build up three APIs in api.js file to operate data between frontend and backend. Read our REST API documents for details.
+Our group used a website called show-doc(https://www.showdoc.com.cn/) to help with documenting apis. We build up three APIs in api.js file to operate data between frontend and backend. A total of three APIs were set before the group began to implement the whole thing. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
+Read the following API documents for details.
 * [Document for submit API](submit_api.md)
 * [Document for question API](question_api.md)
 * [Document for report API](report_api.md)
-
+API document had only some little change over the implementing process. To be specific, only some details of json data were changed. This allows the whole team being quite efficient when implementing.
 
 <a name="_frontend"></a>
 ## Front End - Angular
