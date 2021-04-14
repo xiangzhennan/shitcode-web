@@ -72,9 +72,9 @@ Since the whole project takes a separated front-end and back-end method to imple
 ### - RESTful API
 Our group use the Express framework for our APIs. We build up three main APIs in `api.js` file to operate data between frontend and backend. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
 Read the following API documents for details.
-* [Document for `submit API`](submit_api.md)
-* [Document for `question API`](question_api.md)
-* [Document for `report API`](report_api.md)
+* [Document for `submit` API](submit_api.md)
+* [Document for `question` API](question_api.md)
+* [Document for `report` API](report_api.md)
 
 API documents had only some little change over the implementing process. To be specific, only some details of json data were changed. This allows the whole team being quite efficient when implementing.
 
