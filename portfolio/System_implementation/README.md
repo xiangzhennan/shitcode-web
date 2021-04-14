@@ -33,7 +33,7 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
 
 <a name="_sequence"></a>
 ### Sequence diagram
-![Sequence](sequence_diagram.jpeg)
+<img src="sequence_diagram.jpeg" width="500" />
 
 <a name="_class"></a>
 ### Class diagram
