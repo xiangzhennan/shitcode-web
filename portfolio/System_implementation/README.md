@@ -15,6 +15,8 @@
 * [Front End - Angular](#_frontend)
     * [List of components](#_list)
 
+* [Cookie/session or local storage](#_additional)
+
 * [Deployment details - Docker](#_deploy)
 
 <a name="_stack"></a>
@@ -97,7 +99,18 @@ The following table lists the components we design and create. Then we develop f
 | 9    | report    | report      | Text box, the content is obtained from json |   |
 | 10   | report    | goback      | Button, return to the question page |   |
 
+
+<a name="_additional"></a>
+## Cookie/session or local storage
+
+In the project, we tried to avoid the user to repetitively answer the questions, so session technic and local storage were taken into consideration.
+
+Session can be seen as some memory on the server side while cookie is on client side. Session is designed to have limited survival time, so it is not what we want. By contrast, cookie can be a better choice, living on client side so user can take advantage of it to tell the server that the user has already done the questions once. However, cookie is carried to the server every time there is a http request, which put some pressure on the server side.
+
+Our group finally chose local storage, which also lives permanently on client side but doesn't engage in client-server communication, exactly what we wanted.
+
 <a name="_deploy"></a>
 ## Deployment details - Docker
 
 To improve portability and ease deployment, we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
+
