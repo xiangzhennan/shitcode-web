@@ -60,6 +60,15 @@ f. Deployment details - Docker
 
 <a name="_sprints"></a>
 ## 6.  Sprints & Project Management
+[Click here](portfolio/Sprints/README.md) to see:
+
+a. Group working methods
+
+b. A summary of team roles and individual contributions
+
+c. Documentation of sprints
+
+d. Team use of Git - continuous integration and deployment
 
 <a name="_evaluation"></a>
 ## 7.  Evaluation
