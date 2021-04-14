@@ -33,11 +33,11 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
 <br/><br/>
 
 <a name="_sequence"></a>
-### Sequence diagram
+### - Sequence diagram
 <img src="sequence_diagram.jpeg" width="700" />
 
 <a name="_class"></a>
-### Class diagram
+### - Class diagram
 We create three main components "welcome", "question" and "report" to render related pages and process business logic. We also create a data service to fetch and modify data between server and frontend. Read the following sessions for detail of each part.
 
 ![Class](class_diagram.jpeg)
@@ -47,7 +47,7 @@ We create three main components "welcome", "question" and "report" to render rel
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
 <a name="_model"></a>
-### Data Model
+### - Data model
 
 Data format of the project was set early from API documenting stage. However, for backend, the problem is where to store and get those json data.
 
@@ -65,7 +65,7 @@ Node.js is the backbone of the MEAN stack. We choose Express as a web applicatio
 Since the whole project takes a separated front-end and back-end method to implement. Early confirmation of api interface and data model becomes really vital. This part is finished by back-end team so that front-end team can focus more on displaying. 
 
 <a name="_api"></a>
-### Document for API
+### - Document for API
 Our group used a website called show-doc(https://www.showdoc.com.cn/) to help with documenting apis. We build up three APIs in api.js file to operate data between frontend and backend. A total of three APIs were set before the group began to implement the whole thing. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
 Read the following API documents for details.
 * [Document for submit API](submit_api.md)
@@ -81,7 +81,7 @@ We use AngularJS to build the user-facing side of the application.
 
 We use Angular components to amend the HTML, styling and logic for user interface which is rendered. After designing the function of the application, we build three main components to define areas of responsibility in the user interface. Each component controls a patch of screen view. We interact with these views via properties and methods contained within those components.
 <a name="_list"></a>
-### List of components
+### - List of components
 The following table lists the components we design and create. Then we develop frontend web pages based on these components.
 
 | No.  | Page      | Component   | Implementation                                                                | Binding event<br>(request or function)    |
