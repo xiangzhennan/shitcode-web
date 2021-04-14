@@ -66,11 +66,9 @@ export class QuestionComponent implements OnInit {
           navBox.style.backgroundColor = 'green';
         } else if (this.answerStatus[i] === 0) {
           navBox.style.backgroundColor = 'red';
-        } else {
-          navBox.style.backgroundColor = 'gray';
         }
       }
-    } else {
+    }else {
       localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     }
   }
@@ -80,20 +78,20 @@ export class QuestionComponent implements OnInit {
     this.selectedOption = 1;
     const left = document.getElementById('left');
     // @ts-ignore
-    left.style.boxShadow = '0 5px 5px pink';
+    left.style.border = '3px solid green';
     const right = document.getElementById('right');
     // @ts-ignore
-    right.style.boxShadow = '';
+    right.style.border = '1px solid dimgrey';
   }
 
   chooseRight(): void{
     this.selectedOption = 2;
     const left = document.getElementById('left');
     // @ts-ignore
-    left.style.boxShadow = '';
+    left.style.border = '1px solid dimgrey';
     const right = document.getElementById('right');
     // @ts-ignore
-    right.style.boxShadow = '0 5px 5px lightblue';
+    right.style.border = '3px solid green';
   }
 
   getNextQuestion(): void {
@@ -117,9 +115,6 @@ export class QuestionComponent implements OnInit {
   // tslint:disable-next-line:typedef
   getReport(){
     alert('thanks for answer!');
-    const httpOptions = {headers: new HttpHeaders({'Content-type': 'application/json'})};
-    const api = this.dataService.REST_API_QUESTION;
-    this.http.post(api, localStorage.getItem('answerStatus'), httpOptions);
     this.router.navigate(['/report']);
   }
 
