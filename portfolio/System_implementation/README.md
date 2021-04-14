@@ -46,6 +46,14 @@ We create three main components "welcome", "question" and "report" to render rel
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
 
+Data format of the project was set early from API documenting stage. However, for backend, the problem is where to store and get those json data.
+
+Two ways are available, static data or use mongo DB. Obviously, we can use mongo DB to store everything and get everything. This is simple and easy to implement. However, there are things that are fixed for the project, like the content of a question and shit-code principles. Data like this is more appropriate to be static data.
+
+The final design decision we make is to only store history answer message in the database. Fixed data is stored in server side as .json file. When there is a request for question, we use require(‘xx.json’) to get a json template, use mongo DB to get history info, and then assemble them together. This also happens when we assemble a report json data.
+
+By doing this, we make the best use of mongo DB, static data is separated from dynamic ones.
+
 <a name="_middle"></a>
 ## Middle Tier - Express, Node, the RESTful API
 
