@@ -1,4 +1,4 @@
-# System Implementation
+# Sprints & Project Management
 
 ## Contents
 
@@ -17,10 +17,10 @@
 ## Group working methods
 
 <a name="_agile"></a>
-### Agile approach
+### - Agile approach
 
 <a name="_communication"></a>
-### Communication channel
+### - Communication channel
 
 <a name="_team"></a>
 ## A summary of team roles and individual contributions
