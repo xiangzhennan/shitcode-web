@@ -17,11 +17,23 @@ export class ReportComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    const answers: any = localStorage.getItem('answerStatus');
+    let correctNum = 0;
+    if (answers){
+      const answerStatus: any = JSON.parse(answers);
+      for (let i = 1; i++; i < 10){
+        if (answerStatus[i] === 1){
+          correctNum++;
+        }
+      }
+    }
+    this.retrieveData(correctNum);
   }
 
 
-  retrieveData(): void {
-    this.dataService.getReport(2).subscribe(
+
+  retrieveData(correctNum: number): void {
+    this.dataService.getReport(correctNum).subscribe(
       data => {
         this.data = data;
         console.log(data);

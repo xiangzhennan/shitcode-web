@@ -73,11 +73,9 @@ export class QuestionComponent implements OnInit {
           navBox.style.backgroundColor = 'green';
         } else if (this.answerStatus[i] === 0) {
           navBox.style.backgroundColor = 'red';
-        } else {
-          navBox.style.backgroundColor = 'gray';
         }
       }
-    } else {
+    }else {
       localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     }
   }
@@ -108,14 +106,14 @@ export class QuestionComponent implements OnInit {
     this.selectedOption = 1;
     const left: any = document.getElementById('left');
     left.style.border = '2px solid green';
-    const right: any = document.getElementById('right');
-    right.style.border = '1px solid grey';
+    const righ: any = document.getElementById('right');
+    right.style.border = '1px solid dimgrey';
   }
 
   chooseRight(): void{
     this.selectedOption = 2;
     const left: any = document.getElementById('left');
-    left.style.border = '1px solid grey';
+    left.style.border = '1px solid dimgrey';
     const right: any = document.getElementById('right');
     right.style.border = '2px solid green';
   }
