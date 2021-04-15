@@ -23,7 +23,7 @@ The API is used for modifying related data in database when a user submits an an
   ```javascript
   {
     "questionId":2,
-    "isCorrect":true
+    "isCorrect":“true”
   }
   ```
   
