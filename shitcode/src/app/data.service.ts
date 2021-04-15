@@ -25,7 +25,9 @@ export class DataService {
     return this.httpClient.get(url);
   }
 
-  submitAnswer(answer: {id: number, isCorrect: any}): void{
-    this.httpClient.post(this.REST_API_SUBMIT, answer, this.httpOptions);
+  //submitAnswer(answer: {id: number, isCorrect: any}): void{
+  submitAnswer(isCorrect: any): void{
+    //this.httpClient.post(this.REST_API_SUBMIT, answer, this.httpOptions);
+    this.httpClient.post(this.REST_API_SUBMIT, isCorrect, this.httpOptions);
   }
 }

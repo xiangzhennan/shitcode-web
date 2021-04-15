@@ -1,14 +1,51 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import {DataService} from '../../data.service';
 import {Router} from '@angular/router';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {element} from 'protractor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.css']
+  styleUrls: ['./question.component.css'],
+  animations: [
+    trigger('correctWrong', [
+      state('true', style({ height: '*' })),
+      state('false', style({ height: '0px' })),
+      transition('false <=> true', animate(500))
+    ]),
+    trigger('flyInOut', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateX(-100%)' }),
+        animate(100)
+      ]),
+      transition('* => void', [
+        animate(100, style({ transform: 'translateX(100%)' }))
+      ])
+    ]),
+    // fade in & fade out animation
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1000ms', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [
+        animate('1000ms', style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
+
 export class QuestionComponent implements OnInit {
 
   public data: any = {
@@ -32,7 +69,8 @@ export class QuestionComponent implements OnInit {
   public selectedOption = -1;
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
-  historyAccuracy: number = 0;
+  historyAccuracy: string = "0.00%";
+  isCorrect = false;
 
   constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
 
@@ -135,7 +173,8 @@ export class QuestionComponent implements OnInit {
     this.isAnswered = true;
     this.checkAnswer();
     this.dataService.submitAnswer(
-      {id: this.data.questionId, isCorrect: localStorage.getItem('answerStatus')});
+      //{id: this.data.questionId, isCorrect: localStorage.getItem('answerStatus')});
+      localStorage.getItem('answerStatus'));
     this.feedbackAnswer();
   }
 
@@ -153,6 +192,7 @@ export class QuestionComponent implements OnInit {
     localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     const navBox: any = document.getElementById(this.data.questionId.toString());
     navBox.style.backgroundColor = color;
+    this.isCorrect = (this.selectedOption === this.data.correctId);
   }
 
   feedbackAnswer(): void {
@@ -176,13 +216,13 @@ export class QuestionComponent implements OnInit {
     alert('thanks for answer!');
     this.updateAnswer();
     setTimeout(() => {
-      this.router.navigate(['/report']); },2500);
+      this.router.navigate(['/report']); },2000);
   }
 
   getAccuracy(): void{
-    // transfer to percentage form
+    // 百分制度 单题准确率
     if(this.data.historyAnswerNum != 0) {
-      this.historyAccuracy = this.data.historyCorrectNum/this.data.historyAnswerNum * 100 ;
+      this.historyAccuracy = this.data.historyCorrectNum/this.data.historyAnswerNum * 100 + '%';
     }
   }
 }

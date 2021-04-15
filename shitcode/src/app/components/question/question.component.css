@@ -63,7 +63,7 @@ p{
   width:45%;
   height: 400px;
   padding: 10px 10px;
-  font-size: 30px;
+  font-size: 20px;
   outline: none;
   position: relative;
   border:1px solid grey;
@@ -126,4 +126,20 @@ p{
   box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
 }
 
+table {
+  border-collapse: collapse;
+  background-color: lightgray;
+  border: 1px solid dimgray;
+}
+
+table.history {
+  table-layout: auto;
+  width: 30%;
+}
+
+th,td {
+  border: 1px solid dimgray;
+  text-align: center;
+  font-style: italic;
+}
 

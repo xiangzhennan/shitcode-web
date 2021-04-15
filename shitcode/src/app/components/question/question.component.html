@@ -10,11 +10,27 @@
     </div>
   </div>
   <p id = "principle" class="principle" >{{data.principle}}</p>
-  <p id = "realPrinciple" class="realPrinciple" [hidden]="!isAnswered">{{data.realPrinciple}}</p>
+  <p @fadeInOut *ngIf="isAnswered"
+     id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
   <p>which one is shitcode?</p>
   <div class="container">
     <button id = "left" class="question left" type="button" (click)="chooseLeft()">{{data.options[0].content}}</button>
     <button id = "right" class="question right" type="button" (click)="chooseRight()">{{data.options[1].content}}</button>
+  </div>
+
+  <div @fadeInOut *ngIf="isAnswered">
+    <table class="history">
+      <tr>
+        <th>World Total Corrects</th>
+        <th>World Total Answers</th>
+        <th>World Accuracy</th>
+      </tr>
+      <tr>
+        <td>{{data.historyCorrectNum}}</td>
+        <td>{{data.historyAnswerNum}}</td>
+        <td>{{data.historyAccuracy}}</td>
+      </tr>
+    </table>
   </div>
 
   <div class="footer">
@@ -22,9 +38,8 @@
     <button class="report" type="button" (click)="report()">get report</button>
   </div>
 
-  <div *ngIf="isAnswered === true">
-    <h4>Total number of correct: {{data.historyCorrectNum}}</h4>
-    <h4>Total number of answers: {{data.historyAnswerNum}}</h4>
+  <div *ngIf="isAnswered">
+    <div [@correctWrong]="isCorrect ? true : false" >correctWrong animation</div>
   </div>
 </body>
 
