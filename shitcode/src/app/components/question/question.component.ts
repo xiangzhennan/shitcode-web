@@ -106,22 +106,18 @@ export class QuestionComponent implements OnInit {
 
   chooseLeft(): void{
     this.selectedOption = 1;
-    const left = document.getElementById('left');
-    // @ts-ignore
-    left.style.boxShadow = '0 5px 5px pink';
-    const right = document.getElementById('right');
-    // @ts-ignore
-    right.style.boxShadow = '';
+    const left: any = document.getElementById('left');
+    left.style.border = '2px solid green';
+    const right: any = document.getElementById('right');
+    right.style.border = '1px solid grey';
   }
 
   chooseRight(): void{
     this.selectedOption = 2;
-    const left = document.getElementById('left');
-    // @ts-ignore
-    left.style.boxShadow = '';
-    const right = document.getElementById('right');
-    // @ts-ignore
-    right.style.boxShadow = '0 5px 5px lightblue';
+    const left: any = document.getElementById('left');
+    left.style.border = '1px solid grey';
+    const right: any = document.getElementById('right');
+    right.style.border = '2px solid green';
   }
 
   confirm(): void {
@@ -130,7 +126,7 @@ export class QuestionComponent implements OnInit {
       return;
     }
     this.updateAnswer();
-    if (this.data.questionId != 10){
+    if (this.data.questionId < 10){
       this.getNextQuestion();
     } else {
       this.report();
@@ -178,16 +174,15 @@ export class QuestionComponent implements OnInit {
       alert('please choose an answer!');
       return;
     }
-    alert('thanks for answer!');
     this.updateAnswer();
     setTimeout(() => {
-      this.router.navigate(['/report']); },2000);
+      this.router.navigate(['/report']); }, 2000);
   }
 
   getAccuracy(): string{
-    let historyAccuracy: string = "0.00%";
-    if(this.data.historyAnswerNum != 0) {
-      historyAccuracy = this.data.historyCorrectNum/this.data.historyAnswerNum * 100 + "%";
+    let historyAccuracy = '0.00%';
+    if (this.data.historyAnswerNum !== 0) {
+      historyAccuracy = this.data.historyCorrectNum / this.data.historyAnswerNum * 100 + '%';
     }
     return historyAccuracy;
   }
