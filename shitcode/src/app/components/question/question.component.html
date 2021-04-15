@@ -28,7 +28,7 @@
       <tr>
         <td>{{data.historyCorrectNum}}</td>
         <td>{{data.historyAnswerNum}}</td>
-        <td>{{data.historyAccuracy}}</td>
+        <td>{{getAccuracy()}}</td>
       </tr>
     </table>
   </div>
@@ -38,9 +38,6 @@
     <button class="report" type="button" (click)="report()">get report</button>
   </div>
 
-  <div *ngIf="isAnswered">
-    <div [@correctWrong]="isCorrect ? true : false" >correctWrong animation</div>
-  </div>
 </body>
 
 

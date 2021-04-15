@@ -102,6 +102,7 @@ p{
   font-weight: bold;
   float: right;
   margin-right: 100px;
+  display:inline-block
 }
 
 .confirm{
@@ -110,6 +111,7 @@ p{
   font-weight: bold;
   color: black;
   margin-left: 1000px;
+  display:inline-block
 }
 
 .report:hover{
@@ -130,6 +132,7 @@ table {
   border-collapse: collapse;
   background-color: lightgray;
   border: 1px solid dimgray;
+  display:inline-block
 }
 
 table.history {

@@ -20,14 +20,12 @@ export class DataService {
   }
 
   // tslint:disable-next-line:typedef
-  public getReport(correctNum: number){
-    const url = this.REST_API_REPORT + correctNum;
+  public getReport(id: number) {
+    const url = this.REST_API_REPORT + id;
     return this.httpClient.get(url);
   }
 
-  //submitAnswer(answer: {id: number, isCorrect: any}): void{
-  submitAnswer(isCorrect: any): void{
-    //this.httpClient.post(this.REST_API_SUBMIT, answer, this.httpOptions);
-    this.httpClient.post(this.REST_API_SUBMIT, isCorrect, this.httpOptions);
+  submitAnswer(answer: any): void {
+    this.httpClient.post<string>(this.REST_API_SUBMIT, answer, this.httpOptions);
   }
 }
