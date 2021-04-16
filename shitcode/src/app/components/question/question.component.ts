@@ -39,6 +39,7 @@ export class QuestionComponent implements OnInit {
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
   isCorrect = false;
+  private themeColor: any[] = ["#FEC5BB","#FCD5CE","#FAE1DD","#F8EDEB","#E8E8E4","#D8E2DC","#ECE4DB","#FFE5D9","#FFD7BA","#FEC89A"];
 
   constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
 
@@ -94,6 +95,7 @@ export class QuestionComponent implements OnInit {
         console.log(error);
       }
     );
+    document.bgColor = this.themeColor[id-1];
   }
 
   // reset component to origin state when no answer is selected
