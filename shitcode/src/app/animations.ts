@@ -53,14 +53,15 @@ export const slideInAnimation =
   ]);
 
 export const fadeInOutAnimation =
-  // fade in & fade out animation
+  // fade in & fade out animation + fixed position
   trigger('fadeInOut', [
-    transition(':enter', [
-      style({ opacity: 0 }),
-      animate('1000ms', style({ opacity: 1 })),
+    state('notAnswered', style({ opacity: 0 })),
+    state('Answered', style({ opacity: 1 })),
+    transition('notAnswered => Answered', [
+      animate('500ms')
     ]),
-    transition(':leave', [
-      animate('1000ms', style({ opacity: 0 }))
+    transition('Answered => notAnswered', [
+      animate('500ms')
     ])
   ]);
 

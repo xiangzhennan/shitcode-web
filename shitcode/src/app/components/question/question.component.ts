@@ -102,25 +102,23 @@ export class QuestionComponent implements OnInit {
     this.selectedOption = -1;
     const principle: any = document.getElementById('principle');
     principle.style.textDecoration = '';
+    const confirmNext: any = document.getElementById('confirm');
+    confirmNext.innerHTML = "confirm";
   }
 
   chooseLeft(): void{
     this.selectedOption = 1;
-    const left = document.getElementById('left');
-    // @ts-ignore
+    const left: any = document.getElementById('left');
     left.style.boxShadow = '0 5px 5px pink';
-    const right = document.getElementById('right');
-    // @ts-ignore
+    const right: any = document.getElementById('right');
     right.style.boxShadow = '';
   }
 
   chooseRight(): void{
     this.selectedOption = 2;
-    const left = document.getElementById('left');
-    // @ts-ignore
+    const left: any = document.getElementById('left');
     left.style.boxShadow = '';
-    const right = document.getElementById('right');
-    // @ts-ignore
+    const right: any = document.getElementById('right');
     right.style.boxShadow = '0 5px 5px lightblue';
   }
 
@@ -129,22 +127,30 @@ export class QuestionComponent implements OnInit {
       alert('please choose an answer!');
       return;
     }
-    this.updateAnswer();
-    if (this.data.questionId != 10){
-      this.getNextQuestion();
-    } else {
-      this.report();
+    // next function
+    const confirmNext: any = document.getElementById('confirm');
+    if(confirmNext.innerHTML == "next"){
+      if (this.data.questionId != 10){
+        this.loadQuestion(this.data.questionId + 1);
+      } else {
+        this.report();
+      }
+      return;
     }
+    // confirm function
+    this.updateAnswer();
+    confirmNext.innerHTML = "next";
   }
 
   updateAnswer(): void {
     this.isAnswered = true;
     this.checkAnswer();
-    this.dataService.submitAnswer(JSON.stringify({id: this.data.questionId, result: this.isCorrect}));
-    this.feedbackAnswer();
+    this.dataService.submitAnswer(JSON.stringify(
+      {questionId: this.data.questionId, isCorrect: this.isCorrect}));
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = 'line-through';
   }
 
-  // tslint:disable-next-line:typedef
   checkAnswer() {
     let color: string;
     if (this.selectedOption === this.data.correctId){
@@ -161,18 +167,6 @@ export class QuestionComponent implements OnInit {
     this.isCorrect = (this.selectedOption === this.data.correctId);
   }
 
-  feedbackAnswer(): void {
-    const principle: any = document.getElementById('principle');
-    principle.style.textDecoration = 'line-through';
-    // 动画
-  }
-
-  getNextQuestion(): void {
-    setTimeout(() => {
-      this.loadQuestion(this.data.questionId + 1); }, 2000);
-  }
-
-  // tslint:disable-next-line:typedef
   report(): void{
     if (this.selectedOption === -1){
       alert('please choose an answer!');
@@ -180,8 +174,7 @@ export class QuestionComponent implements OnInit {
     }
     alert('thanks for answer!');
     this.updateAnswer();
-    setTimeout(() => {
-      this.router.navigate(['/report']); },2000);
+    this.router.navigate(['/report']);
   }
 
   getAccuracy(): string{
