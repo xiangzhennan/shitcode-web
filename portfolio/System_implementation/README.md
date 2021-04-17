@@ -134,6 +134,7 @@ We used post request so that every data the server needs hides safely in request
 We use AngularJS to build the user-facing side of the application.
 
 We use Angular components to amend the HTML, styling and logic for user interface which is rendered. After designing the function of the application, we build three main components to define areas of responsibility in the user interface. Each component controls a patch of screen view. We interact with these views via properties and methods contained within those components.
+
 <a name="_list"></a>
 ### - List of components
 The following table lists the components we design and create. Then we develop frontend web pages based on these components.
@@ -200,13 +201,13 @@ For backend team, coding is only about sending out the right json data since we 
 ![image](postman.png)
 
 <a name="_6.3"></a>
-### Integrate frontend and backend
+### - Integrate frontend and backend
 Once both frontend and backend team finished the same feature (for example report component and report API were finished), Git helped with merge codes. Therefore, it keeps both team aware of each other’s progress and integrate several parts at a time.
 
 In the real process, the backend managed to finish earlier than the frontend. From that time on, frontend team can have a real backend to test their code, so no more separated coding is needed.
 
 <a name="_6.4"></a>
-### Deploy with docker and improve through testing
+### - Deploy with docker and improve through testing
 Although we are advised to use docker while developing, there are three important reasons our team chose to do things slightly differently. First, deploy by docker functions no differently from running website on IDE(in our team, WebStorm) locally and is actually more complex and slowly. Second, docker takes up more and more space in the computer as we continue to build and run. Third, using a local mongoDB is easier for debugging since we can check things directly through its terminal, see as below.
 
 ```javascript
