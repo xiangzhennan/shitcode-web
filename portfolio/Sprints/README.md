@@ -9,6 +9,10 @@
 
 * [A summary of team roles and individual contributions](#_team)
     * [Zhennan Xiang](#_Xiang)
+    * [Shujie Liu](#_Liu)
+    * [Sheng Guo](#_Guo)
+    * [Karine Liang](#_Liang)
+    * [Shengzhe Qin](#_Qin)
 
 * [Documentation of sprints](#_sprints)
     
@@ -65,18 +69,39 @@ The key development activities we take in the Agile development including:
 <a name="_Xiang"></a>
 * **Zhennan Xiang**
 
-Xiang's role in this team is more focused on technical side and project structure. Since early stage when idea of website was set, I began to design and document the essential frontend components, backend APIs and data models.
+Xiang's role in the team is more focused on technical side and project structure. Since early stage when idea of website was set, I began to design and document the essential frontend components, backend APIs and data models.
 
 To be specific, Xiang has done the following things:
 1)	API documenting
 2)	component listing
-3)	first version of prototype website (including only static json in backend and router in frontend)
+3)	backend development and first version of prototype website (including only static json in backend and router in frontend)
 4)	database building and integrating
 5)	testing and evaluation
 </br>
 
-
+<a name="_Liu"></a>
 * **Shujie Liu**
+
+Liu's role in the team is a organiser and communicator， working on hosting weekly meeting, coordinating works and communication among teammates and controlling the progress of the project. She participated in the development of the backend and was mainly responsible for the implementation of report API and related features.
+
+To be specific, Liu mainly contributed to the following things:
+1) part of backend development
+2) UX design including paper prototyping and understanding of user group
+3) project management
+4) report integration and quality control
+</br>
+
+<a name="_Guo"></a>
+* **Sheng Guo**
+</br>
+
+<a name="_Liang"></a>
+* **Karine Liang**
+</br>
+
+<a name="_Qin"></a>
+* **Shengzhe Qin**
+</br>
 
 <a name="_sprints"></a>
 ## Documentation of sprints
