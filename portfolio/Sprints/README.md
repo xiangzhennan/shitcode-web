@@ -74,7 +74,7 @@ To be specific, Xiang has done the following things:
 4)	database building and integrating
 5)	testing and evaluation
 
-<\br>
+</br>
 * **Shujie Liu**
 
 <a name="_sprints"></a>
