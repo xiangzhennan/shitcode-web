@@ -7,7 +7,7 @@
     * [Class diagram](#_class)
 
 * [Back End - MongoDB - database implementation](#_backend)
-    * [Data model](#_model)
+    * [Data model and how to assemble json](#_model)
 
 * [Middle Tier - Express, Node, the RESTful API](#_middle)
     * [RESTful API](#_api)
@@ -51,7 +51,7 @@ We create three main components "welcome", "question" and "report" to render rel
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
 <a name="_model"></a>
-### - Data model
+### - Data model and how to assemble json
 
 Data format of the project was set early from API documenting stage. However, for backend, the problem is where to store and get those json data.
 
@@ -59,7 +59,15 @@ Two ways are available, static data or use mongo DB. Obviously, we can use mongo
 
 The final design decision we make is to only store history answer message in the database. Fixed data is stored in server side as .json file. When there is a request for question, we use require(‘xx.json’) to get a json template, use mongo DB to get history info, and then assemble them together. This also happens when we assemble a report json data.
 
-By doing this, we make the best use of mongo DB, static data is separated from dynamic ones.
+By doing this, we make the best use of mongo DB, static data is separated from dynamic ones. Determined by the complexity of the website, only one model is needed to record all history info of different users’ answers, see as below.
+
+```javascript
+var QuestionSchema = new Schema({
+   questionId: Number,
+   numOfAnswer: Number,
+   numOfCorrect: Number
+});
+```
 
 <a name="_middle"></a>
 ## Middle Tier - Express, Node, the RESTful API
