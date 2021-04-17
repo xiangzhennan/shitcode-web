@@ -20,8 +20,10 @@
 * [5. Additional element - cookie/session or local storage](#_additional)
 
 * [6. Deployment details - Docker](#_deploy)
-    * [Frontend with static data](#_6.1)
-    * [Backend with no view](#_6.2)
+    * [Develop frontend with static data](#_6.1)
+    * [Develop backend with no view](#_6.2)
+    * [Integrate frontend and backend](#_6.3)
+    * [Deploy with docker and improve through testing](#_6.4)
 
 <a name="_stack"></a>
 ## 1.  Stack architecture and system design
@@ -52,6 +54,9 @@ We create three main components "welcome", "question" and "report" to render rel
 ## 2.  Back End - MongoDB - database implementation
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
+
+In the project, we only store dynamic history info (history correct number and history answer number) of each question in MongoDB. We don't store any sensitive information from users. The static question info is stored in the form of json in the server.
+
 <a name="_model"></a>
 ### - Data model and how to assemble json
 
@@ -165,7 +170,7 @@ To improve portability and ease deployment, we use Docker to manage the Node/Mon
 There are basically 4 stages of deployment.
 
 <a name="_6.1"></a>
-### - Frontend with static data
+### - Develop frontend with static data
 Frontend team make use of static json data declared in `component.ts` file to imitate data from backend (that is why early API documenting helps with developing). So once router and html file was finished, `ng serve` help testing the web page without any backend code. An example of static data used in frontend is showed below.
 
 ```javascript
@@ -188,13 +193,27 @@ public data: any = {
 ```
 
 <a name="_6.2"></a>
-### - Backend with no view
+### - Develop backend with no view
 For backend team, coding is only about sending out the right json data since we are using RESTFUL API style. A small problem is how to test a post request without any frontend code. A tool called `postman` did great help as it can simulate all kinds of `http request` without frontend. 
 
 
 ![image](postman.png)
 
 <a name="_6.3"></a>
-### Integrated website
+### Integrate frontend and backend
+Once both frontend and backend team finished the same feature (for example report component and report API were finished), Git helped with merge codes. Therefore, it keeps both team aware of each other’s progress and integrate several parts at a time.
+
+In the real process, the backend managed to finish earlier than the frontend. From that time on, frontend team can have a real backend to test their code, so no more separated coding is needed.
+
+<a name="_6.4"></a>
+### Deploy with docker and improve through testing
+Although we are advised to use docker while developing, there are three important reasons our team chose to do things slightly differently. First, deploy by docker functions no differently from running website on IDE(in our team, WebStorm) locally and is actually more complex and slowly. Second, docker takes up more and more space in the computer as we continue to build and run. Third, using a local mongoDB is easier for debugging since we can check things directly through its terminal, see as below.
+
+```javascript
+const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
+//const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
+```
+
+Our final decision is to develop locally until we have a fully functioning website and only do user testing on docker. Docker provide quite reliable support when we tried to test and improve through wide user testing. Simple `docker-compose build` and `docker-compose up` did the whole job of modify and redeploy.
 
 
