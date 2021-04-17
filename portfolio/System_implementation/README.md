@@ -42,6 +42,7 @@ As for backend, we use Node, Express and MongoDB for the serving of pages, the b
 
 <a name="_sequence"></a>
 ### - Sequence diagram
+The application is designed and provides service according to the following sequence logic.
 <img src="sequence_diagram.jpeg" width="700" />
 
 <a name="_class"></a>
