@@ -72,9 +72,9 @@ To be specific, Xiang has done the following things:
 2)	component listing
 3)	first version of prototype website (including only static json in backend and router in frontend)
 4)	database building and integrating
-5)	testing and evaluation
+5)	testing and evaluation</br>
 
-</br>
+
 * **Shujie Liu**
 
 <a name="_sprints"></a>
