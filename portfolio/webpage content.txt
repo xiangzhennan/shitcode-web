@@ -15,8 +15,7 @@ After submission, show real principle.
 3. Report page
 
 Nice Try!
-Badge: gold medal/silver medal/bronze medal/try harder pattern
-You have answered X questions correctly with X% accuracy!
-You have beaten X% people!
+Badge: Excellent/Nice work/Try harder
+You have correctly answered X questions with X% accuracy!
 
 
