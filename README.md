@@ -19,7 +19,7 @@ A quiz challenge aimed to help new coders get rid of bad coding habit in a playf
 <a name="_team"></a>
 ## 1.  Team
 
-Zhennan Xiang: <oh20840@bristol.ac.uk> [Backend]
+Zhennan Xiang: <oh20840@bristol.ac.uk> [Backend, System architect]
 
 Shujie Liu: <xk20359@bristol.ac.uk> [Backend]
 
