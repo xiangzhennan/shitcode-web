@@ -61,7 +61,8 @@ The key development activities we take in the Agile development including:
 <a name="_team"></a>
 ## A summary of team roles and individual contributions
 
-* ** Zhennan Xiang **
+* **Zhennan Xiang**
+
 Xiang's role in this team is more focused on technical side and project structure. Since early stage when idea of website was set, I began to design and document the essential frontend components, backend APIs and data models.
 
 To be specific, Xiang has done the following things:
