@@ -8,6 +8,7 @@
     * [Communication channel](#_communication)
 
 * [A summary of team roles and individual contributions](#_team)
+    * [Zhennan Xiang](#_Xiang)
 
 * [Documentation of sprints](#_sprints)
     
@@ -61,6 +62,7 @@ The key development activities we take in the Agile development including:
 <a name="_team"></a>
 ## A summary of team roles and individual contributions
 
+<a name="_Xiang"></a>
 * **Zhennan Xiang**
 
 Xiang's role in this team is more focused on technical side and project structure. Since early stage when idea of website was set, I began to design and document the essential frontend components, backend APIs and data models.
@@ -72,6 +74,7 @@ To be specific, Xiang has done the following things:
 4)	database building and integrating
 5)	testing and evaluation
 
+* **Shujie Liu**
 
 <a name="_sprints"></a>
 ## Documentation of sprints
