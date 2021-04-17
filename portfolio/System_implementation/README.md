@@ -20,10 +20,10 @@
 * [5. Additional element - cookie/session or local storage](#_additional)
 
 * [6. Deployment details - Docker](#_deploy)
-    * [5.1	frontend with static data](#_6.1)
+    * [frontend with static data](#_6.1)
 
 <a name="_stack"></a>
-## 1. Stack architecture and system design
+## 1.  Stack architecture and system design
 
 We worked on a quiz challenge single page application that comprises of animation interaction to make the learning process more fun. After discussion of function and implementation, we decided to choose MEAN stack to develop the application in terms of its benefit of flexibility, scalability and extensibility. 
 
@@ -48,7 +48,7 @@ We create three main components "welcome", "question" and "report" to render rel
 ![Class](class_diagram.jpeg)
 
 <a name="_backend"></a>
-## 2. Back End - MongoDB - database implementation
+## 2.  Back End - MongoDB - database implementation
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
 <a name="_model"></a>
@@ -71,7 +71,7 @@ var QuestionSchema = new Schema({
 ```
 
 <a name="_middle"></a>
-## 3. Middle Tier - Express, Node, the RESTful API
+## 3.  Middle Tier - Express, Node, the RESTful API
 
 Node.js is the backbone of the MEAN stack. We choose Express as a web application framework for Node.js. We use Express to handle all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
 
@@ -123,7 +123,7 @@ Second, there is a post request in the API design, which submits the information
 We used post request so that every data the server needs hides safely in request body instead of url. Also, this practice cost us some more time on understanding a post request and how to get param from request body.
 
 <a name="_frontend"></a>
-## 4. Front End - Angular
+## 4.  Front End - Angular
 
 We use AngularJS to build the user-facing side of the application.
 
@@ -148,7 +148,7 @@ The following table lists the components we design and create. Then we develop f
 
 
 <a name="_additional"></a>
-## 5. Additional element - cookie/session or local storage
+## 5.  Additional element - cookie/session or local storage
 
 In the project, we tried to avoid the user to repetitively answer the questions, so session technic and local storage were taken into consideration.
 
@@ -157,7 +157,7 @@ Session can be seen as some memory on the server side while cookie is on client 
 Our group finally chose local storage, which also lives permanently on client side but doesn't engage in client-server communication, exactly what we wanted.
 
 <a name="_deploy"></a>
-## 6. Deployment details - Docker
+## 6.  Deployment details - Docker
 
 To improve portability and ease deployment, we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
 
