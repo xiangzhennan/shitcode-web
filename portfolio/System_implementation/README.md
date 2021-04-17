@@ -21,6 +21,7 @@
 
 * [6. Deployment details - Docker](#_deploy)
     * [Frontend with static data](#_6.1)
+    * [Backend with no view](#_6.2)
 
 <a name="_stack"></a>
 ## 1.  Stack architecture and system design
@@ -185,7 +186,8 @@ public data: any = {
       historyAnswerNum: 10
 };
 ```
+
+<a name="_6.2"></a>
 ### - Backend with no view
 For backend team, coding is only about sending out the right json data since we are using RESTFUL API style. A small problem is how to test a post request without any frontend code. A tool called `postman` did great help as it can simulate all kinds of `http request` without frontend. 
 
-![image](https://user-images.githubusercontent.com/74025382/115113446-46f5a280-9f82-11eb-8f08-ffaf61a981de.png)
