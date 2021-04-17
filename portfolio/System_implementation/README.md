@@ -2,27 +2,28 @@
 
 ## Contents
 
-* [Stack architecture and system design](#_stack)
+* [1. Stack architecture and system design](#_stack)
     * [Sequence diagram](#_sequence)
     * [Class diagram](#_class)
 
-* [Back End - MongoDB - database implementation](#_backend)
+* [2. Back End - MongoDB - database implementation](#_backend)
     * [Data model and how to assemble json](#_model)
 
-* [Middle Tier - Express, Node, the RESTful API](#_middle)
+* [3. Middle Tier - Express, Node, the RESTful API](#_middle)
     * [RESTful API](#_api)
     * [Connect component to API](#_connect)
     * [Technical challenge](#_problem)
 
-* [Front End - Angular](#_frontend)
+* [4. Front End - Angular](#_frontend)
     * [List of components](#_list)
 
-* [Additional element - cookie/session or local storage](#_additional)
+* [5. Additional element - cookie/session or local storage](#_additional)
 
-* [Deployment details - Docker](#_deploy)
+* [6. Deployment details - Docker](#_deploy)
+    * [5.1	frontend with static data](#_6.1)
 
 <a name="_stack"></a>
-## Stack architecture and system design
+## 1. Stack architecture and system design
 
 We worked on a quiz challenge single page application that comprises of animation interaction to make the learning process more fun. After discussion of function and implementation, we decided to choose MEAN stack to develop the application in terms of its benefit of flexibility, scalability and extensibility. 
 
@@ -47,7 +48,7 @@ We create three main components "welcome", "question" and "report" to render rel
 ![Class](class_diagram.jpeg)
 
 <a name="_backend"></a>
-## Back End - MongoDB - database implementation
+## 2. Back End - MongoDB - database implementation
 
 In the MEAN stack, MongoDB stores the application’s data. When in production we host MongoDB in a container on the same server. We also have a local version for development and testing.
 <a name="_model"></a>
@@ -70,7 +71,7 @@ var QuestionSchema = new Schema({
 ```
 
 <a name="_middle"></a>
-## Middle Tier - Express, Node, the RESTful API
+## 3. Middle Tier - Express, Node, the RESTful API
 
 Node.js is the backbone of the MEAN stack. We choose Express as a web application framework for Node.js. We use Express to handle all the interactions between the frontend and the database, ensuring a smooth transfer of data to the end user.
 
@@ -122,7 +123,7 @@ Second, there is a post request in the API design, which submits the information
 We used post request so that every data the server needs hides safely in request body instead of url. Also, this practice cost us some more time on understanding a post request and how to get param from request body.
 
 <a name="_frontend"></a>
-## Front End - Angular
+## 4. Front End - Angular
 
 We use AngularJS to build the user-facing side of the application.
 
@@ -147,7 +148,7 @@ The following table lists the components we design and create. Then we develop f
 
 
 <a name="_additional"></a>
-## Additional element - cookie/session or local storage
+## 5. Additional element - cookie/session or local storage
 
 In the project, we tried to avoid the user to repetitively answer the questions, so session technic and local storage were taken into consideration.
 
@@ -156,7 +157,31 @@ Session can be seen as some memory on the server side while cookie is on client 
 Our group finally chose local storage, which also lives permanently on client side but doesn't engage in client-server communication, exactly what we wanted.
 
 <a name="_deploy"></a>
-## Deployment details - Docker
+## 6. Deployment details - Docker
 
 To improve portability and ease deployment, we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
 
+There are basically 4 stages of deployment.
+
+<a name="_6.1"></a>
+### - Frontend with static data
+Frontend team make use of static json data declared in `component.ts` file to imitate data from backend (that is why early API documenting helps with developing). So once router and html file was finished, `ng serve` help testing the web page without any backend code. An example of static data used in frontend is showed below.
+
+```javascript
+public data: any = {
+   questionId: 1,
+   principle: 'shitcode one: use variable name with no actual meaning',
+   realPrinciple: 'coding rule one: use variable with valid meaning',
+      options: [{
+         optionId: 1,
+         content: 'int i = 0',
+      },
+      {  
+         optionId: 2,
+         content: 'int numOfStudent = 0',
+      }],
+      correctId: 2,
+      historyCorrectNum: 5,
+      historyAnswerNum: 10
+};
+```
