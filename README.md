@@ -75,3 +75,15 @@ d. Team use of Git - continuous integration and deployment
 
 <a name="_conclusion"></a>
 ## 8.  Conclusion
+
+[Click here](portfolio/Conclusion/README.md) to see:
+
+a. Conclusion on the group working practices
+
+b. Conclusion on the success of the project
+
+c. How coronavirus has affected the project
+
+d. Social and Ethical implications
+
+e. Future work
