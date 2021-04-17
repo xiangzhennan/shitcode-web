@@ -101,7 +101,13 @@ There are two major problems the backend team met.
 
 First, how to get params from a get request. In the workbook, only get request without any params was taught, but our project needs more than that. For example, a get question request will need to clarify which question the user asks for.
 
-After doing some research into HTTP protocol and express framework, we finally figured out how to use express to get params and deal with it in api.js.
+After doing some research into HTTP protocol and express framework, we finally figured out how to use express to get params and deal with it in api.js. A small piece of code below shows how we get `id` from a get request.
+
+```javascript
+if (req.query.id !== undefined){
+   questionId = parseInt(req.query.id);
+}
+```
 
 Second, there is a post request in the API design, which submits the information of whether user answered a specific question correctly. This request can sure be changed to a get request but the request will have influence on the database, so we think get request can be dangerous. Malicious attack can make use of get request to ruin the validity of data inside database, which is designed to provide history answering info.  
 
