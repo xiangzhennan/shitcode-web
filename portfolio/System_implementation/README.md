@@ -219,3 +219,4 @@ const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${M
 Our final decision is to develop locally until we have a fully functioning website and only do user testing on docker. Docker provide quite reliable support when we tried to test and improve through wide user testing. Simple `docker-compose build` and `docker-compose up` did the whole job of modify and redeploy.
 
 
+[Back to the homepage](../../README.md)
