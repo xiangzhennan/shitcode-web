@@ -137,7 +137,12 @@ kmvfdn
 | Agile development cycle  | Description      | 
 | ------------------------ | ---------------- |
 | Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
-| Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [(Click here to check)](../System_implementation/README.md#_list);</br>Design RESTful API [(Click here to check)](../System_implementation/README.md#_api);     |   
+| Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [(Click here to check)](../System_implementation/README.md#_list);</br>Design RESTful API [(Click here to check)](../System_implementation/README.md#_api);     |  
+| Development     | Implement Node.js server, create question API;</br>Create components of welcome page, question page and report page with text description, necessary buttons but no style; |
+| Testing         | Test APIs and internal logic on Express with `node server.js`; |
+| Deployment      | [Click here to check video of first prototype] |
+| Users stories   | Emma (End-user):</br>I only see some buttons to click to jump to different pages. I have no idea how to play with it or interact with it. It's a too simple web page only. |
+| Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on get-report feature by further development on back-end |
 
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
