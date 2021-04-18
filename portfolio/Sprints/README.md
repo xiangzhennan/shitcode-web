@@ -126,12 +126,13 @@ During each iteration we defined the requirements based on the backlog from prev
 
 <a name="_s3"></a>
 ### - Sprint 1: First prototype (25 Feb – 18 Mar)
-* **Requirements** - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
-* **Design** - Work with stakeholders to define requirements and new features when the application has been identified. 
-* **Development** - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
-* **Testing** - Unit testing, functional testing, user acceptance testing.
-* **Deployment** - Integrate and deliver the working iteration into production.
-* **Review** - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
+* **Requirements** 
+kmvfdn
+* **Design** 
+* **Development** 
+* **Testing** 
+* **Deployment** 
+* **Review** 
 
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
