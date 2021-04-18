@@ -15,6 +15,13 @@
     * [Shengzhe Qin](#_Qin)
 
 * [Documentation of sprints](#_sprints)
+    * [High level overview](#_s1)
+    * [Timeline](#_s2)
+    * [Sprint 1: First prototype (25 Feb – 18 Mar)](#_s3)
+    * [Sprint 2: Alpha version release (18 Mar – 8 Apr)](#_s4)
+    * [Sprint 3: Beta version release (8 Apr – 22 Apr)](#_s5)
+    * [Sprint 4: Version 1.0 release (22 Apr – 7 May)](#_s6)
+    * [Meeting logs](#_s7)
     
 * [Team use of Git - continuous integration and deployment](#_git)
     
@@ -106,11 +113,37 @@ To be specific, Liu mainly contributed to the following things:
 <a name="_sprints"></a>
 ## Documentation of sprints
 
+<a name="_s1"></a>
+### - High level overview
 As mentioned above in our system implementation we decided on the agile approach which features breaking down of project into sprints.
 
 At the beginning of each sprint, we decided the features that we would implement during that sprint, the tests that we expected each subsystem to pass, and the user stories that we expected to be satisfied by the implementation of those features.
 
 During each iteration we defined the requirements based on the backlog from previous sprints, and test user feedback. We then designed the software based on the requirements. Finally, we evaluated our previous version before defining the requirements for the next sprint.
+
+<a name="_s2"></a>
+### - Timeline
+
+<a name="_s3"></a>
+### - Sprint 1: First prototype (25 Feb – 18 Mar)
+* **Requirements** - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
+* **Design** - Work with stakeholders to define requirements and new features when the application has been identified. 
+* **Development** - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
+* **Testing** - Unit testing, functional testing, user acceptance testing.
+* **Deployment** - Integrate and deliver the working iteration into production.
+* **Review** - Accept user and stakeholder feedback and work it into the requirements of the next iteration.
+
+<a name="_s4"></a>
+### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
+
+<a name="_s5"></a>
+### - Sprint 3: Beta version release (8 Apr – 22 Apr)
+
+<a name="_s6"></a>
+### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
+
+<a name="_s7"></a>
+### - Meeting logs
 
 
 <a name="_git"></a>
