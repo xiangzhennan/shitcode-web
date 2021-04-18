@@ -134,6 +134,11 @@ kmvfdn
 * **Deployment** 
 * **Review** 
 
+
+| --------------- | --------- | 
+| Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
+| Design          | index      |   
+
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
 
