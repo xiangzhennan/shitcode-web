@@ -1,0 +1,15 @@
+{
+  "questionId":2,
+  "principle": "shitcode two: Mix variable/functions naming style",
+  "realPrinciple": "coding rule two: Maintain consistency in variable/functions naming style",
+  "options": [{
+    "optionId": 1,
+    "content": "let wWidth = 640;\nlet w_height = 480;"
+  },
+    {"optionId": 2,
+      "content": "let windowWidth = 640;\nlet windowHeight = 480;"
+    }],
+  "correctId":2,
+  "historyCorrectNum": 0,
+  "historyAnswerNum": 0
+}
