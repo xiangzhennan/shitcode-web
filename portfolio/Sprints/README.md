@@ -134,9 +134,10 @@ kmvfdn
 * **Deployment** 
 * **Review** 
 
-
+| Agile development cycle  | description      | 
+| ------------------------ | ---------------- |
 | Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
-| Design          | index      |   
+| Design          | Design Angular components of each page; [Click here to check](../System_implementation/README.md#_list)      |   
 
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
