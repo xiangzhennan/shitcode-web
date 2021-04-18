@@ -54,7 +54,7 @@ Following Agile model, we decide what can be accomplished in the timeframe at th
 
 The key activities we follow during each Agile development cycle are as below: 
 * **Requirements** - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
-* **Design** - Work with stakeholders to define requirements and new features when the application has been identified. 
+* **Design** - The team discusses how to tackle these requirements, and proposes the tools needed to achieve the best result. The developers discuss the feature implementation and the internal structure of the come.
 * **Development** - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
 * **Testing** - Unit testing, functional testing, user acceptance testing.
 * **Deployment** - Integrate and deliver the working iteration into production.
@@ -137,7 +137,7 @@ kmvfdn
 | Agile development cycle  | Description      | 
 | ------------------------ | ---------------- |
 | Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
-| Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [Click here to check](../System_implementation/README.md#_list);</br>Design RESTful API [Click here to check](../System_implementation/README.md#_api);     |   
+| Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [(Click here to check)](../System_implementation/README.md#_list);</br>Design RESTful API [(Click here to check)](../System_implementation/README.md#_api);     |   
 
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
