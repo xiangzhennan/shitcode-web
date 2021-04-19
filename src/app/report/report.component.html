@@ -1,0 +1,28 @@
+<div class="logo">
+  <img src="assets/img/logo.png" style="height:150px;width:400px;">
+</div>
+
+<div class="box">
+  <div *ngIf="accuracy>=0.8">
+    <img class="report_picture" src="assets/img/happy.png">
+  </div>
+  <div *ngIf="accuracy>=0.6 && accuracy<0.8">
+    <img class="report_picture" src="assets/img/normal.png">
+  </div>
+  <div *ngIf="accuracy<0.6">
+    <img class="report_picture" src="assets/img/sad.png">
+  </div>
+  <div class="report_box">
+    <span class="report_string_title">答对题目数:</span><span class="report_string_body">{{correctNum}}</span>
+  </div>
+  <div class="report_box">
+    <span class="report_string_title">正确率:</span><span class="report_string_body">{{accuracy*100}}%</span>
+  </div>
+  <div class="badge">{{badge}}</div>
+  <div>
+    <a class="button" href="report">查看答题情况</a>
+    <a class="button" href="">返回主页</a>
+    <a class="button" href="report">重新测试</a>
+  </div>
+
+</div>
