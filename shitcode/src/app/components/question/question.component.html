@@ -21,15 +21,15 @@
 
     <div class="container">
       <button id = "left" class="question left" type="button" (click)="chooseLeft()">
-      <div id="leftTitle" class="title"></div>
+      <div [@fadeInOut]="isAnswered" id="leftTitle" class="title"></div>
       <p id="content1"></p>
-      <div id="leftFeedback" class="feedback"></div>
+      <div [@fadeInOut]="isAnswered" id="leftFeedback" class="feedback"></div>
       </button>
 
       <button id = "right" class="question right" type="button" (click)="chooseRight()">
-        <div id="rightTitle" class="title"></div>
+        <div [@fadeInOut]="isAnswered" id="rightTitle" class="title"></div>
         <p id="content2"></p>
-        <div id="rightFeedback" class="feedback"></div>
+        <div [@fadeInOut]="isAnswered" id="rightFeedback" class="feedback"></div>
       </button>
     </div>
 

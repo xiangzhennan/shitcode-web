@@ -21,8 +21,8 @@ export class ReportComponent implements OnInit {
     const answers: any = localStorage.getItem('answerStatus');
     let correctNum = 0;
     if (answers){
-      const answerStatus: number[] = JSON.parse(answers);
-      for (let i = 0; i++; i < 10){
+      const answerStatus: any[10] = JSON.parse(answers);
+      for (let i = 0; i < 10; i++){
         if (answerStatus[i] === 1){
           correctNum++;
         }

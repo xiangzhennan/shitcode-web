@@ -11,7 +11,8 @@ export class DataService {
   public REST_API_SUBMIT = 'http://localhost:3000/api/submit';
   httpOptions = {headers: new HttpHeaders({'Content-type': 'application/json'})};
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+  }
 
   // tslint:disable-next-line:typedef
   public getQuestion(id: number){
