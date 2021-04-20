@@ -1,45 +1,44 @@
-<head>
-  <meta charset="UTF-8">
-  <title>shitcode tutorial</title>
-  <link rel="stylesheet" type="text/css" href="question.component.css">
-</head>
-<body>
-  <div class="nav">
-    <div class="navBox" *ngFor="let questionId of questionIDArray">
-        <button type="button" class="navButton" [id] = "questionId" (click)="loadQuestion(questionId)">{{questionId}}</button>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- zooming for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>shitcode tutorial</title>
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="question.component.css">
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navBox" *ngFor="let questionId of questionIDArray">
+          <button [id] = "questionId" type="button" class="navButton" (click)="loadQuestion(questionId)">
+            <img src="../../../assets/img/cold.png" alt="{{questionId}}" width="70%" height="95%"></button>
+      </div>
     </div>
-  </div>
-  <p id = "principle" class="principle" >{{data.principle}}</p>
-  <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
-     id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
-  <p>which one is shitcode?</p>
-  <div class="container">
-    <button id = "left" class="question left" type="button" (click)="chooseLeft()">{{data.options[0].content}}</button>
-    <button id = "right" class="question right" type="button" (click)="chooseRight()">{{data.options[1].content}}</button>
-  </div>
+    <p id = "principle" class="principle" >{{data.principle}}</p>
+    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
+       id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
+    <p>which one is shitcode?</p>
+    <div class="container">
+      <button id = "left" class="question left" type="button" (click)="chooseLeft()">{{data.options[0].content}}</button>
+      <button id = "right" class="question right" type="button" (click)="chooseRight()">{{data.options[1].content}}</button>
+    </div>
+    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'">
+          <p class="history">{{getAccuracy()}} people find the shit code!</p>
+    </div>
+    <div class="footer">
+      <button id= "confirm" type="button" (click)="confirm()">confirm</button>
+      <button id= "report" [disabled]="!isAnswered" type="button" (click)="report()">get report</button>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'">
-    <table class="history">
-      <tr>
-        <th>World Total Corrects</th>
-        <th>World Total Answers</th>
-        <th>World Accuracy</th>
-      </tr>
-      <tr>
-        <td>{{data.historyCorrectNum}}</td>
-        <td>{{data.historyAnswerNum}}</td>
-        <td>{{getAccuracy()}}</td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="footer">
-    <button id= "confirm" class="confirm" type="button" (click)="confirm()">confirm</button>
-    <button class="report" type="button" (click)="report()">get report</button>
-  </div>
-
-</body>
-
+  </body>
+</html>
 
 
 

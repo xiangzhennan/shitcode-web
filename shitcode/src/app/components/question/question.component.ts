@@ -39,7 +39,8 @@ export class QuestionComponent implements OnInit {
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
   isCorrect = false;
-  private themeColor: any[] = ["#FEC5BB","#FCD5CE","#FAE1DD","#F8EDEB","#E8E8E4","#D8E2DC","#ECE4DB","#FFE5D9","#FFD7BA","#FEC89A"];
+  private themeColors: any[] = ["#FEC5BB","#FCD5CE","#FAE1DD","#F8EDEB","#E8E8E4","#D8E2DC","#ECE4DB","#FFE5D9","#FFD7BA","#FEC89A"];
+  private stateColors: any = {correct: "#FFA000", wrong:"red", default: ""};
 
   constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
 
@@ -66,16 +67,19 @@ export class QuestionComponent implements OnInit {
         this.isAnswered = true;
         this.loadQuestion(1);
       }
-      // init nav bar, gray for not answered, green for correct, red for wrong
+      // init nav bar with different status colors & img
       for (i = 0; i < 10; i++) {
         console.log((i + 1).toString());
         const navBox: any = document.getElementById((i + 1).toString());
         if (this.answerStatus[i] === 1) {
-          navBox.style.backgroundColor = 'green';
+          navBox.style.backgroundColor = this.stateColors.correct;
+          navBox.childNodes[0].src = "../../../assets/img/happy.png";
         } else if (this.answerStatus[i] === 0) {
-          navBox.style.backgroundColor = 'red';
+          navBox.style.backgroundColor = this.stateColors.wrong;
+          navBox.childNodes[0].src = "../../../assets/img/dead.png";
         } else {
-          navBox.style.backgroundColor = 'gray';
+          navBox.style.backgroundColor = this.stateColors.default;
+          navBox.childNodes[0].src = "../../../assets/img/cold.png";
         }
       }
     } else {
@@ -88,58 +92,86 @@ export class QuestionComponent implements OnInit {
     this.dataService.getQuestion(id).subscribe(
       data => {
         this.data = data;
-        this.resetAnswerState();
+        (this.answerStatus[id-1] === -1) ? this.resetAnswerState() : this.retainAnsweredState(id);
+        document.bgColor = this.themeColors[id-1];
+        // to highlight current navBox
+        for(var i in this.questionIDArray){
+          const navBox: any = document.getElementById(this.questionIDArray[i].toString());
+          navBox.style.opacity = '0.6';
+          if(this.questionIDArray[i] === id){
+            navBox.style.opacity = '1';
+          }
+        }
         console.log(data);
       },
       error => {
         console.log(error);
       }
     );
-    document.bgColor = this.themeColor[id-1];
   }
 
   // reset component to origin state when no answer is selected
   resetAnswerState(): void{
     this.isAnswered = false;
-    this.selectedOption = -1;
     const principle: any = document.getElementById('principle');
     principle.style.textDecoration = '';
     const confirmNext: any = document.getElementById('confirm');
     confirmNext.innerHTML = "confirm";
+    // reset option status
+    this.selectedOption = -1;
+    const left: any = document.getElementById('left');
+    left.style.opacity = '1';
+    const right: any = document.getElementById('right');
+    right.style.opacity = '1';
+  }
+
+  retainAnsweredState(id:number): void{
+    this.isAnswered = true;
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = 'line-through';
+    const confirmNext: any = document.getElementById('confirm');
+    confirmNext.innerHTML = "next";
+    // retain selected status
+    let optionIdSet = [2,1];
+    this.selectedOption = (this.answerStatus[id-1]===1) ?
+      this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
+    (this.selectedOption === 1) ? this.chooseLeft() : this.chooseRight();
   }
 
   chooseLeft(): void{
     this.selectedOption = 1;
     const left: any = document.getElementById('left');
-    left.style.boxShadow = '0 5px 5px pink';
+    left.style.opacity = '0.6';
+    /* right.style.boxShadow = '0 5px 5px lightpink'*/;
     const right: any = document.getElementById('right');
-    right.style.boxShadow = '';
+    right.style.opacity = '1';
   }
 
   chooseRight(): void{
     this.selectedOption = 2;
     const left: any = document.getElementById('left');
-    left.style.boxShadow = '';
+    left.style.opacity = '1';
     const right: any = document.getElementById('right');
-    right.style.boxShadow = '0 5px 5px lightblue';
+    right.style.opacity = '0.6'
+    /* right.style.boxShadow = '0 5px 5px lightblue'*/;
   }
 
   confirm(): void {
-    if (this.selectedOption === -1){
-      alert('please choose an answer!');
-      return;
-    }
-    // next function
+    // if answered, jump to next question / report page
     const confirmNext: any = document.getElementById('confirm');
-    if(confirmNext.innerHTML == "next"){
-      if (this.data.questionId != 10){
-        this.loadQuestion(this.data.questionId + 1);
-      } else {
+    if (confirmNext.innerHTML === "next") {
+      if(this.data.questionId === 10) {
         this.report();
+      } else {
+        this.loadQuestion(this.data.questionId + 1);
       }
       return;
     }
-    // confirm function
+    // otherwise, confirm answer
+    if (this.selectedOption === -1) {
+      alert('please choose an answer!');
+      return;
+    }
     this.updateAnswer();
     confirmNext.innerHTML = "next";
   }
@@ -149,41 +181,42 @@ export class QuestionComponent implements OnInit {
     this.checkAnswer();
     this.dataService.submitAnswer(JSON.stringify(
       {questionId: this.data.questionId, isCorrect: this.isCorrect}));
+    // feedback
     const principle: any = document.getElementById('principle');
     principle.style.textDecoration = 'line-through';
   }
 
   checkAnswer() {
     let color: string;
+    let imgUrl: string;
     if (this.selectedOption === this.data.correctId){
-      color = 'green';
+      color = this.stateColors.correct;
+      imgUrl = "../../../assets/img/happy.png";
       this.answerStatus[this.data.questionId - 1] = 1;
     }
     else{
-      color = 'red';
+      color = this.stateColors.wrong;
+      imgUrl = "../../../assets/img/dead.png";
       this.answerStatus[this.data.questionId - 1] = 0;
     }
     localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     const navBox: any = document.getElementById(this.data.questionId.toString());
     navBox.style.backgroundColor = color;
+    navBox.childNodes[0].src = imgUrl;
     this.isCorrect = (this.selectedOption === this.data.correctId);
   }
 
   report(): void{
-    if (this.selectedOption === -1){
-      alert('please choose an answer!');
-      return;
+    // disabled until it is answered
+    if(this.isAnswered) {
+      this.router.navigate(['/report']);
     }
-    alert('thanks for answer!');
-    this.updateAnswer();
-    this.router.navigate(['/report']);
   }
 
-  getAccuracy(): string{
-    let historyAccuracy: string = "0.00%";
-    if(this.data.historyAnswerNum != 0) {
-      historyAccuracy = this.data.historyCorrectNum/this.data.historyAnswerNum * 100 + "%";
+  getAccuracy() {
+    if (this.data.historyCorrectNum == 0 || this.data.historyAnswerNum == 0){
+      return "0%";
     }
-    return historyAccuracy;
+    return (Math.round(this.data.historyCorrectNum / this.data.historyAnswerNum * 10000) / 100.00) + "%";
   }
 }

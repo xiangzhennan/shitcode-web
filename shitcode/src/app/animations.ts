@@ -26,7 +26,7 @@ export const slideInAnimation =
       ]),
       query(':enter', animateChild()),
     ]),
-    transition('QuestionPage => ReportPage', [
+    transition('QuestionPage <=> ReportPage', [
       style({ position: 'relative' }),
       query(':enter, :leave', [
         style({

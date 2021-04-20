@@ -13,12 +13,12 @@ export class ReportComponent implements OnInit {
     accuracy: '50%',
     badge: 'Try harder'
   };
+  private defaultAnswerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
   }
-
 
   retrieveData(): void {
     this.dataService.getReport(2).subscribe(
@@ -29,5 +29,9 @@ export class ReportComponent implements OnInit {
       error => {
         console.log(error);
       });
+  }
+
+  clearAnswers(): void {
+    localStorage.setItem('answerStatus', JSON.stringify(this.defaultAnswerStatus));
   }
 }

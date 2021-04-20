@@ -1,33 +1,43 @@
 body{
-  padding: 50px;
   background-repeat: no-repeat;
+  margin-top: 1%;
   position: relative;
 }
 
 .nav{
   width: 100%;
   height: 30px;
-  margin: 0 auto;
+  margin-left: 50px;
   position: relative;
 }
 
 .navBox{
-  margin-left: 200px;
+  margin: auto;
+  position: static;
+  width: 80%;
 }
 
 .navButton{
   width: 100px;
-  height: 30px;
+  height: 55px;
   text-align: center;
   font-size: 18px;
-  color:black;
-  margin: 0 -1px -1px 0;
-  border:1px solid dimgrey;
   float: left;
+
+  //border-color: white;
+  border: none;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .navButton:hover{
-  box-shadow: 0 1px grey;
+  opacity: 1;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p{
@@ -69,6 +79,7 @@ p{
   border:1px solid grey;
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .left{
@@ -82,67 +93,68 @@ p{
 }
 
 .left:hover{
+  opacity: 0.75;
   box-shadow:0 5px 5px pink;
 }
 
 .right:hover{
+  opacity: 0.75;
   box-shadow: 0 5px 5px lightblue;
 }
 
 .footer{
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-around;
 }
 
-.report{
+#confirm{
+  width:100px;
+  height: 4em;
+  font-weight: bold;
+  text-align: center;
+  display:inline-block;
+  color: black;
+  margin-left: 82%;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+[disabled]{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+#report{
   width:100px;
   height: 4em;
   color: black;
   font-weight: bold;
   float: right;
-  margin-right: 100px;
-  display:inline-block
+  margin-right: 30px;
+  display:inline-block;
 }
 
-.confirm{
-  width:100px;
-  height: 4em;
-  font-weight: bold;
-  color: black;
-  margin-left: 1000px;
-  display:inline-block
-}
-
-.report:hover{
+#report:hover{
+  opacity: 0.7;
+  /*
   background-color: #4cc9f0;
   -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
   -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
   box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  */
 }
 
-.confirm:hover{
+#confirm:hover{
+  opacity: 0.7;
+  /*
   background-color: #f038ff;
   -webkit-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
   -moz-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
   box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+  */
 }
 
-table {
-  border-collapse: collapse;
-  background-color: lightgray;
-  border: 1px solid dimgray;
-  display:inline-block
+.history{
+  text-align: left;
 }
-
-table.history {
-  table-layout: auto;
-  width: 30%;
-}
-
-th,td {
-  border: 1px solid dimgray;
-  text-align: center;
-  font-style: italic;
-}
-
