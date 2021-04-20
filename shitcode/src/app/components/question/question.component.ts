@@ -37,8 +37,8 @@ export class QuestionComponent implements OnInit {
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
   isCorrect = false;
-  private themeColors: any[] = ['#FEC5BB', '#FCD5CE', '#FAE1DD', '#F8EDEB', '#E8E8E4', '#D8E2DC', '#ECE4DB',
-    '#FFE5D9', '#FFD7BA', '#FEC89A'];
+  private themeColors: any[] = ['#FEC5BB', '#FCD5CE', '#FAE1DD', '#F8EDEB', '#E8E8E4', '#D8E2DC', '#ECE4DB', '#FFE5D9',
+    '#FFD7BA', '#FEC89A'];
   private stateColors: any = {correct: '#FFA000', wrong: 'red', default: ''};
 
   constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
@@ -66,7 +66,6 @@ export class QuestionComponent implements OnInit {
         this.isAnswered = true;
         this.loadQuestion(1);
       }
-      // init nav bar with different status colors & img
       // init nav bar with different status colors & img
       for (i = 0; i < 10; i++) {
         console.log((i + 1).toString());
@@ -101,8 +100,12 @@ export class QuestionComponent implements OnInit {
     this.dataService.getQuestion(id).subscribe(
       data => {
         this.data = data;
-        (this.answerStatus[id - 1] === -1) ? this.resetAnswerState() : this.retainAnsweredState(id);
         document.body.style.backgroundColor = this.themeColors[id - 1];
+        // format the question contents
+        const left: any = document.getElementById('content1');
+        const right: any = document.getElementById('content2');
+        left.innerHTML = this.getQuestionContent(this.data.options[0].content);
+        right.innerHTML = this.getQuestionContent(this.data.options[1].content);
         // to highlight current navBox
         this.questionIDArray.forEach(item => {
           const navBox: any = document.getElementById(item.toString());
@@ -111,16 +114,13 @@ export class QuestionComponent implements OnInit {
             navBox.style.opacity = '1';
           }
         });
+        (this.answerStatus[id - 1] === -1) ? this.resetAnswerState() : this.retainAnsweredState(id);
         console.log(data);
       },
       error => {
         console.log(error);
       }
     );
-    const left: any = document.getElementById('content1');
-    const right: any = document.getElementById('content2');
-    left.innerHTML = this.getQuestionContent(this.data.options[0].content);
-    right.innerHTML = this.getQuestionContent(this.data.options[1].content);
   }
 
   // reset component to origin state when no answer is selected
@@ -134,8 +134,8 @@ export class QuestionComponent implements OnInit {
     this.selectedOption = -1;
     const left: any = document.getElementById('left');
     const right: any = document.getElementById('right');
-    left.style.opacity = '1';
-    right.style.opacity = '1';
+    left.style.opacity = '0.6';
+    right.style.opacity = '0.6';
     this.resetOptionFeedback();
   }
 
@@ -165,18 +165,18 @@ export class QuestionComponent implements OnInit {
   chooseLeft(): void{
     this.selectedOption = 1;
     const left: any = document.getElementById('left');
-    left.style.opacity = '0.6';
+    left.style.opacity = '1';
     left.style.boxShadow = '0 5px 5px lightpink';
     const right: any = document.getElementById('right');
-    right.style.opacity = '1';
+    right.style.opacity = '0.6';
   }
 
   chooseRight(): void{
     this.selectedOption = 2;
     const left: any = document.getElementById('left');
-    left.style.opacity = '1';
+    left.style.opacity = '0.6';
     const right: any = document.getElementById('right');
-    right.style.opacity = '0.6';
+    right.style.opacity = '1';
     right.style.boxShadow = '0 5px 5px lightblue';
   }
 
@@ -239,7 +239,7 @@ export class QuestionComponent implements OnInit {
     const rightTitle: any = document.getElementById('rightTitle');
     rightTitle.style.display = 'block';
     rightTitle.innerText = this.data.correctId === 2 ? 'shitcode' : 'good code';
-    const container: any = document.getElementsByClassName('container');
+    // const container: any = document.getElementsByClassName('container');
     const selected: any = this.selectedOption === 1 ? document.getElementById('left') : document.getElementById('right');
     const feedback: any = selected.lastChild;
     feedback.style.display = 'block';

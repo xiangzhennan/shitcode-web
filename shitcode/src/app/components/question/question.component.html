@@ -17,7 +17,7 @@
     <p id = "principle" class="principle" >{{data.principle}}</p>
     <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
       id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
-    <p>which one is shitcode?</p>
+    <p class="guide">which one is shitcode?</p>
 
     <div class="container">
       <button id = "left" class="question left" type="button" (click)="chooseLeft()">
@@ -25,7 +25,6 @@
       <p id="content1"></p>
       <div [@fadeInOut]="isAnswered" id="leftFeedback" class="feedback"></div>
       </button>
-
       <button id = "right" class="question right" type="button" (click)="chooseRight()">
         <div [@fadeInOut]="isAnswered" id="rightTitle" class="title"></div>
         <p id="content2"></p>
