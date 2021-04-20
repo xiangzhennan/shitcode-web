@@ -1,9 +1,7 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {DataService} from '../../data.service';
 import {Router} from '@angular/router';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {element} from 'protractor';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClient} from '@angular/common/http';
 import {fadeInOutAnimation} from '../../animations';
 
 @Component({
@@ -39,8 +37,9 @@ export class QuestionComponent implements OnInit {
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
   isCorrect = false;
-  private themeColors: any[] = ["#FEC5BB","#FCD5CE","#FAE1DD","#F8EDEB","#E8E8E4","#D8E2DC","#ECE4DB","#FFE5D9","#FFD7BA","#FEC89A"];
-  private stateColors: any = {correct: "#FFA000", wrong:"red", default: ""};
+  private themeColors: any[] = ['#FEC5BB', '#FCD5CE', '#FAE1DD', '#F8EDEB', '#E8E8E4', '#D8E2DC', '#ECE4DB',
+    '#FFE5D9', '#FFD7BA', '#FEC89A'];
+  private stateColors: any = {correct: '#FFA000', wrong: 'red', default: ''};
 
   constructor( private dataService: DataService, public router: Router, public http: HttpClient) {
 
@@ -73,13 +72,13 @@ export class QuestionComponent implements OnInit {
         const navBox: any = document.getElementById((i + 1).toString());
         if (this.answerStatus[i] === 1) {
           navBox.style.backgroundColor = this.stateColors.correct;
-          navBox.childNodes[0].src = "../../../assets/img/happy.png";
+          navBox.childNodes[0].src = '../../../assets/img/nav/good.png';
         } else if (this.answerStatus[i] === 0) {
           navBox.style.backgroundColor = this.stateColors.wrong;
-          navBox.childNodes[0].src = "../../../assets/img/dead.png";
+          navBox.childNodes[0].src = '../../../assets/img/nav/bad.png';
         } else {
           navBox.style.backgroundColor = this.stateColors.default;
-          navBox.childNodes[0].src = "../../../assets/img/cold.png";
+          navBox.childNodes[0].src = '../../../assets/img/nav/default.png';
         }
       }
     } else {
@@ -92,16 +91,16 @@ export class QuestionComponent implements OnInit {
     this.dataService.getQuestion(id).subscribe(
       data => {
         this.data = data;
-        (this.answerStatus[id-1] === -1) ? this.resetAnswerState() : this.retainAnsweredState(id);
-        document.bgColor = this.themeColors[id-1];
+        (this.answerStatus[id - 1] === -1) ? this.resetAnswerState() : this.retainAnsweredState(id);
+        document.body.style.backgroundColor = this.themeColors[id - 1];
         // to highlight current navBox
-        for(var i in this.questionIDArray){
-          const navBox: any = document.getElementById(this.questionIDArray[i].toString());
+        this.questionIDArray.forEach(item => {
+          const navBox: any = document.getElementById(item.toString());
           navBox.style.opacity = '0.6';
-          if(this.questionIDArray[i] === id){
+          if (item === id){
             navBox.style.opacity = '1';
           }
-        }
+        });
         console.log(data);
       },
       error => {
@@ -116,7 +115,7 @@ export class QuestionComponent implements OnInit {
     const principle: any = document.getElementById('principle');
     principle.style.textDecoration = '';
     const confirmNext: any = document.getElementById('confirm');
-    confirmNext.innerHTML = "confirm";
+    confirmNext.innerHTML = 'confirm';
     // reset option status
     this.selectedOption = -1;
     const left: any = document.getElementById('left');
@@ -125,15 +124,15 @@ export class QuestionComponent implements OnInit {
     right.style.opacity = '1';
   }
 
-  retainAnsweredState(id:number): void{
+  retainAnsweredState(id: number): void{
     this.isAnswered = true;
     const principle: any = document.getElementById('principle');
     principle.style.textDecoration = 'line-through';
     const confirmNext: any = document.getElementById('confirm');
-    confirmNext.innerHTML = "next";
+    confirmNext.innerHTML = 'next';
     // retain selected status
-    let optionIdSet = [2,1];
-    this.selectedOption = (this.answerStatus[id-1]===1) ?
+    const optionIdSet = [2, 1];
+    this.selectedOption = (this.answerStatus[id - 1] === 1) ?
       this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
     (this.selectedOption === 1) ? this.chooseLeft() : this.chooseRight();
   }
@@ -142,7 +141,7 @@ export class QuestionComponent implements OnInit {
     this.selectedOption = 1;
     const left: any = document.getElementById('left');
     left.style.opacity = '0.6';
-    /* right.style.boxShadow = '0 5px 5px lightpink'*/;
+    /* right.style.boxShadow = '0 5px 5px lightpink'*/
     const right: any = document.getElementById('right');
     right.style.opacity = '1';
   }
@@ -159,8 +158,8 @@ export class QuestionComponent implements OnInit {
   confirm(): void {
     // if answered, jump to next question / report page
     const confirmNext: any = document.getElementById('confirm');
-    if (confirmNext.innerHTML === "next") {
-      if(this.data.questionId === 10) {
+    if (confirmNext.innerHTML === 'next') {
+      if (this.data.questionId === 10) {
         this.report();
       } else {
         this.loadQuestion(this.data.questionId + 1);
@@ -173,7 +172,7 @@ export class QuestionComponent implements OnInit {
       return;
     }
     this.updateAnswer();
-    confirmNext.innerHTML = "next";
+    confirmNext.innerHTML = 'next';
   }
 
   updateAnswer(): void {
@@ -186,17 +185,17 @@ export class QuestionComponent implements OnInit {
     principle.style.textDecoration = 'line-through';
   }
 
-  checkAnswer() {
+  checkAnswer(): void {
     let color: string;
     let imgUrl: string;
     if (this.selectedOption === this.data.correctId){
       color = this.stateColors.correct;
-      imgUrl = "../../../assets/img/happy.png";
+      imgUrl = '../../../assets/img/nav/good.png';
       this.answerStatus[this.data.questionId - 1] = 1;
     }
     else{
       color = this.stateColors.wrong;
-      imgUrl = "../../../assets/img/dead.png";
+      imgUrl = '../../../assets/img/nav/bad.png';
       this.answerStatus[this.data.questionId - 1] = 0;
     }
     localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
@@ -208,15 +207,17 @@ export class QuestionComponent implements OnInit {
 
   report(): void{
     // disabled until it is answered
-    if(this.isAnswered) {
+    if (this.isAnswered) {
       this.router.navigate(['/report']);
+      // avoid style conflicts
+      document.body.style.backgroundColor = 'rgba(255,231,16,126)';
     }
   }
 
-  getAccuracy() {
-    if (this.data.historyCorrectNum == 0 || this.data.historyAnswerNum == 0){
-      return "0%";
+  getAccuracy(): string {
+    if (this.data.historyCorrectNum === 0 || this.data.historyAnswerNum === 0){
+      return '0%';
     }
-    return (Math.round(this.data.historyCorrectNum / this.data.historyAnswerNum * 10000) / 100.00) + "%";
+    return (Math.round(this.data.historyCorrectNum / this.data.historyAnswerNum * 10000) / 100.00) + '%';
   }
 }

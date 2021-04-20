@@ -18,6 +18,7 @@ export class ReportComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.retrieveData();
   }
 
   retrieveData(): void {
