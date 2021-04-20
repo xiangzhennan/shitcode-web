@@ -1,2 +1,29 @@
-<p>report works!</p>
-<button type="button" routerLink="/question">review answers</button>
+<body>
+  <div class="logo">
+    <img src="assets/img/logo.png" alt="logo" style="height:150px;width:400px;">
+  </div>
+
+  <div class="box">
+    <div *ngIf="data.accuracy>=0.8">
+      <img class="report_picture" alt="range1" src="../../../assets/img/happy.png">
+    </div>
+    <div *ngIf="data.accuracy>=0.6 && data.accuracy<0.8">
+      <img class="report_picture" alt="range2" src="../../../assets/img/normal.png">
+    </div>
+    <div *ngIf="data.accuracy<0.6">
+      <img class="report_picture" alt="range3" src="../../../assets/img/sad.png">
+    </div>
+    <div class="report_box">
+      <span class="report_string_title">答对题目数:</span><span class="report_string_body">{{data.correctNum}}</span>
+    </div>
+    <div class="report_box">
+      <span class="report_string_title">正确率:</span><span class="report_string_body">{{data.accuracy*100}}%</span>
+    </div>
+    <div class="badge">{{data.badge}}</div>
+    <div>
+      <a class="button" routerLink="/question">查看答题情况</a>
+      <a class="button" routerLink="/welcome">返回主页</a>
+      <a class="button" routerLink="/question" (click)="clearAnswers()">重新测试</a>
+    </div>
+  </div>
+</body>

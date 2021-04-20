@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
@@ -26,6 +26,6 @@ export class DataService {
   }
 
   submitAnswer(answer: any): void {
-    this.httpClient.post<string>(this.REST_API_SUBMIT, answer, this.httpOptions);
+    this.httpClient.post(this.REST_API_SUBMIT, answer, this.httpOptions);
   }
 }
