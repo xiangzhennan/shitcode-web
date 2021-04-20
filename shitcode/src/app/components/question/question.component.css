@@ -1,6 +1,5 @@
 body{
   height:750px;
-  background-color: #FEC5BB;
   background-repeat: no-repeat;
   margin-top: 1%;
   position: relative;
@@ -172,8 +171,13 @@ p{
 }
 
 #confirm:hover{
-  background-color: #f038ff;
-  -webkit-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
-  -moz-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
-  box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+}
+
+[disabled]{
+  opacity: 0.7;
+  cursor: not-allowed;
 }

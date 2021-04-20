@@ -18,18 +18,31 @@ export class ReportComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.retrieveData();
+    const answers: any = localStorage.getItem('answerStatus');
+    let correctNum = 0;
+    if (answers){
+      const answerStatus: number[] = JSON.parse(answers);
+      for (let i = 0; i++; i < 10){
+        if (answerStatus[i] === 1){
+          correctNum++;
+        }
+      }
+    }
+    this.retrieveData(correctNum);
+    // avoid bgColor conflict
+    document.body.style.backgroundColor = 'rgba(255,231,16,126)';
   }
 
-  retrieveData(): void {
-    this.dataService.getReport(2).subscribe(
-      data => {
-        this.data = data;
-        console.log(data);
+  retrieveData(correctNum: number): void {
+  this.dataService.getReport(correctNum).subscribe(
+    data => {
+      this.data = data;
+      this.data.accuracy = parseInt(this.data.accuracy);
+      console.log(data);
       },
-      error => {
-        console.log(error);
-      });
+    error => {
+      console.log(error);
+    });
   }
 
   clearAnswers(): void {

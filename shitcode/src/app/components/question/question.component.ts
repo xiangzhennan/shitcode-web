@@ -67,6 +67,7 @@ export class QuestionComponent implements OnInit {
         this.loadQuestion(1);
       }
       // init nav bar with different status colors & img
+      // init nav bar with different status colors & img
       for (i = 0; i < 10; i++) {
         console.log((i + 1).toString());
         const navBox: any = document.getElementById((i + 1).toString());
@@ -74,9 +75,11 @@ export class QuestionComponent implements OnInit {
           navBox.style.backgroundColor = this.stateColors.correct;
           navBox.childNodes[0].src = '../../../assets/img/nav/good.png';
         } else if (this.answerStatus[i] === 0) {
-          navBox.style.backgroundColor = 'red';
+          navBox.style.backgroundColor = this.stateColors.wrong;
+          navBox.childNodes[0].src = '../../../assets/img/nav/bad.png';
         } else {
-          navBox.style.backgroundColor = 'gray';
+          navBox.style.backgroundColor = this.stateColors.default;
+          navBox.childNodes[0].src = '../../../assets/img/nav/default.png';
         }
       }
     }else {
@@ -130,29 +133,33 @@ export class QuestionComponent implements OnInit {
     // reset option status
     this.selectedOption = -1;
     const left: any = document.getElementById('left');
-    left.style.opacity = '1';
     const right: any = document.getElementById('right');
+    left.lastChild.innerText = '';
+    right.lastChild.innerText = '';
+    left.style.opacity = '1';
     right.style.opacity = '1';
   }
 
   retainAnsweredState(id: number): void{
     this.isAnswered = true;
-    const principle: any = document.getElementById('principle');
-    principle.style.textDecoration = 'line-through';
-    const confirmNext: any = document.getElementById('confirm');
-    confirmNext.innerHTML = 'next';
     // retain selected status
     const optionIdSet = [2, 1];
-    this.selectedOption = (this.answerStatus[id - 1] === 1) ?
-      this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
-    (this.selectedOption === 1) ? this.chooseLeft() : this.chooseRight();
+    this.selectedOption = (this.answerStatus[id - 1] === 1) ? this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
+    this.selectedOption === 1 ? this.chooseLeft() : this.chooseRight();
+    // init option text feedback
+    const left: any = document.getElementById('left');
+    const right: any = document.getElementById('right');
+    left.lastChild.innerText = '';
+    right.lastChild.innerText = '';
+    // retain feedback status: real-principle text decoration, next button, option title & feedback
+    this.feedbackAnswer();
   }
 
   chooseLeft(): void{
     this.selectedOption = 1;
     const left: any = document.getElementById('left');
     left.style.opacity = '0.6';
-    /* right.style.boxShadow = '0 5px 5px lightpink'*/
+    left.style.boxShadow = '0 5px 5px lightpink';
     const right: any = document.getElementById('right');
     right.style.opacity = '1';
   }
@@ -162,8 +169,8 @@ export class QuestionComponent implements OnInit {
     const left: any = document.getElementById('left');
     left.style.opacity = '1';
     const right: any = document.getElementById('right');
-    right.style.opacity = '0.6'
-    /* right.style.boxShadow = '0 5px 5px lightblue'*/;
+    right.style.opacity = '0.6';
+    right.style.boxShadow = '0 5px 5px lightblue';
   }
 
   confirm(): void {
@@ -183,7 +190,7 @@ export class QuestionComponent implements OnInit {
       return;
     }
     this.updateAnswer();
-    confirmNext.innerHTML = 'next';
+    this.feedbackAnswer();
   }
 
   updateAnswer(): void {
@@ -191,9 +198,6 @@ export class QuestionComponent implements OnInit {
     this.checkAnswer();
     this.dataService.submitAnswer(JSON.stringify(
       {questionId: this.data.questionId, isCorrect: this.isCorrect}));
-    // feedback
-    const principle: any = document.getElementById('principle');
-    principle.style.textDecoration = 'line-through';
   }
 
   checkAnswer(): void {
@@ -204,8 +208,7 @@ export class QuestionComponent implements OnInit {
       color = this.stateColors.correct;
       imgUrl = '../../../assets/img/nav/good.png';
       this.answerStatus[this.data.questionId - 1] = 1;
-    }
-    else{
+    } else{
       color = this.stateColors.wrong;
       imgUrl = '../../../assets/img/nav/bad.png';
       this.answerStatus[this.data.questionId - 1] = 0;
@@ -214,6 +217,14 @@ export class QuestionComponent implements OnInit {
     const navBox: any = document.getElementById(this.data.questionId.toString());
     navBox.style.backgroundColor = color;
     navBox.childNodes[0].src = imgUrl;
+  }
+
+  feedbackAnswer(): void {
+    const principle: any = document.getElementById('principle');
+    principle.style.textDecoration = 'line-through';
+    const confirmNext: any = document.getElementById('confirm');
+    confirmNext.innerHTML = 'next';
+    // option feedback
     const leftTitle: any = document.getElementById('leftTitle');
     leftTitle.style.display = 'block';
     leftTitle.innerText = this.data.correctId === 1 ? 'shitcode' : 'good code';
@@ -226,8 +237,7 @@ export class QuestionComponent implements OnInit {
     feedback.style.display = 'block';
     if (this.isCorrect){
       feedback.innerText = 'Congruatulations!';
-    }
-    else{
+    } else{
       feedback.innerText = 'What a pity!';
     }
   }
@@ -236,9 +246,7 @@ export class QuestionComponent implements OnInit {
     // disabled until it is answered
     if (this.isAnswered) {
       setTimeout(() => {
-        this.router.navigate(['/report']);
-        document.body.style.backgroundColor = 'rgba(255,231,16,126)';}, 2000);
-      // avoid style conflicts
+        this.router.navigate(['/report']); }, 2000);
     }
   }
 
