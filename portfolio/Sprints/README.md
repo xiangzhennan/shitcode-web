@@ -143,7 +143,7 @@ During each iteration we defined the requirements based on the backlog from prev
 https://youtu.be/Z3gb-ht5-jM
 <a name="_s5"></a>
 ### - Sprint 3: Beta version release (8 Apr – 22 Apr)
-
+https://youtu.be/5RtuafF8Iko
 <a name="_s6"></a>
 ### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
 
