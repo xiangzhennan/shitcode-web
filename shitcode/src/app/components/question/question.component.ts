@@ -130,28 +130,35 @@ export class QuestionComponent implements OnInit {
     principle.style.textDecoration = '';
     const confirmNext: any = document.getElementById('confirm');
     confirmNext.innerHTML = 'confirm';
-    // reset option status
+    // reset selected status
     this.selectedOption = -1;
+    const left: any = document.getElementById('left');
+    const right: any = document.getElementById('right');
+    left.style.opacity = '1';
+    right.style.opacity = '1';
+    this.resetOptionFeedback();
+  }
+
+  resetOptionFeedback(): void {
     const left: any = document.getElementById('left');
     const right: any = document.getElementById('right');
     left.lastChild.innerText = '';
     right.lastChild.innerText = '';
-    left.style.opacity = '1';
-    right.style.opacity = '1';
+    const leftTitle: any = document.getElementById('leftTitle');
+    const rightTitle: any = document.getElementById('rightTitle');
+    leftTitle.innerText = '';
+    rightTitle.innerText = '';
   }
 
   retainAnsweredState(id: number): void{
     this.isAnswered = true;
     // retain selected status
-    const optionIdSet = [2, 1];
-    this.selectedOption = (this.answerStatus[id - 1] === 1) ? this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
+    this.isCorrect = this.answerStatus[id - 1] === 1;
+    const optionIdSet = [2, 1];   // a trick to return 1 when input 2, and vice versa
+    this.selectedOption = this.isCorrect ? this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
     this.selectedOption === 1 ? this.chooseLeft() : this.chooseRight();
-    // init option text feedback
-    const left: any = document.getElementById('left');
-    const right: any = document.getElementById('right');
-    left.lastChild.innerText = '';
-    right.lastChild.innerText = '';
-    // retain feedback status: real-principle text decoration, next button, option title & feedback
+    // reset & generate feedback
+    this.resetOptionFeedback();
     this.feedbackAnswer();
   }
 
@@ -219,12 +226,13 @@ export class QuestionComponent implements OnInit {
     navBox.childNodes[0].src = imgUrl;
   }
 
+  // feedbacks: real-principle text decoration, next button, option property, comment
   feedbackAnswer(): void {
     const principle: any = document.getElementById('principle');
     principle.style.textDecoration = 'line-through';
     const confirmNext: any = document.getElementById('confirm');
     confirmNext.innerHTML = 'next';
-    // option feedback
+    // option property & comment
     const leftTitle: any = document.getElementById('leftTitle');
     leftTitle.style.display = 'block';
     leftTitle.innerText = this.data.correctId === 1 ? 'shitcode' : 'good code';
