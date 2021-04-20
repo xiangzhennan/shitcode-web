@@ -225,23 +225,21 @@ export class QuestionComponent implements OnInit {
     const feedback: any = selected.lastChild;
     feedback.style.display = 'block';
     if (this.isCorrect){
-      feedback.innerText = 'Congruatulations! The accuracy of this question is ' + this.getAccuracy();
+      feedback.innerText = 'Congruatulations!';
     }
     else{
-      feedback.innerText = 'What a pity! The accuracy of this question is ' + this.getAccuracy();
+      feedback.innerText = 'What a pity!';
     }
   }
 
   report(): void{
     // disabled until it is answered
     if (this.isAnswered) {
-      this.router.navigate(['/report']);
+      setTimeout(() => {
+        this.router.navigate(['/report']);
+        document.body.style.backgroundColor = 'rgba(255,231,16,126)';}, 2000);
       // avoid style conflicts
-      document.body.style.backgroundColor = 'rgba(255,231,16,126)';
     }
-    this.updateAnswer();
-    setTimeout(() => {
-      this.router.navigate(['/report']); }, 2000);
   }
 
   getAccuracy(): string {

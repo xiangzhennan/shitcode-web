@@ -16,34 +16,33 @@
             <img src="../../../assets/img/nav/default.png" alt="{{questionId}}" width="70%" height="95%"></button>
       </div>
     </div>
-  </div>
+    <p id = "principle" class="principle" >{{data.principle}}</p>
+    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
+      id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
+    <p>which one is shitcode?</p>
 
-  <p id = "principle" class="principle" >{{data.principle}}</p>
-  <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
-     id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
-  <p>which one is shitcode?</p>
-
-  <div class="container">
-    <button id = "left" class="question left" type="button" (click)="chooseLeft()">
+    <div class="container">
+      <button id = "left" class="question left" type="button" (click)="chooseLeft()">
       <div id="leftTitle" class="title"></div>
       <p id="content1"></p>
       <div id="leftFeedback" class="feedback"></div>
-    </button>
+      </button>
 
-    <button id = "right" class="question right" type="button" (click)="chooseRight()">
-      <div id="rightTitle" class="title"></div>
-      <p id="content2"></p>
-      <div id="rightFeedback" class="feedback"></div>
-    </button>
-  </div>
+      <button id = "right" class="question right" type="button" (click)="chooseRight()">
+        <div id="rightTitle" class="title"></div>
+        <p id="content2"></p>
+        <div id="rightFeedback" class="feedback"></div>
+      </button>
+    </div>
 
-  <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'">
+    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'">
         <p class="history">{{getAccuracy()}} people find the shit code!</p>
-  </div>
+    </div>
 
-  <div class="footer">
-    <button id= "confirm" type="button" (click)="confirm()">confirm</button>
-    <button id= "report" [disabled]="!isAnswered" type="button" (click)="report()">get report</button>
-  </div>
+    <div class="footer">
+      <button id= "confirm" type="button" (click)="confirm()">confirm</button>
+      <button id= "report" [disabled]="!isAnswered" type="button" (click)="report()">get report</button>
+    </div>
 
 </body>
+</html>
