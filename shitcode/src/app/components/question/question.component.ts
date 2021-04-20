@@ -18,20 +18,20 @@ import {fadeInOutAnimation} from '../../animations';
 export class QuestionComponent implements OnInit {
 
   public data: any = {
-      questionId: -1,
-      principle: 'shitcode rule one: use variable name with no actual meaning',
-      realPrinciple: 'coding rule one: use variable with valid meaning',
-      options: [{
-        optionId: 1,
-        content: 'int i = 0',
-      },
-        {optionId: 2,
-          content: 'int numOfStudent = 0',
-        }],
-      correctId: 2,
-      historyCorrectNum: 5,
-      historyAnswerNum: 10
-    };
+    questionId: 1,
+    principle: 'shitcode one: Name variables in an obfuscated way',
+    realPrinciple: 'coding rule one: Name variables with valid meaning',
+    options: [{
+      optionId: 1,
+      content: 'int a = 42;'
+    },
+      {optionId: 2,
+        content: 'int age = 42;'
+      }],
+    correctId: 1,
+    historyCorrectNum: 0,
+    historyAnswerNum: 0
+  };
 
   public questionIDArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   public isAnswered = false;
@@ -80,6 +80,15 @@ export class QuestionComponent implements OnInit {
     }
   }
 
+  getQuestionContent(source: string): string{
+    const lines: string[] = source.split('\n');
+    let questionContent: any = '';
+    for (const str of lines){
+      questionContent = questionContent + str + '<br>';
+    }
+    return questionContent;
+  }
+
   // load next question, reset
   loadQuestion( id: number ): void{
     this.dataService.getQuestion(id).subscribe(
@@ -92,6 +101,10 @@ export class QuestionComponent implements OnInit {
         console.log(error);
       }
     );
+    const left: any = document.getElementById('content1');
+    const right: any = document.getElementById('content2');
+    left.innerHTML = this.getQuestionContent(this.data.options[0].content);
+    right.innerHTML = this.getQuestionContent(this.data.options[1].content);
   }
 
   // reset component to origin state when no answer is selected
@@ -106,7 +119,7 @@ export class QuestionComponent implements OnInit {
     this.selectedOption = 1;
     const left: any = document.getElementById('left');
     left.style.border = '2px solid green';
-    const righ: any = document.getElementById('right');
+    const right: any = document.getElementById('right');
     right.style.border = '1px solid dimgrey';
   }
 
@@ -141,7 +154,8 @@ export class QuestionComponent implements OnInit {
   // tslint:disable-next-line:typedef
   checkAnswer() {
     let color: string;
-    if (this.selectedOption === this.data.correctId){
+    this.isCorrect = (this.selectedOption === this.data.correctId);
+    if (this.isCorrect){
       color = 'green';
       this.answerStatus[this.data.questionId - 1] = 1;
     }
@@ -152,7 +166,22 @@ export class QuestionComponent implements OnInit {
     localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
     const navBox: any = document.getElementById(this.data.questionId.toString());
     navBox.style.backgroundColor = color;
-    this.isCorrect = (this.selectedOption === this.data.correctId);
+    const leftTitle: any = document.getElementById('leftTitle');
+    leftTitle.style.display = 'block';
+    leftTitle.innerText = this.data.correctId === 1 ? 'shitcode' : 'good code';
+    const rightTitle: any = document.getElementById('rightTitle');
+    rightTitle.style.display = 'block';
+    rightTitle.innerText = this.data.correctId === 2 ? 'shitcode' : 'good code';
+    const container: any = document.getElementsByClassName('container');
+    const selected: any = this.selectedOption === 1 ? document.getElementById('left') : document.getElementById('right');
+    const feedback: any = selected.lastChild;
+    feedback.style.display = 'block';
+    if (this.isCorrect){
+      feedback.innerText = 'Congruatulations! The accuracy of this question is ' + this.getAccuracy();
+    }
+    else{
+      feedback.innerText = 'What a pity! The accuracy of this question is ' + this.getAccuracy();
+    }
   }
 
   feedbackAnswer(): void {

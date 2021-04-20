@@ -35,18 +35,21 @@ p{
 }
 
 .principle{
-  margin: 40px auto;
+  margin: 20px auto;
   font-style: italic;
+  font-size:18px;
   color:red;
   height: 20px;
   clear:both;
 }
 
 .realPrinciple{
+  margin: 5px auto;
   font-style: italic;
-  color:green;
+  font-size: 18px;
+  color:lightgreen;
   height: 20px;
-  transition: all 1s ease-out 0.5s;
+  transition: all 15s ease-out 1s;
 }
 
 .container{
@@ -60,20 +63,33 @@ p{
 }
 
 .question{
-  width:45%;
+  width:40%;
   height: 400px;
-  padding: 10px 10px;
+  padding: 0 0;
   font-size: 20px;
   outline: none;
-  position: relative;
   border:1px solid grey;
   border-radius: 4px;
   box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+.title{
+  left: 220px;
+  top: 20px;
+  height: 40px;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  overflow: hidden;
 }
 
 .left{
   background-color: pink;
-  float:left
+  float:left;
 }
 
 .right{
@@ -89,29 +105,53 @@ p{
   box-shadow: 0 5px 5px lightblue;
 }
 
+#content1,#content2{
+  text-align: left;
+  line-height: 30px;
+  font-size: 20px;
+  margin-left: 10%;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.feedback{
+  bottom: 20px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  overflow: hidden;
+}
+
 .footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+}
+
+.footer button{
+  width: 100px;
+  height: 3em;
+  color: #333333;
+  font-weight: bold;
 }
 
 .report{
-  width:100px;
-  height: 4em;
-  color: black;
-  font-weight: bold;
   float: right;
   margin-right: 100px;
-  display:inline-block
+}
+
+.next{
+  float: right;
+  margin-right: 20px;
 }
 
 .confirm{
-  width:100px;
-  height: 4em;
-  font-weight: bold;
-  color: black;
-  margin-left: 1000px;
-  display:inline-block
+  float: right;
+  margin-right: 20px;
 }
 
 .report:hover{
@@ -121,6 +161,13 @@ p{
   box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
 }
 
+.next:hover{
+  background-color: #d2691e;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(210,105,30,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(210,105,30,1);
+  box-shadow: 10px 10px 99px 6px rgba(210,105,30,1);
+}
+
 .confirm:hover{
   background-color: #f038ff;
   -webkit-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
@@ -128,21 +175,4 @@ p{
   box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
 }
 
-table {
-  border-collapse: collapse;
-  background-color: lightgray;
-  border: 1px solid dimgray;
-  display:inline-block
-}
-
-table.history {
-  table-layout: auto;
-  width: 30%;
-}
-
-th,td {
-  border: 1px solid dimgray;
-  text-align: center;
-  font-style: italic;
-}
 

@@ -3,38 +3,37 @@
   <title>shitcode tutorial</title>
   <link rel="stylesheet" type="text/css" href="question.component.css">
 </head>
+
 <body>
   <div class="nav">
     <div class="navBox" *ngFor="let questionId of questionIDArray">
         <button type="button" class="navButton" [id] = "questionId" (click)="loadQuestion(questionId)">{{questionId}}</button>
     </div>
   </div>
-  <p id = "principle" class="principle" >{{data.principle}}</p>
-  <p @fadeInOut *ngIf="isAnswered"
-     id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
-  <p>which one is shitcode?</p>
-  <div class="container">
-    <button id = "left" class="question left" type="button" (click)="chooseLeft()">{{data.options[0].content}}</button>
-    <button id = "right" class="question right" type="button" (click)="chooseRight()">{{data.options[1].content}}</button>
-  </div>
 
-  <div @fadeInOut *ngIf="isAnswered">
-    <table class="history">
-      <tr>
-        <th>World Total Corrects</th>
-        <th>World Total Answers</th>
-        <th>World Accuracy</th>
-      </tr>
-      <tr>
-        <td>{{data.historyCorrectNum}}</td>
-        <td>{{data.historyAnswerNum}}</td>
-        <td>{{getAccuracy()}}</td>
-      </tr>
-    </table>
+  <div class="principle"><p id = "principle">{{data.principle}}</p></div>
+  <div class="realPrinciple">
+    <p @fadeInOut *ngIf="isAnswered" id = "realPrinciple">{{data.realPrinciple}}</p>
+  </div>
+  <p>which one is shitcode?</p>
+
+  <div class="container">
+    <button id = "left" class="question left" type="button" (click)="chooseLeft()">
+      <div id="leftTitle" class="title"></div>
+      <p id="content1"></p>
+      <div id="leftFeedback" class="feedback"></div>
+    </button>
+
+    <button id = "right" class="question right" type="button" (click)="chooseRight()">
+      <div id="rightTitle" class="title"></div>
+      <p id="content2"></p>
+      <div id="rightFeedback" class="feedback"></div>
+    </button>
   </div>
 
   <div class="footer">
     <button class="confirm" type="button" (click)="confirm()">confirm</button>
+    <button class="next" type="button" (click)="getNextQuestion()">next</button>
     <button class="report" type="button" (click)="report()">get report</button>
   </div>
 
