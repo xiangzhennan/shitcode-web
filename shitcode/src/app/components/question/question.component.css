@@ -139,36 +139,37 @@ p{
   font-weight: bold;
 }
 
-.report{
+#report{
   float: right;
   margin-right: 100px;
 }
 
-.next{
+#next{
+  display: none;
   float: right;
   margin-right: 20px;
 }
 
-.confirm{
-  float: right;
-  margin-right: 20px;
+#confirm{
+  float: left;
+  margin-left: 500px;
 }
 
-.report:hover{
+#report:hover{
   background-color: #4cc9f0;
   -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
   -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
   box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
 }
 
-.next:hover{
+#next:hover{
   background-color: #d2691e;
   -webkit-box-shadow: 10px 10px 99px 6px rgba(210,105,30,1);
   -moz-box-shadow: 10px 10px 99px 6px rgba(210,105,30,1);
   box-shadow: 10px 10px 99px 6px rgba(210,105,30,1);
 }
 
-.confirm:hover{
+#confirm:hover{
   background-color: #f038ff;
   -webkit-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
   -moz-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);

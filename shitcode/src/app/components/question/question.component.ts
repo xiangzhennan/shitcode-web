@@ -137,11 +137,10 @@ export class QuestionComponent implements OnInit {
       return;
     }
     this.updateAnswer();
-    if (this.data.questionId < 10){
-      this.getNextQuestion();
-    } else {
-      this.report();
-    }
+    const confirm: any = document.getElementById('confirm');
+    confirm.display =  'none';
+    const next: any = document.getElementById('next');
+    next.display = 'block';
   }
 
   updateAnswer(): void {
