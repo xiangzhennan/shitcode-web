@@ -1,6 +1,6 @@
 {
   "questionId":4,
-  "principle": "shitcode four: Try to mix formatting style as much as possible",
+  "principle": "shitcode type four: Try to mix formatting style as much as possible",
   "realPrinciple": "coding rule four: Maintain consistency in formatting style",
   "options": [{
     "optionId": 1,
@@ -9,7 +9,7 @@
     {"optionId": 2,
       "content": "let ingredients = ['tomato', 'onion', 'mushrooms'];\nlet dressings = ['ketchup', 'mayonnaise'];"
     }],
-  "correctId":2,
+  "correctId":1,
   "historyCorrectNum": 0,
   "historyAnswerNum": 0
 }

@@ -17,14 +17,14 @@ export class QuestionComponent implements OnInit {
 
   public data: any = {
     questionId: 1,
-    principle: 'shitcode one: Name variables in an obfuscated way',
-    realPrinciple: 'coding rule one: Name variables with valid meaning',
+    principle: 'test',
+    realPrinciple: 'test',
     options: [{
       optionId: 1,
-      content: 'int a = 42;'
+      content: 'test'
     },
       {optionId: 2,
-        content: 'int age = 42;'
+        content: 'test'
       }],
     correctId: 1,
     historyCorrectNum: 0,
@@ -204,7 +204,7 @@ export class QuestionComponent implements OnInit {
     this.isAnswered = true;
     this.checkAnswer();
     this.dataService.submitAnswer(JSON.stringify(
-      {questionId: this.data.questionId, isCorrect: this.isCorrect}));
+      {questionId: this.data.questionId, isCorrect: this.isCorrect})).subscribe();
   }
 
   checkAnswer(): void {

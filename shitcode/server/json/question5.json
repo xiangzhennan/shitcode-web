@@ -1,6 +1,6 @@
 {
   "questionId":5,
-  "principle": "shitcode five: Put as much code as possible into one line",
+  "principle": "shitcode type five: Put as much code as possible into one line",
   "realPrinciple": "coding rule five: Put code into different lines based on readability",
   "options": [{
     "optionId": 1,
@@ -9,7 +9,7 @@
     {"optionId": 2,
       "content": "document.location.search\n  .replace(/(^\\?)/, '')\n  .split('&')\n  .reduce((searchParams, keyValuePair) => {\n    keyValuePair = keyValuePair.split('=');\n    searchParams[keyValuePair[0]] = keyValuePair[1];\n    return searchParams;\n  },\n  {}\n)"
     }],
-  "correctId":2,
+  "correctId":1,
   "historyCorrectNum": 0,
   "historyAnswerNum": 0
 }

@@ -1,6 +1,6 @@
 {
   "questionId":1,
-  "principle": "shitcode one: Name variables in an obfuscated way",
+  "principle": "shitcode type one: Name variables in an obfuscated way",
   "realPrinciple": "coding rule one: Name variables with valid meaning",
   "options": [{
     "optionId": 1,
@@ -9,7 +9,7 @@
     {"optionId": 2,
       "content": "int age = 42;"
     }],
-  "correctId":2,
+  "correctId":1,
   "historyCorrectNum": 0,
   "historyAnswerNum": 0
 }

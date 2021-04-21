@@ -17,8 +17,8 @@ const options = {
   connectTimeoutMS: 10000,
 };
 
-const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
-//const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
+//const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
+const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
 
 mongoose.connect(url, options).then(function () {
   //console.log(url);
@@ -82,10 +82,11 @@ router.post('/submit',(req,res)=> {
     if (err) return console.error(err);
     if (question.length === 1) {
       question[0].numOfAnswer++;
-      if (req.body.isCorrect === 'true') {
+      if (req.body.isCorrect) {
+        console.log("is true");
         question[0].numOfCorrect++;
       }
-      console.log(question[0]);
+      //console.log(question[0]);
       question[0].save(function (err) {
         if (err) return handleError(err);
         // saved!

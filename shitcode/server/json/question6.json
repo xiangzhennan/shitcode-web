@@ -1,13 +1,13 @@
 {
   "questionId":6,
-  "principle": "shitcode six: Fail silently",
+  "principle": "shitcode type six: Fail silently",
   "realPrinciple": "coding rule six: Set error modals and whenever you catch an error, it is necessary to send back log messages or report exceptions",
   "options": [{
     "optionId": 1,
-    "content": "try {\n  // Something unpredictable.\n} catch (error) {\n  // tss...\n}"
+    "content": "try {\n  // Something unpredictable.\n} catch (error) {\n  setErrorMessage(error.message);\n  // and/or\n  logError(error);\n}\n"
   },
     {"optionId": 2,
-      "content": "try {\n  // Something unpredictable.\n} catch (error) {\n  setErrorMessage(error.message);\n  // and/or\n  logError(error);\n}\n"
+      "content": "try {\n  // Something unpredictable.\n} catch (error) {\n  // tss...\n}"
     }],
   "correctId":2,
   "historyCorrectNum": 0,

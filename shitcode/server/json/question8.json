@@ -1,6 +1,6 @@
 {
   "questionId":8,
-  "principle": "shitcode eight: Create variables that you're not going to use",
+  "principle": "shitcode type eight: Create variables that you're not going to use",
   "realPrinciple": "coding rule eight: Only create variables that you're going to use",
   "options": [{
     "optionId": 1,
@@ -9,7 +9,7 @@
     {"optionId": 2,
       "content": "function sum(a, b) {\n  return a + b;\n}"
     }],
-  "correctId":2,
+  "correctId":1,
   "historyCorrectNum": 0,
   "historyAnswerNum": 0
 }
