@@ -1,0 +1,15 @@
+{
+  "questionId":10,
+  "principle": "shitcode type ten: Have an unreachable piece of code",
+  "realPrinciple": "coding rule ten: Don't have any unreachable piece of code",
+  "options": [{
+    "optionId": 1,
+    "content": "function square(num) {\n  if (typeof num === 'undefined') {\n    return undefined;\n  }\n  else {\n    return num ** 2;\n  }\n  return null; // This is my \"Plan B\".\n}"
+  },
+    {"optionId": 2,
+      "content": "function square(num) {\n  if (typeof num === 'undefined') {\n    return undefined;\n  }\n  return num ** 2;\n}"
+    }],
+  "correctId":1,
+  "historyCorrectNum": 0,
+  "historyAnswerNum": 0
+}

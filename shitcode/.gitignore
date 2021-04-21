@@ -44,9 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# unnecessary files
-/protfolio
 *.docx
-/group24
-/images
+wait-for.sh
