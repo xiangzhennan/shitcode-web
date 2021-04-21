@@ -10,6 +10,8 @@ export class WelcomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // avoid bgColor conflict
+    document.body.style.backgroundColor = 'rgba(255,231,16,126)';
   }
 
 }

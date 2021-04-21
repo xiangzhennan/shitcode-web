@@ -1,7 +1,13 @@
-<div>
-  <p>welcome to shit-code, click to start</p>
-
-  <button type="button" [routerLink]=" ['/question']">
-    start here
-  </button>
-</div>
+<body>
+  <div class="logo">
+      <img src="assets/img/logo.png" alt="logo" style="height:150px;width:400px;">
+   </div>
+   <div class="box">
+      <h1 style="font-size: 40px;line-height: 45px;">Find Out Shitcode</h1>
+      <p style="font-size: 16px;line-height: 28px;">Do you think you've known how to avoid shitcode?</p>
+      <p style="font-size: 16px;line-height: 28px;padding-bottom: 25px;">
+        Some little piece of shitcode may probably mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and try it.
+      </p>
+      <a class="button" [routerLink]="['/question']">play</a>
+   </div>
+</body>

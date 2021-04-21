@@ -1,3 +1,29 @@
-<p>report works!</p>
+<body>
+  <div class="logo">
+    <img src="assets/img/logo.png" alt="logo" style="height:150px;width:400px;">
+  </div>
 
-<button type="button" routerLink="/question">review answers</button>
+  <div class="box">
+    <div *ngIf="data.accuracy>=80">
+      <img class="report_picture" alt="range1" src="../../../assets/img/happy.jpg">
+    </div>
+    <div *ngIf="data.accuracy>=60 && data.accuracy<80">
+      <img class="report_picture" alt="range2" src="../../../assets/img/normal.jpg">
+    </div>
+    <div *ngIf="data.accuracy<60">
+      <img class="report_picture" alt="range3" src="../../../assets/img/sad.jpg">
+    </div>
+    <div class="report_box">
+      <span class="report_string_title">Total corrects: </span><span class="report_string_body">{{data.correctNum}}</span>
+    </div>
+    <div class="report_box">
+      <span class="report_string_title">Accuracy: </span><span class="report_string_body">{{data.accuracy}}%</span>
+    </div>
+    <div class="badge">{{data.badge}}</div>
+    <div>
+      <a class="button" routerLink="/question">review answers</a>
+      <a class="button" routerLink="/welcome">home</a>
+      <a class="button" routerLink="/question" (click)="clearAnswers()">replay</a>
+    </div>
+  </div>
+</body>

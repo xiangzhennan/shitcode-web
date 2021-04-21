@@ -1,0 +1,8 @@
+.content{
+  width:100%;
+  /*min-height: 600px;*/
+  background-size: cover;
+  padding-top: 100px 0 -110px 0;
+  height:98vh;
+  margin:0;
+}
