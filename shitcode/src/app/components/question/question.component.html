@@ -16,7 +16,7 @@
       </div>
     </div>
     <p id = "principle" class="principle" >{{data.principle}}</p>
-    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
+    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered"
       id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
     <p class="guide">which one is shitcode?</p>
 
@@ -33,7 +33,7 @@
       </button>
     </div>
 
-    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'">
+    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered">
         <p class="history">{{getAccuracy()}} people find the shit code!</p>
     </div>
 
