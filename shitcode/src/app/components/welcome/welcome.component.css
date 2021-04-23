@@ -2,6 +2,16 @@
   background-color: rgba(255,231,16,126);
 }
 
+.title{
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.font{
+  //font-family: Copperplate, Papyrus, fantasy;
+  font-family: Zen dots, serif;
+}
+
 .logo{
   margin:0 auto;
   padding-top: 50px;
@@ -28,7 +38,7 @@
   vertical-align: middle;
   display: inline-block;
   color: #59A3F8;
-  size:18px;
+  size:25px;
   line-height: 40px;
   font-weight: bolder;
   text-decoration:none;

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>shitcode tutorial</title>
      <link rel="stylesheet" type="text/css" href="question.component.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
   </head>
-  <body>
+  <body class="font">
     <div class="nav">
       <div class="navBox" *ngFor="let questionId of questionIDArray">
           <button [id] = "questionId" type="button" class="navButton" (click)="loadQuestion(questionId)">
@@ -15,7 +16,7 @@
       </div>
     </div>
     <p id = "principle" class="principle" >{{data.principle}}</p>
-    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'"
+    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered"
       id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
     <p class="guide">which one is shitcode?</p>
 
@@ -32,7 +33,7 @@
       </button>
     </div>
 
-    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'">
+    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered">
         <p class="history">{{getAccuracy()}} people find the shit code!</p>
     </div>
 
