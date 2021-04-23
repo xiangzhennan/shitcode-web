@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- zooming for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>shitcode tutorial</title>
+     <link rel="stylesheet" type="text/css" href="question.component.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+  </head>
+  <body class="font">
+    <div class="nav">
+      <div class="navBox" *ngFor="let questionId of questionIDArray">
+          <button [id] = "questionId" type="button" class="navButton" (click)="loadQuestion(questionId)">
+            <img src="../../../assets/img/nav/default.png" alt="{{questionId}}" width="70%" height="95%"></button>
+      </div>
+    </div>
+    <p id = "principle" class="principle" >{{data.principle}}</p>
+    <p [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered"
+      id = "realPrinciple" class="realPrinciple">{{data.realPrinciple}}</p>
+    <p class="guide">which one is shitcode?</p>
+
+    <div class="container">
+      <button id = "left" class="question left" type="button" (click)="chooseLeft()">
+      <div [@fadeInOut]="isAnswered" id="leftTitle" class="title"></div>
+      <p id="content1"></p>
+      <div [@fadeInOut]="isAnswered" id="leftFeedback" class="feedback"></div>
+      </button>
+      <button id = "right" class="question right" type="button" (click)="chooseRight()">
+        <div [@fadeInOut]="isAnswered" id="rightTitle" class="title"></div>
+        <p id="content2"></p>
+        <div [@fadeInOut]="isAnswered" id="rightFeedback" class="feedback"></div>
+      </button>
+    </div>
+
+    <div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered">
+        <p class="history">{{getAccuracy()}} people find the shit code!</p>
+    </div>
+
+    <div class="footer">
+      <button id= "confirm" type="button" (click)="confirm()">confirm</button>
+      <button id= "report" [disabled]="!isAnswered" type="button" (click)="report()">get report</button>
+    </div>
+
+</body>
+</html>

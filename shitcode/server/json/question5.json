@@ -1,0 +1,15 @@
+{
+  "questionId":5,
+  "principle": "shitcode type five: Put as much code as possible into one line",
+  "realPrinciple": "coding rule five: Put code into different lines based on readability",
+  "options": [{
+    "optionId": 1,
+    "content": "document.location.search.replace(/(^\\?)/,'').split('&').reduce(function(o,n){n=n.split('=');o[n[0]]=n[1];return o},{})"
+  },
+    {"optionId": 2,
+      "content": "document.location.search\n  .replace(/(^\\?)/, '')\n  .split('&')\n  .reduce((searchParams, keyValuePair) => {\n    keyValuePair = keyValuePair.split('=');\n    searchParams[keyValuePair[0]] = keyValuePair[1];\n    return searchParams;\n  },\n  {}\n)"
+    }],
+  "correctId":1,
+  "historyCorrectNum": 0,
+  "historyAnswerNum": 0
+}

@@ -1,0 +1,15 @@
+{
+  "questionId":4,
+  "principle": "shitcode type four: Try to mix formatting style as much as possible",
+  "realPrinciple": "coding rule four: Maintain consistency in formatting style",
+  "options": [{
+    "optionId": 1,
+    "content": "let i = ['tomato', 'onion', 'mushrooms'];\nlet d = [ \"ketchup\", \"mayonnaise\" ];"
+  },
+    {"optionId": 2,
+      "content": "let ingredients = ['tomato', 'onion', 'mushrooms'];\nlet dressings = ['ketchup', 'mayonnaise'];"
+    }],
+  "correctId":1,
+  "historyCorrectNum": 0,
+  "historyAnswerNum": 0
+}
