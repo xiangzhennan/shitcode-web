@@ -84,7 +84,6 @@ To be specific, Xiang has done the following things:
 3)	backend development and first version of prototype website (including only static json in backend and router in frontend)
 4)	database building and integrating
 5)	testing and evaluation
-</br>
 
 <a name="_Liu"></a>
 * **Shujie Liu**
@@ -96,27 +95,26 @@ To be specific, Liu mainly contributed to the following things:
 2) UX design including paper prototyping and understanding of user group
 3) project management
 4) report integration and quality control
-</br>
 
 <a name="_Guo"></a>
 * **Sheng Guo**
-</br>
 
 <a name="_Liang"></a>
 * **Karine Liang**
-</br>
+
 
 <a name="_Qin"></a>
 * **Shengzhe Qin**
-</br>
+
 Qin's role in the team is more inclined to the front-end page design and peripheral system building assistance.
 Qin participated in the specific function design on the initial creative stage of the website, responsible for development and style design of welcome and report pages. Qin also designed the questionnaire and collected user feedback for analysis during the evaluation phase.
+
 Specifically, Qin mainly contributed to the following things:
 1) Initial creativity
 2) Part of function design
 3) Design for welcome page and report page
 4) Research on font and image library and providing suitable options
-5）Designing questionnaire and analyzing user feedback for evaluation
+5) Designing questionnaire and analyzing user feedback for evaluation
 
 
 <a name="_sprints"></a>
