@@ -35,6 +35,9 @@ Find-out-shitcode is a quiz game designed for coders especially novices to impro
 
 Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-art-shitcode) principles, each question provides two code snippets through examples of good and bad style in the game. The user is encouraged to distinguish between them and choose the bad practice which is defined as shitcode. The corresponding principle for good practice will be displayed afterwards. To increase the challenge of the game, the user will get relevant medal badge and ranking according to answer accuracy in the end.
 
+### Demo video
+
+
 <a name="_background"></a>
 ## 3.  Background and Motivation
 
