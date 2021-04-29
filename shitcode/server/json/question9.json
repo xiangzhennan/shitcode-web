@@ -1,15 +1,15 @@
 {
   "questionId":9,
-  "principle": "shitcode type nine: No types specified and/or no type checks if language allows you to do so",
-  "realPrinciple": "coding rule nine: Always specify types and/or do type checks",
+  "principle": "shitcode type nine: Always name your boolean value a flag",
+  "realPrinciple": "coding rule nine: Name boolean value based on judgement condition",
   "options": [{
     "optionId": 1,
-    "content": "function sum(a: number, b: number): ?number {\n  // Covering the case when we don't do translation and/or Flow type checks in JS.\n  if (typeof a !== 'number' && typeof b !== 'number') {\n    return undefined;\n  }\n  return a + b;\n}\n\n// This one should fail during the translation/compilation.\nconst guessWhat = sum([], {}); // -> undefined"
+    "content": "let flag = true;"
   },
     {"optionId": 2,
-      "content": "function sum(a, b) {\n  return a + b;\n}\n\n// Having untyped fun here.\nconst guessWhat = sum([], {}); // -> \"[object Object]\"\nconst guessWhatAgain = sum({}, []); // -> 0"
+      "content": "let isDone = false;\nlet isEmpty = false;"
     }],
-  "correctId":2,
+  "correctId":1,
   "historyCorrectNum": 0,
   "historyAnswerNum": 0
 }
