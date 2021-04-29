@@ -18,7 +18,7 @@ const options = {
 };
 
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
-//const url = `mongodb://127.0.0.1:27017/questions?authSource=admin`;
+//const url = `mongodb://localhost:27017/questions?authSource=admin`;
 
 mongoose.connect(url, options).then(function () {
   //console.log(url);
