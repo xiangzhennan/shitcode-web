@@ -159,7 +159,7 @@ The following table lists the components we design and create. Then we develop f
 ### - Welcome page
 For the welcome page, it mainly lies in making the page design simple and easy to understand and how to match the logo.
 Since the theme of the game is to find out shitcode, we use cute shit elements to layout the webpages. We found 47 images and finally selected the most popular ones with users.
-For the design of the theme color, it is based on yellow, and the same color scheme is used in the following pages to keep the color consistent.
+For the design of the theme color, it is based on yellow, and the same color scheme is used in the following pages to keep the color of the website consistent.
 
 
 <a name="_report"></a>
