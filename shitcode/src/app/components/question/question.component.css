@@ -55,18 +55,20 @@ p{
 }
 
 .principle{
-  margin: 7px auto;
+  margin-left: 6%;
+  margin-right: 6%;
   font-style: normal;
-  font-size:35px;
+  font-size: 35px;
   color:red;
   height: 40px;
   clear:both;
 }
 
 .realPrinciple{
-  margin: 5px auto;
+  margin-left: 6%;
+  margin-right: 6%;
   font-style: normal;
-  font-size: 35px;
+  font-size: 32px;
   text-align: center;
   color: #757575;
   height: 40px;
@@ -202,4 +204,10 @@ p{
   -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
   -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
   box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+}
+
+.history{
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
 }

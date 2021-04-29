@@ -37,7 +37,7 @@ export class QuestionComponent implements OnInit {
   // -1 for not answered, 0 for false, 1 for true
   public answerStatus: number[] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
   isCorrect = false;
-  private themeColors: any[] = ['#FEC5BB', '#FCD5CE', '#FAE1DD', '#F8EDEB', '#E8E8E4', '#D8E2DC', '#ECE4DB', '#FFE5D9',
+  private themeColors: any[] = ['#FEC89A', '#FFD7BA', '#FCD5CE', '#FAE1DD', '#E8E8E4', '#D8E2DC', '#ECE4DB', '#FFE5D9',
     '#FFD7BA', '#FEC89A'];
   private stateColors: any = {correct: '#FFA000', wrong: 'red', default: ''};
 

@@ -33,28 +33,12 @@ module.exports = function (config) {
       ]
     },
     reporters: ['progress', 'kjhtml'],
-    port: 3000,
+    port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeHeadlessCI'],
-    customLaunchers: {
-      ChromeHeadlessCI: {
-        base: 'ChromeHeadless',
-        flags: ['--no-sandbox']
-      }
-    },
+    browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true,
-    coverageIstanbulReporter: {
-      reports: [ 'html', 'lcovonly' ],
-      fixWebpackSourcePaths: true,
-      thresholds: {
-        statements: 80,
-        lines: 80,
-        branches: 80,
-        functions: 80
-      }
-    }
+    restartOnFileChange: true
   });
 };
