@@ -16,6 +16,8 @@
 
 * [4. Front End - Angular](#_frontend)
     * [List of components](#_list)
+    * [Welcome page](#_welcome)
+    * [Report page](#_report)
 
 * [5. Additional element - cookie/session or local storage](#_additional)
 
@@ -142,8 +144,8 @@ The following table lists the components we design and create. Then we develop f
 
 | No.  | Page      | Component   | Implementation                                                                | Binding event<br>(request or function)    |
 | ---- | --------- | ----------- | ----------------------------------------------------------------------------- | ----------------------------------------- |
-| 1    | index     | intro       | Text box, the content is fixed in html                                        |                                           |
-| 2    | index     | start-exam  | Start answer button                                                           | /question?id=                             |
+| 1    | welcome   | intro       | Text box, the content is fixed in html                                        |                                           |
+| 2    | welcome   | start-exam  | Start answer button                                                           | /question?id=                             |
 | 3    | question  | principle   | 1. Text box, the content is obtained from json<br>2. After the confirm button is triggered, display code principle |      |
 | 4    | question  | option      | 1. Text box, selectable (highlighted), the content is obtained from json<br>2. After the confirm button is triggered, trigger the animation according to the result |     |
 | 5    | question  | confirm     | 1. Confirm button<br>2. Bind click, pop up assert if option is not selected<br>3. After clicking, verify and record the answer, trigger the animation<br>4. At the end of the animation, jump to the next question<br>5. Automatic submission after the last question |updateAnswers()<br>feedbackAnswer()<br>/report?correctNum= |
@@ -153,6 +155,39 @@ The following table lists the components we design and create. Then we develop f
 | 9    | report    | report      | Text box, the content is obtained from json |   |
 | 10   | report    | goback      | Button, return to the question page |   |
 
+<a name="_welcome"></a>
+### - Welcome page
+For the welcome page, it mainly lies in making the page design simple and easy to understand and how to match the logo.
+Since the theme of the game is to find out shitcode, we use cute shit elements to layout the webpages. We found 47 images and finally selected the most popular ones with users.
+For the design of the theme color, it is based on yellow, and the same color scheme is used in the following pages to keep the color consistent.
+
+
+<a name="_report"></a>
+### - Report page
+
+On the report page, the score is displayed with related shit-mood logo according to the accuracy. 
+
+```javascript
+<div *ngIf="data.accuracy>=80">
+   <img class="report_picture" alt="range1" src="../../../assets/img/happy.jpg">
+</div>
+<div *ngIf="data.accuracy>=60 && data.accuracy<80">
+   <img class="report_picture" alt="range2" src="../../../assets/img/normal.jpg">
+</div>
+<div *ngIf="data.accuracy<60">
+   <img class="report_picture" alt="range3" src="../../../assets/img/sad.jpg">
+</div>
+```
+
+There are buttons on the bottom linked to review the answers, return to the home page, and try again the game.
+
+```javascript
+<div>
+   <a class="button" routerLink="/question">review answers</a>
+   <a class="button" routerLink="/welcome">home</a>
+   <a class="button" routerLink="/question" (click)="clearAnswers()">replay</a>
+</div>
+```
 
 
 <a name="_additional"></a>
