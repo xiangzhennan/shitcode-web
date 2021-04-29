@@ -6,9 +6,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class DataService {
 
-  public REST_API_QUESTION = 'localhost:3000/api/question?id=';
-  public REST_API_REPORT = 'localhost:3000/api/report?correctNum=';
-  public REST_API_SUBMIT = 'localhost:3000/api/submit';
+  public REST_API_QUESTION = 'http://localhost:3000/api/question?id=';
+  public REST_API_REPORT = 'http://localhost:3000/api/report?correctNum=';
+  public REST_API_SUBMIT = 'http://localhost:3000/api/submit';
   httpOptions = {headers: new HttpHeaders({'Content-type': 'application/json'})};
 
   constructor(private httpClient: HttpClient) {
