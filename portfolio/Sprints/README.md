@@ -139,8 +139,8 @@ During each iteration we defined the requirements based on the backlog from prev
 | ------------------------ | ---------------- |
 | Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
 | Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [(Click here to check)](../System_implementation/README.md#_list);</br>Design RESTful API [(Click here to check)](../System_implementation/README.md#_api);     |  
-| Development     | Implement Node.js server, create question API;</br>Create components of welcome page, question page and report page with only text description, necessary buttons but no style; |
-| Testing         | Test APIs and internal logic on Express with `node server.js`; |
+| Development     | Implement Node.js server, create question API;</br>Build framework of components of welcome page, question page and report page with only text description, necessary buttons but no style; |
+| Testing         | Test question API on Express with `node server.js`; |
 | Deployment      | Deploy on local [(Click here to check video of first prototype)](https://youtu.be/6PBFm8z1YCs) |
 | Users stories   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. I had no idea how to play with it or interact with it. It was a too simple web page only. |
 | Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the two more APIs by further development on back-end |
