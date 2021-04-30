@@ -144,7 +144,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | Development     | Implement Node.js server, create question API;</br>Build framework of components of welcome page, question page and report page with only text description, necessary buttons but no style; |
 | Testing         | Test question API on Express with `node server.js`; |
 | Deployment      | Deploy on local [(Click here to check video of first prototype)](https://youtu.be/6PBFm8z1YCs) |
-| Users stories   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. I had no idea how to play with it or interact with it. It was a too simple web page only. |
+| **Users stories**   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. There is only one question. I had no idea how to play with it. The interface looks too plain though. It is only a simple web page with some texts and buttons. |
 | Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the two more APIs by further development on back-end |
 
 <a name="_s4"></a>
@@ -157,7 +157,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | Development     | Implement integrated development on frontend;</br>Work on the development of two more APIs on backend;</br>Create a service to handle the http calls and connect components to APIs;</br>Implement MongoDB and manage the storage of data |
 | Testing         | Execute unit testing |
 | Deployment      | Deploy on docker [(Click here to check video of Alpha version)](https://youtu.be/Z3gb-ht5-jM) |
-| Users stories   | **Emma (End-user)**:</br>I could see what the system looks like and what I could do with it, although the UI design is not pretty. I was willing to have a try and play it, however, the whole experience looked like taking a test. I didn't enjoy it and felt it playful. |
+| **Users stories**   | **Emma (End-user)**:</br>I can see what the system looks like and what I can do with it, although the UI design is not pretty. There are several questions now. I'm willing to have a try and play with it, however, the whole experience looks like taking a test. I don't enjoy it or feel it playful. |
 | Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introductory text of the game;</br>Work on report page to make the game more competitive |
 
 
@@ -172,7 +172,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | Development     | Develop on welcome page and report page;</br>Improve UI design on question page |
 | Testing         | Component integration and functional testing |
 | Deployment      | Deploy on docker [(Click here to check video of Beta version)](https://youtu.be/5RtuafF8Iko) |
-| Users stories   | **Emma (End-user)**:</br>When I opened the website again, it was colorful and vivid. The user interface looked more like a playful game now. It made me want to explore the game more. However, the font of some texts is too small to read. Besides, the option box and the content in it could be designed more user-friendly. |
+| **Users stories**   | **Emma (End-user)**:</br>When I open the website again, it is colorful and vivid. The user interface looks more like a playful game now. It make me want to explore the game more. However, the font of some texts is too small to read. Besides, the option box and the content in it could be designed more user-friendly. |
 | Review          | Backlog and things to do:</br>Further adjustment on UI design according to user's feedback;</br>User acceptance testing;</br>Write portfolio, record demo video |
 
 
@@ -186,7 +186,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | Development     | Work on some minor adjustment on UI design;</br>Fix bugs and deploy for user acceptance testing|
 | Testing         | User acceptance testing |
 | Deployment      | Deploy on docker [(Click here to check video of version 1.0)](https://youtu.be/2qxE9Px6Q80) |
-| Users stories   | **Emma (End-user)**:</br>I think the final version is great. It's a playful quiz game. I can learn something about which is shitcode that I should avoid in the future but also have much fun in the process. I will recommend the game to my coder friends. There are only ten questions in the game for now, short and easy to be focused. However, it would be better for coding beginner if the question database could be more abundant and set the challenge into different levels for players. |
+| **Users stories**   | **Emma (End-user)**:</br>I think the final version is great. It's a playful quiz game. I can learn something about which is shitcode that I should avoid in the future but also have much fun in the process. I will recommend the game to my coder friends. There are only ten questions in the game for now, short and easy to be focused. However, it would be better for coding beginner if the question database could be more abundant and set the challenge into different levels for players to choose. |
 | Review          | Make project conclusion on each aspect|
 
 <a name="_s7"></a>
