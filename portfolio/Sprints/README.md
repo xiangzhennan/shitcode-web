@@ -143,7 +143,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | Testing         | Test APIs and internal logic on Express with `node server.js`; |
 | Deployment      | Deploy on local [(Click here to check video of first prototype)](https://youtu.be/6PBFm8z1YCs) |
 | Users stories   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. I had no idea how to play with it or interact with it. It was a too simple web page only. |
-| Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the rest of APIs by further development on back-end |
+| Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the two more APIs by further development on back-end |
 
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
@@ -151,8 +151,8 @@ During each iteration we defined the requirements based on the backlog from prev
 | Agile development cycle  | Description      | 
 | ------------------------ | ---------------- |
 | Requirements    | Fulfill functionality of each component on frontend;</br>Develop report API and submit API;</br>Build up database on backend;</br>Implement deployment on docker     | 
-| Design          | List design detail of each component and internal logic between components;</br>Design database model and schema, decide what data to store and how to store it;|  
-| Development     | Implement integrated development on frontend;</br>Work on the development of the rest of APIs on backend;</br>Create a service to handle the http calls and connect components to APIs;</br>Implement MongoDB and manage the storage of data |
+| Design          | List implementation detail of each component and internal logic on fulfilling each functionality;</br>Design database model and schema, decide what data to store and how to store it;|  
+| Development     | Implement integrated development on frontend;</br>Work on the development of two more APIs on backend;</br>Create a service to handle the http calls and connect components to APIs;</br>Implement MongoDB and manage the storage of data |
 | Testing         | Execute unit testing |
 | Deployment      | Deploy on docker [(Click here to check video of alpha version)](https://youtu.be/Z3gb-ht5-jM) |
 | Users stories   | **Emma (End-user)**:</br>I could see what the system looks like and what I could do with it, although the UI design is not pretty. I was willing to have a try and play it, however, the whole experience looked like taking a test. I didn't enjoy it and felt it playful |
