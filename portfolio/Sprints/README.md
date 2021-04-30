@@ -135,7 +135,7 @@ During each iteration we defined the requirements based on the backlog from prev
 ### - Sprint 1: First prototype (25 Feb – 18 Mar)
 
 
-| Agile development cycle  | Description      | 
+| Agile development cycle I  | Description      | 
 | ------------------------ | ---------------- |
 | Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
 | Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [(Click here to check)](../System_implementation/README.md#_list);</br>Design RESTful API [(Click here to check)](../System_implementation/README.md#_api);     |  
@@ -148,23 +148,34 @@ During each iteration we defined the requirements based on the backlog from prev
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
 
-| Agile development cycle  | Description      | 
+| Agile development cycle II  | Description      | 
 | ------------------------ | ---------------- |
 | Requirements    | Fulfill functionality of each component on frontend;</br>Develop report API and submit API;</br>Build up database on backend;</br>Implement deployment on docker     | 
 | Design          | List implementation detail of each component and internal logic on fulfilling each functionality;</br>Design database model and schema, decide what data to store and how to store it;|  
 | Development     | Implement integrated development on frontend;</br>Work on the development of two more APIs on backend;</br>Create a service to handle the http calls and connect components to APIs;</br>Implement MongoDB and manage the storage of data |
 | Testing         | Execute unit testing |
-| Deployment      | Deploy on docker [(Click here to check video of alpha version)](https://youtu.be/Z3gb-ht5-jM) |
-| Users stories   | **Emma (End-user)**:</br>I could see what the system looks like and what I could do with it, although the UI design is not pretty. I was willing to have a try and play it, however, the whole experience looked like taking a test. I didn't enjoy it and felt it playful |
-| Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introduce the game;</br>Work on report page to make the game more competitive |
+| Deployment      | Deploy on docker [(Click here to check video of Alpha version)](https://youtu.be/Z3gb-ht5-jM) |
+| Users stories   | **Emma (End-user)**:</br>I could see what the system looks like and what I could do with it, although the UI design is not pretty. I was willing to have a try and play it, however, the whole experience looked like taking a test. I didn't enjoy it and felt it playful. |
+| Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introductory text of the game;</br>Work on report page to make the game more competitive |
 
 
 
 <a name="_s5"></a>
 ### - Sprint 3: Beta version release (8 Apr – 22 Apr)
+
+| Agile development cycle III | Description      | 
+| ------------------------ | ---------------- |
+| Requirements    | Fulfill functionality of each component on frontend;</br>Develop report API and submit API;</br>Build up database on backend;</br>Implement deployment on docker     | 
+| Design          | List implementation detail of each component and internal logic on fulfilling each functionality;</br>Design database model and schema, decide what data to store and how to store it;|  
+| Development     | Implement integrated development on frontend;</br>Work on the development of two more APIs on backend;</br>Create a service to handle the http calls and connect components to APIs;</br>Implement MongoDB and manage the storage of data |
+| Testing         | Execute unit testing |
+| Deployment      | Deploy on docker [(Click here to check video of Beta version)](https://youtu.be/5RtuafF8Iko) |
+| Users stories   | **Emma (End-user)**:</br>I could see what the system looks like and what I could do with it, although the UI design is not pretty. I was willing to have a try and play it, however, the whole experience looked like taking a test. I didn't enjoy it and felt it playful. |
+| Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introductory text of the game;</br>Work on report page to make the game more competitive |
+
 implement get-report feature
 </br>Decide what data to show on the report and how to collect and calculate it; 
-https://youtu.be/5RtuafF8Iko
+
 <a name="_s6"></a>
 ### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
 
