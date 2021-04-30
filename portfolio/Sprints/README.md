@@ -179,7 +179,7 @@ During each iteration we defined the requirements based on the backlog from prev
 
 | Agile development cycle IV | Description      | 
 | ------------------------ | ---------------- |
-| Requirements    | Further adjustment on UI design and other minor adjustment;</br>Fix some errors on the pages or in the codes;</br>Write portfolio, record demo video| 
+| Requirements    | Further adjustment on UI design and other minor adjustment;</br>Fix some errors on the pages and in the codes;</br>Write portfolio, record demo video| 
 | Design          | Find out several font libraries to choose;</br>UI design: 1) Increase font size of some texts; 2) Change font and color of some texts; 3) Highlight the selected option box; 4) Resize the option box;</br>Design questionnaire for evaluation, collect and analyse feedback from users|  
 | Development     | Work on some minor adjustment on UI design;</br>Fix bugs and deploy for user acceptance testing|
 | Testing         | User acceptance testing |
