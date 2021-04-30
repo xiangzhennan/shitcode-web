@@ -170,12 +170,22 @@ During each iteration we defined the requirements based on the backlog from prev
 | Development     | Develop on welcome page and report page;</br>Improve UI design on question page |
 | Testing         | Component integration and functional testing |
 | Deployment      | Deploy on docker [(Click here to check video of Beta version)](https://youtu.be/5RtuafF8Iko) |
-| Users stories   | **Emma (End-user)**:</br>When I opened the website again, it was colorful and vivid. The user interface looked more like a playful game now. It made me want to explore the game more. However, the font of some texts is too small to read and the option box and the content in it could be designed more user-friendly. |
+| Users stories   | **Emma (End-user)**:</br>When I opened the website again, it was colorful and vivid. The user interface looked more like a playful game now. It made me want to explore the game more. However, the font of some texts is too small to read. Besides, the option box and the content in it could be designed more user-friendly. |
 | Review          | Backlog and things to do:</br>Further adjustment on UI design according to user's feedback;</br>User acceptance testing;</br>Write portfolio, record demo video |
 
 
 <a name="_s6"></a>
 ### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
+
+| Agile development cycle IV | Description      | 
+| ------------------------ | ---------------- |
+| Requirements    | Further adjustment on UI design and other minor adjustment;</br>Fix some errors on the pages or in the codes;</br>Write portfolio, record demo video| 
+| Design          | Find out several font libraries to choose;</br>UI design: 1) Increase font size of some texts; 2) Change font and color of some texts; 3) Highlight the selected option box; 4) Resize the option box;</br>Design questionnaire for evaluation, collect and analyse feedback from users|  
+| Development     | Work on some minor adjustment on UI design;</br>Fix bugs and deploy for user acceptance testing|
+| Testing         | User acceptance testing |
+| Deployment      | Deploy on docker [(Click here to check video of version 1.0)](https://youtu.be/2qxE9Px6Q80) |
+| Users stories   | **Emma (End-user)**:</br>I think the final version is great. It's a playful quiz game. I can learn something about which is shitcode that I should avoid in the future but also have much fun in the process. I will recommend the game to my coder friends. There are only ten questions in the game for now, short and easy to be focused. However, it would be better for coding beginner if the question database could be more abundant or set the challenge into different levels for players. |
+| Review          | Make project conclusion on several aspects|
 
 <a name="_s7"></a>
 ### - Meeting logs
