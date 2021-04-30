@@ -54,7 +54,7 @@ Following Agile model, we decide what can be accomplished in the timeframe at th
 
 The key activities we follow during each Agile development cycle are as below: 
 * **Requirements** - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
-* **Design** - The team discusses how to tackle these requirements, and proposes the tools needed to achieve the best result. The developers discuss the feature implementation and the internal structure of the come.
+* **Design** - The team discusses how to tackle these requirements, and proposes the tools needed to achieve the best result. The developers discuss the feature implementation and the internal structure of the outcome.
 * **Development** - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
 * **Testing** - Unit testing, functional testing, user acceptance testing.
 * **Deployment** - Integrate and deliver the working iteration into production.
@@ -139,17 +139,31 @@ During each iteration we defined the requirements based on the backlog from prev
 | ------------------------ | ---------------- |
 | Requirements    | Defined overall infrastructure;</br>Defined minimum viable product (MVP) with functions/classes/variables;</br>Develop first prototype and make it work;     | 
 | Design          | Paper prototyping and draw website wireframes;</br>Design Angular components of each page [(Click here to check)](../System_implementation/README.md#_list);</br>Design RESTful API [(Click here to check)](../System_implementation/README.md#_api);     |  
-| Development     | Implement Node.js server, create question API;</br>Create components of welcome page, question page and report page with text description, necessary buttons but no style; |
+| Development     | Implement Node.js server, create question API;</br>Create components of welcome page, question page and report page with only text description, necessary buttons but no style; |
 | Testing         | Test APIs and internal logic on Express with `node server.js`; |
 | Deployment      | Deploy on local [(Click here to check video of first prototype)](https://youtu.be/6PBFm8z1YCs) |
-| Users stories   | **Emma (End-user)**:</br>I only see some buttons to click to jump to different pages. I have no idea how to play with it or interact with it. It's a too simple web page only. |
-| Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on get-report feature by further development on back-end |
+| Users stories   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. I had no idea how to play with it or interact with it. It was a too simple web page only. |
+| Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the rest of APIs by further development on back-end |
 
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
-https://youtu.be/Z3gb-ht5-jM
+
+| Agile development cycle  | Description      | 
+| ------------------------ | ---------------- |
+| Requirements    | Fulfill functionality of each component on frontend;</br>Develop report API and submit API;</br>Build up database on backend;</br>Implement deployment on docker     | 
+| Design          | List design detail of each component and internal logic between components;</br>Design database model and schema, decide what data to store and how to store it;|  
+| Development     | Implement integrated development on frontend;</br>Work on the development of the rest of APIs on backend;</br>Create a service to handle the http calls and connect components to APIs;</br>Implement MongoDB and manage the storage of data |
+| Testing         | Execute unit testing |
+| Deployment      | Deploy on docker [(Click here to check video of alpha version)](https://youtu.be/Z3gb-ht5-jM) |
+| Users stories   | **Emma (End-user)**:</br>I could see what the system looks like and what I could do with it, although the UI design is not pretty. I was willing to have a try and play it, however, the whole experience looked like taking a test. I didn't enjoy it and felt it playful |
+| Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introduce the game;</br>Work on report page to make the game more competitive |
+
+
+
 <a name="_s5"></a>
 ### - Sprint 3: Beta version release (8 Apr – 22 Apr)
+implement get-report feature
+</br>Decide what data to show on the report and how to collect and calculate it; 
 https://youtu.be/5RtuafF8Iko
 <a name="_s6"></a>
 ### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
