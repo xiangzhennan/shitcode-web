@@ -184,8 +184,8 @@ During each iteration we defined the requirements based on the backlog from prev
 | Development     | Work on some minor adjustment on UI design;</br>Fix bugs and deploy for user acceptance testing|
 | Testing         | User acceptance testing |
 | Deployment      | Deploy on docker [(Click here to check video of version 1.0)](https://youtu.be/2qxE9Px6Q80) |
-| Users stories   | **Emma (End-user)**:</br>I think the final version is great. It's a playful quiz game. I can learn something about which is shitcode that I should avoid in the future but also have much fun in the process. I will recommend the game to my coder friends. There are only ten questions in the game for now, short and easy to be focused. However, it would be better for coding beginner if the question database could be more abundant or set the challenge into different levels for players. |
-| Review          | Make project conclusion on several aspects|
+| Users stories   | **Emma (End-user)**:</br>I think the final version is great. It's a playful quiz game. I can learn something about which is shitcode that I should avoid in the future but also have much fun in the process. I will recommend the game to my coder friends. There are only ten questions in the game for now, short and easy to be focused. However, it would be better for coding beginner if the question database could be more abundant and set the challenge into different levels for players. |
+| Review          | Make project conclusion on each aspect|
 
 <a name="_s7"></a>
 ### - Meeting logs
