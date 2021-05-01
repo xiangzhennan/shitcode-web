@@ -30,7 +30,7 @@
 <a name="_stack"></a>
 ## 1.  Stack architecture and system design
 
-We worked on a quiz challenge single page application that comprises of animation interaction to make the learning process more fun. After discussion of function and implementation, we decided to choose MEAN stack to develop the application in terms of its benefit of flexibility, scalability and extensibility. 
+We worked on a quiz challenge single page application that comprises of animation interaction to make the learning process more fun. After discussion of function and implementation, we decided to choose **MEAN stack** to develop the application in terms of its benefit of flexibility, scalability and extensibility. 
 
 The client side is the web page which runs in the browser. On the client, we use Angular to render the content in JS and complete client-side operations.
 
