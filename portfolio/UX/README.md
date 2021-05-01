@@ -56,3 +56,19 @@ Define the challenge of the problems gathered from the discovery phase in a diff
 Give different answers to the clearly defined problem, seeking inspiration from elsewhere.
 * **Deliver**<br/>
 Test out different solutions at small-scale, reject those that will not work and improve the ones that will.
+
+<a name="_3.2"></a>
+### - Prototyping and think-loud
+
+Paper prototyping is a user-centred design method that involves the development of user interface mock-ups and drawn sketches which are presented to end users for evaluation.
+
+We involved our users to better conceptualise our product and visualise how it will be used. Feedback from end-user Emma is listed as below.
+* **Product concept and goals**<br/>
+```I think it's very clear for the game to choose out shitcode in order to get scores as high as possible.```
+* **Logic and flow of user journeys**<br/>
+```I think the logic of the game is very simple to understand, easy to play.```
+* **The form of the user interface**<br/>
+```Using cute shit elements and images to display result of my answer to each question is very vivid and fits the shit-code theme.```
+
+This really tested our hypothesis and helped us to better understand our product and users.
+
