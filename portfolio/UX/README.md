@@ -38,7 +38,7 @@ Then we created a matrix to populate the axes with these play items and problems
 
 After several rounds of discussion and voting, we finally chose the idea about shitcode which is very close to our current situation and needs. Having found that most learning is by trying out challenging problems and reflecting on them, we decided to design a quiz game to address the problem about bad coding habit and promote active learning experience.
 
-
+<img src="mood_board2.png" width="800" />
 
 <a name="_1.3"></a>
 ### - Paper prototyping
