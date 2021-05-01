@@ -3,6 +3,7 @@
 ## Contents
 
 * [Design Process and Early prototyping and ideation](#_1)
+    * [Design thinking](#_1.1)
 
 
 
@@ -12,6 +13,7 @@
 
 To design and build a web app that is based around the concept of “serious play” which addresses a serious issue but using playful techniques to engage audiences, we used design thinking to generate the idea of our project. 
 
+<a name="_1.1"></a>
 ### - Design thinking
 
 During design thinking, we followed the process as below.
