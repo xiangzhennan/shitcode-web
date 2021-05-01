@@ -4,6 +4,8 @@
 
 * [Early prototyping and ideation](#_1)
     * [Design thinking](#_1.1)
+    * [Early ideation and mood boards](#_1.2)
+    * [Paper prototyping](#_1.3)
 
 
 
@@ -31,6 +33,8 @@ Test out different solutions at small-scale, reject those that will not work and
 
 We brainstormed a list of several forms of game, like kicking a ball, gambling, rolling dice, trading. We also listed several serious topics, like garbage sorting to protect environment, finding buying partner to share order and reduce waste, shit-code tutorial to help new coder get rid of bad coding habit.
 Then we created a matrix to populate the axes with these play items and problems for further decision.
+
+<img src="mood_board.png"/>
 
 After several rounds of discussion and voting, we finally chose the idea about shitcode which is very close to our current situation and needs. Having found that most learning is by trying out challenging problems and reflecting on them, we decided to design a quiz game to address the problem about bad coding habit and promote active learning experience.
 
