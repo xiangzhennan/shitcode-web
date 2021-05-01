@@ -131,7 +131,7 @@ During each iteration we defined the requirements based on the backlog from prev
 <a name="_s2"></a>
 ### - Timeline
 
-<img src="timeline.png"/>
+<img src="timeline_chart.png"/>
 
 <a name="_s3"></a>
 ### - Sprint 1: First prototype (25 Feb – 18 Mar)
