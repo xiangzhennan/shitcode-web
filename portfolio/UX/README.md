@@ -6,6 +6,9 @@
     * [Early ideation and mood boards](#_1.1)
     * [Paper prototyping](#_1.2)
 * [Identification of interacting users and broader stakeholders](#_2)
+    * [End user - coding novice](#_2.1)
+    * [End user - coding lover](#_2.2)
+    * [Broader stakeholder - online coding community](#_2.2)
 * [UX approach](#_3)
     * [Design thinking](#_3.1)
     * [Prototyping and think-loud](#_3.2)
@@ -33,7 +36,19 @@ After several rounds of discussion and voting, we finally chose the idea about s
 <a name="_2"></a>
 ## Identification of interacting users and broader stakeholders
 
+Our system is mainly designed for two types of end user: coding novice and coding lover. Online coding community is also our broader stakeholder.
 
+<a name="_2.1"></a>
+* **End user - coding novice**<br/>
+The coding novice is a group of people who are new to programming, like computer science related students. They are in the process of systematically learning programming. As a beginner, they need to learn good practice of coding in order to build up good coding habit at the beginning.
+
+<a name="_2.2"></a>
+* **End user - coding lover**<br/>
+The coding lover is a group of people who have much interest in coding but not major in it or work on it. They may like to study coding by themselves in their free time and their main tutorial might be materials online. The game is a good supplement to their self-study.
+
+<a name="_2.3"></a>
+* **Broader stakeholder - online coding community**<br/>
+Developers tend to like discussing problems they meet in an online coding community. So there is much coding experience in practice that could be found in those online communities. This could be a good example for teaching which is good code and identifying which is shit code, which would be a good source to enrich database of quiz questions.
 
 
 <a name="_3"></a>
