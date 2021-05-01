@@ -60,6 +60,17 @@ f. Deployment details - Docker
 
 <a name="_UX"></a>
 ## 5.  UX Design
+[Click here](portfolio/UX/README.md) to see:
+
+a. Early prototyping and ideation
+
+b. Identification of interacting users and broader stakeholders
+
+c. UX approach
+
+d. Understanding of user group
+
+e. Wireframes and interaction flow diagrams for final key subsystems
 
 <a name="_sprints"></a>
 ## 6.  Sprints & Project Management
