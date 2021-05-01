@@ -192,7 +192,7 @@ During each iteration we defined the requirements based on the backlog from prev
 <a name="_s7"></a>
 ### - Meeting logs
 
-[Meeting log records](meeting_log/README.md)
+[Click here to check meeting logs](meeting_log/README.md)
 
 
 <a name="_git"></a>
