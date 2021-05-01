@@ -7,6 +7,7 @@
     * [Paper prototyping](#_1.2)
 * [UX approach](#_3)
     * [Design thinking](#_3.1)
+    * [Prototyping and think-loud](#_3.2)
 
 
 
