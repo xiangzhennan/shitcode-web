@@ -1,92 +1,25 @@
-# Find Out Shitcode
-![Logo](portfolio/images/game_logo.jpeg)
+# UX Design
 
-A quiz challenge aimed to help new coders get rid of bad coding habit in a playful way. Find out bad coding practice from the listed coding snippets. Watch out 💩 on the screen if you choose wrong answers. We’ve concluded several good coding principles for you to build up a better awareness of how to avoid writing shitcode.
+## Contents
 
-
-<p>
-    <a href="#_team">1. Team</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_intro">2. Introduction</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_background">3. Background and Motivation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_implementation">4. System Implementation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_UX">5. UX Design</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_sprints">6. Sprints & Project Management</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_evaluation">7. Evaluation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#_conclusion">8. Conclusion</a>
-</p>
+* [Design Process and Early prototyping and ideation](#_1)
 
 
-<a name="_team"></a>
-## 1.  Team
 
-Zhennan Xiang: <oh20840@bristol.ac.uk> [Backend, System architect]
 
-Shujie Liu: <xk20359@bristol.ac.uk> [Backend]
+<a name="_1"></a>
+## Design Process and Early prototyping and ideation
 
-Karine Liang: <eb20033@bristol.ac.uk> [Frontend]
+To design and build a web app that is based around the concept of “serious play” which addresses a serious issue but using playful techniques to engage audiences, we used design thinking to generate the idea of our project. 
 
-Sheng Guo: <ka20939@bristol.ac.uk> [Frontend]
+### - Design thinking
 
-Shengzhe Qin: <fb20957@bristol.ac.uk> [Frontend]
-
-<a name="_intro"></a>
-## 2.  Introduction
-Find-out-shitcode is a quiz game designed for coders especially novices to improve their coding skills and learn how to write readable code. Good habits for coding are important when learning programming as well as coding in a team. New coders always feel confused about which is good practice for implementing a piece of code. There are many tutorials on the market that teach you how to write code, but few teach you how to avoid writing shit code. The game is aimed at this kind of niche market and offered in a playful way to make learning more fun.
-
-Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-art-shitcode) principles, each question provides two code snippets through examples of good and bad style in the game. The user is encouraged to distinguish between them and choose the bad practice which is defined as shitcode. The corresponding principle for good practice will be displayed afterwards. To increase the challenge of the game, the user will get relevant medal badge and ranking according to answer accuracy in the end.
-
-### Demo video
-[![demo](portfolio/images/demo_video.png)](https://youtu.be/QZWNW-RlVLs)
-
-<a name="_background"></a>
-## 3.  Background and Motivation
-
-<a name="_implementation"></a>
-## 4.  System Implementation
-
-[Click here](portfolio/System_implementation/README.md) to see:
-
-a. Stack architecture and system design
-
-b. Back End - MongoDB - database implementation
-
-c. Middle Tier - Express, Node, the RESTful API
-
-d. Front End - Angular
-
-e. Additional element - cookie/session or local storage
-
-f. Deployment details - Docker
-
-<a name="_UX"></a>
-## 5.  UX Design
-
-<a name="_sprints"></a>
-## 6.  Sprints & Project Management
-[Click here](portfolio/Sprints/README.md) to see:
-
-a. Group working methods
-
-b. A summary of team roles and individual contributions
-
-c. Documentation of sprints
-
-d. Team use of Git - continuous integration and deployment
-
-<a name="_evaluation"></a>
-## 7.  Evaluation
-
-<a name="_conclusion"></a>
-## 8.  Conclusion
-
-[Click here](portfolio/Conclusion/README.md) to see:
-
-a. Conclusion on the group working practices
-
-b. Conclusion on the success of the project
-
-c. How coronavirus has affected the project
-
-d. Social and Ethical implications
-
-e. Future work
+During design thinking, we followed the process as below.
+* **Discover**<br/>
+Discover a real-world problem or a serious issue around us. Speak to people who are affected by the issues.
+* **Define**<br/>
+Define the challenge of the problems gathered from the discovery phase in a different way.
+* **Develop**<br/>
+Give different answers to the clearly defined problem, seeking inspiration from elsewhere.
+* **Deliver**<br/>
+Test out different solutions at small-scale, reject those that will not work and improve the ones that will.
