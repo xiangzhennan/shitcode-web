@@ -31,6 +31,17 @@ After several rounds of discussion and voting, we finally chose the idea about s
 <a name="_3"></a>
 ## UX approach
 
+A UX approach involves deeply understanding the users through research, organizing information, visual design (and more), all with the goal of meeting user needs and doing it elegantly. It involves putting users at the centre of the design and development process, and establishing an iterative cycle of research, design and evaluation.
+
+* **Research**<br/>
+Perform initial user research to help understand the target audience (capabilities, limitations, goals, expectations) and their tasks.
+* **Design**<br/>
+User research insights are used to help generate ideas and early designs. Prototyping can be used to bring concepts to life.
+* **Evaluation**<br/>
+Capture user feedback, and to measure the delivered UX throughout a project.
+
+We used the following approaches to improve our UX design in the whole process of development.
+
 <a name="_3.1"></a>
 ### - Design thinking
 
