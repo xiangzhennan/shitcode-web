@@ -198,4 +198,11 @@ During each iteration we defined the requirements based on the backlog from prev
 <a name="_git"></a>
 ## Team use of Git - continuous integration and deployment
 
+To control and manage development in a robust and systematic way, we implement version control using a public GitHub repo and setup main, dev and other feature branches. Each team member developed their codes locally and pushed them to their own individual dev branch when code is finalized and they are happy with it. These individual branches were updated by each team member and were a working, moving copy of the latest shared version of their code.
+
+Because the frontend development work was allocated to three persons, the frontend team integrated their work by merging all changes to frontdev branch. Then we merged frontend and backend working copies to dev branch regularly whenever we completed a significant set of proper unit tests and functional tests. 
+
+Our code is merged progressively from branch to branch. One group member of our team was in charge of merging dev into main when our codes were fully tested and sophisticated enough to be a release version to serve users. The person was also mainly responsible for running the build script, creating issues and allocating specific tasks on group members. Then the issues got closed when they were solved.
+
+
 [Back to the homepage](../../README.md)
