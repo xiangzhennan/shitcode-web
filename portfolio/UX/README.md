@@ -5,6 +5,7 @@
 * [Early prototyping and ideation](#_1)
     * [Early ideation and mood boards](#_1.1)
     * [Paper prototyping](#_1.2)
+* [Identification of interacting users and broader stakeholders](#_2)
 * [UX approach](#_3)
     * [Design thinking](#_3.1)
     * [Prototyping and think-loud](#_3.2)
@@ -28,6 +29,12 @@ After several rounds of discussion and voting, we finally chose the idea about s
 
 <a name="_1.2"></a>
 ### - Paper prototyping
+
+<a name="_2"></a>
+## Identification of interacting users and broader stakeholders
+
+
+
 
 <a name="_3"></a>
 ## UX approach
