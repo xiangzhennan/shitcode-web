@@ -160,9 +160,11 @@ The development of wireframes of each page is according to user's feedback in di
 The welcome page is to display the game theme and logo as well as introduce what the game is and how to play with it. 
 
 The initial design of welcome page is drawn as below.
+
 <img src="img/welcome1.png" width="700" />
 
 The final design of welcome page is show as below. Click ``"play"`` button to start the game.
+
 <img src="img/welcome2.png" width="700" />
 
 <a name="_5.2"></a>
