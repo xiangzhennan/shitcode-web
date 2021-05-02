@@ -1,5 +1,5 @@
 # Find Out Shitcode
-![Logo](portfolio/images/game_logo.jpeg)
+<img src="portfolio/images/game_logo.jpeg" width="700" />
 
 A quiz challenge aimed to help new coders get rid of bad coding habit in a playful way. Find out bad coding practice from the listed coding snippets. Watch out 💩 on the screen if you choose wrong answers. We’ve concluded several good coding principles for you to build up a better awareness of how to avoid writing shitcode.
 
@@ -36,7 +36,7 @@ Find-out-shitcode is a quiz game designed for coders especially novices to impro
 Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-art-shitcode) principles, each question provides two code snippets through examples of good and bad style in the game. The user is encouraged to distinguish between them and choose the bad practice which is defined as shitcode. The corresponding principle for good practice will be displayed afterwards. To increase the challenge of the game, the user will get relevant medal badge and ranking according to answer accuracy in the end.
 
 ### Demo video
-[![demo](portfolio/images/demo_video.png)](https://youtu.be/QZWNW-RlVLs)
+[<img src="portfolio/images/demo_video.png" width="700" />](https://youtu.be/QZWNW-RlVLs)
 
 <a name="_background"></a>
 ## 3.  Background and Motivation
