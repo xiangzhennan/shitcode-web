@@ -191,7 +191,7 @@ The option box chosen by player will be highlighted as below.
 
 <img src="img/question4.png" width="700" />
 
-If the player don't choose an answer but directly click "confirm" button, a prompt box will pop up to give a reminder.
+If a player don't choose an answer but directly click ``"confirm"`` button, a prompt box will pop up with a reminder.
 
 <img src="img/question5.png" width="700" />
 
