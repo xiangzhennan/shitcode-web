@@ -2,19 +2,19 @@
 
 ## Contents
 
-* [Group working methods](#_group)
+* [1. Group working methods](#_group)
     * [Workflow](#_workflow)
     * [Agile development](#_agile)
     * [Communication channel](#_communication)
 
-* [A summary of team roles and individual contributions](#_team)
+* [2. A summary of team roles and individual contributions](#_team)
     * [Zhennan Xiang](#_Xiang)
     * [Shujie Liu](#_Liu)
     * [Sheng Guo](#_Guo)
     * [Karine Liang](#_Liang)
     * [Shengzhe Qin](#_Qin)
 
-* [Documentation of sprints](#_sprints)
+* [3. Documentation of sprints](#_sprints)
     * [High level overview](#_s1)
     * [Timeline](#_s2)
     * [Sprint 1: First prototype (25 Feb – 18 Mar)](#_s3)
@@ -23,11 +23,11 @@
     * [Sprint 4: Version 1.0 release (22 Apr – 7 May)](#_s6)
     * [Meeting logs](#_s7)
     
-* [Team use of Git - continuous integration and deployment](#_git)
+* [4. Team use of Git - continuous integration and deployment](#_git)
     
 
 <a name="_group"></a>
-## Group working methods
+## 1. Group working methods
 
 To develop an application in a group, we apply the principles of DevOps and stick to the selected methodology to keep out project on track and moving at a constant pace.
 
@@ -68,10 +68,10 @@ The key activities we follow during each Agile development cycle are as below:
 * **Teams** - We use Teams to have our weekly meeting and schedule team standups.
 * **GitHub** - We use GitHub to share documents, implement version control and merge our outputs for effective collaboration.
 * **Kanban** - We use Kanban Board for task allocation and progress monitoring. It makes the progress of our project transparent and helps us more better monitor how far we've come and what's left to do.
-
+<\br>
 
 <a name="_team"></a>
-## A summary of team roles and individual contributions
+## 2. A summary of team roles and individual contributions
 
 <a name="_Xiang"></a>
 * **Zhennan Xiang**
@@ -118,7 +118,7 @@ Specifically, Qin mainly contributed to the following things:
 
 
 <a name="_sprints"></a>
-## Documentation of sprints
+## 3. Documentation of sprints
 
 <a name="_s1"></a>
 ### - High level overview
@@ -196,7 +196,7 @@ During each iteration we defined the requirements based on the backlog from prev
 
 
 <a name="_git"></a>
-## Team use of Git - continuous integration and deployment
+## 4. Team use of Git - continuous integration and deployment
 
 To control and manage development in a robust and systematic way, we implement version control using a public GitHub repo and setup main, dev and other feature branches. Each team member developed their codes locally and pushed them to their own individual dev branch when code is finalized and they are happy with it. These individual branches were updated by each team member and were a working, moving copy of the latest shared version of their code.
 
