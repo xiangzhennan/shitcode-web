@@ -115,7 +115,7 @@ Specifically, Qin mainly contributed to the following things:
 3) Design for welcome page and report page
 4) Research on font and image library and providing suitable options
 5) Designing questionnaire and analyzing user feedback for evaluation
-
+</br>
 
 <a name="_sprints"></a>
 ## 3. Documentation of sprints
@@ -193,7 +193,7 @@ During each iteration we defined the requirements based on the backlog from prev
 ### - Meeting logs
 
 [Click here to check meeting logs](meeting_log/README.md)
-
+</br>
 
 <a name="_git"></a>
 ## 4. Team use of Git - continuous integration and deployment
@@ -203,6 +203,6 @@ To control and manage development in a robust and systematic way, we implement v
 Because the frontend development work was allocated to three persons, the frontend team integrated their work by merging all changes to frontdev branch. Then frontend and backend working copies were merged to dev branch regularly whenever we completed a significant set of proper unit tests and functional tests. 
 
 Our principle is to merge code progressively from branch to branch. One group member of our team was in charge of merging dev into main when our codes were fully tested and sophisticated enough to be a release version to serve users. The person was also mainly responsible for running the build script each time, creating issues and allocating specific tasks on group members. The issues would get closed when they were solved.
-
+</br>
 
 [Back to the homepage](../../README.md)
