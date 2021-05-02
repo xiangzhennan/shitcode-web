@@ -208,11 +208,11 @@ The first version is show as below.
 
 <img src="img/question7.png" width="700" />
 
-The final version is show as below which has much more details and polished UI design.
+The final version is shown as below which has much more details and polished UI design.
 
 <img src="img/question8.png" width="700" />
 
-The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first. The grey icons on the navigation bar in the following picture indicate unanswered questions.
+The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first. The dark grey icons on the navigation bar in the following picture indicate the unanswered questions.
 
 <img src="img/question9.png" width="700" />
 
