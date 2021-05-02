@@ -117,8 +117,16 @@ User story is a popular way to record user needs. To make the picture clear, we 
 
 ```As a freshman majoring in computer science, I just start my journey on coding. I feel exciting but also nervous. I could learn technical skills and algorithm from books. However, this is a very practical subject. Sometimes, I didn't get high score for my assignments and feel frustrated on the reality that my code is a little messy compared with others. I want to figure out how to write elegant and efficient code, so that I could be a solid and professional software engineer in the future. I know this requires accumulation of much experience, but it would be better if there is tutorial or guidance about that somewhere. There are many tutorials on the market about how to write code using specific programming language. I expect more there would be tutorials about teaching me how to write readable, stable, sustainable and robust code to solve problems elegantly. ```
 
+```If there is a game that requires you to find out shit code, how do you feel about it? Would you like to try? What's your expectation for it?```
+```I find that would be interesting. I'm willing to try. There is nothing better than learning in the game. I love puzzle game! I expect if I find out shit code in the game, I could definitely avoid it in my work. I think that might be like a mirror to remind me what to do and what not to do when writing code.```
+
 <a name="_4.2"></a>
 ### - User story 2: Max (coding lover)
+
+```As an amateur programmer, I learn coding by myself at my spare time and I'm always willing to explore more. The internet is a knowledge treasury for my self-study. I could always find good tutorials online. However, I also wonder how to write code more professionally. I could find some summaries of coding experience from others online. It would be more excellent if there is more guidance and conclusion on how to write professional code on the internet.```
+
+```If there is a game that requires you to find out shit code, how do you feel about it? Would you like to try? What's your expectation for it?```
+```Oh, play a game about coding? That sounds fun. I definitely would try. I hope I could learn something from that and reflect on whether I write similar shit code in my practice.```
 
 <a name="_4.3"></a>
 ### - User story 3: Raymond (active user of online coding community)
