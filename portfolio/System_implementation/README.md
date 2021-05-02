@@ -132,7 +132,8 @@ if (req.query.id !== undefined){
 Second, there is a post request in the API design, which submits the information of whether user answered a specific question correctly. This request can sure be changed to a get request but the request will have influence on the database, so we think get request can be dangerous. Malicious attack can make use of get request to ruin the validity of data inside database, which is designed to provide history answering info.  
 
 We used post request so that every data the server needs hides safely in request body instead of url. Also, this practice cost us some more time on understanding a post request and how to get param from request body.
-</br>
+
+</br></br>
 
 <a name="_frontend"></a>
 ## 4.  Front End - Angular
@@ -201,7 +202,7 @@ In the project, we tried to avoid the user to repetitively answer the questions,
 Session can be seen as some memory on the server side while cookie is on client side. Session is designed to have limited survival time, so it is not what we want. By contrast, cookie can be a better choice, living on client side so user can take advantage of it to tell the server that the user has already done the questions once. However, cookie is carried to the server every time there is a http request, which put some pressure on the server side.
 
 Our group finally chose local storage, which also lives permanently on client side but doesn't engage in client-server communication, exactly what we wanted.
-</br>
+</br></br>
 
 <a name="_deploy"></a>
 ## 6.  Deployment details - Docker
