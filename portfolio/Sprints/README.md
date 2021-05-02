@@ -68,7 +68,7 @@ The key activities we follow during each Agile development cycle are as below:
 * **Teams** - We use Teams to have our weekly meeting and schedule team standups.
 * **GitHub** - We use GitHub to share documents, implement version control and merge our outputs for effective collaboration.
 * **Kanban** - We use Kanban Board for task allocation and progress monitoring. It makes the progress of our project transparent and helps us more better monitor how far we've come and what's left to do.
-<\br>
+</br>
 
 <a name="_team"></a>
 ## 2. A summary of team roles and individual contributions
