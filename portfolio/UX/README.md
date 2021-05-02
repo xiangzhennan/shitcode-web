@@ -146,17 +146,53 @@ If there is a game that you could play to find out shit code, how do you feel ab
 <a name="_5"></a>
 ## 5. Wireframes and interaction flow diagrams for final key subsystems
 
+The development of wireframes of each page is according to user's feedback in different phases.
+
 ### - Wireframe: welcome page
 
 The welcome page is to display the game theme and logo and introduce what the game is and how to play with it. Click "start/play" button to start the game.
 
-The initial design of welcome page was drawn as below.
+The initial design of welcome page is drawn as below.
 <img src="img/welcome1.png" width="700" />
 
-The final design of welcome page was show as below.
+The final design of welcome page is show as below.
 <img src="img/welcome2.png" width="700" />
 
 ### - Wireframe: question page
+
+The question page is to show questions and right answer of each question.
+
+The initial design of question page is drawn as below.
+<img src="img/question1.png" width="700" />
+
+The first version of question page is show as below.
+- There is navigation bar on the top to show the progress.
+- The shitcode type is a hint of this question.
+- The player should choose one answer from two option boxes.
+<img src="img/question2.png" width="700" />
+
+The final version of question page is show as below. It renders color of the page and adds cute shit logo on the navigation bar.
+<img src="img/question3.png" width="700" />
+
+The option box chosen by player will be highlighted as below.
+<img src="img/question4.png" width="700" />
+
+If the player don't choose an answer but directly click "confirm" button, a prompt box will pop up to give a reminder.
+<img src="img/question5.png" width="700" />
+
+After confirming, the page will show 
+- the right answer which will be highlighted
+- the right coding rule for reference
+- the updated navigation which display the answering status of this question (correctly answered questions and incorrectly answered questions have different icons)
+
+The initial design is drawn as below.
+<img src="img/question6.png" width="700" />
+
+The first version is show as below.
+<img src="img/question7.png" width="700" />
+
+The final version is show as below which has much more detail with more vivid UI design.
+<img src="img/question8.png" width="700" />
 
 
 ### - Wireframe: report page
