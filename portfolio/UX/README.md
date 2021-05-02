@@ -40,6 +40,8 @@ After several rounds of discussion and voting, we finally chose the idea about s
 <a name="_1.2"></a>
 ### - Paper prototyping
 
+[![prototyping](paper_prototyping.png)](https://youtu.be/6ovaOIM6iVE)
+
 </br>
 
 <a name="_2"></a>
