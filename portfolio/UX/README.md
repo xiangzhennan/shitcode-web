@@ -212,11 +212,12 @@ The final version is shown as below which has much more details and polished UI 
 
 <img src="img/question8.png" width="700" />
 
+Then click ``"next"`` button to go into the next question or ``"get report"`` button to stop answering the rest of questions but enter into the report page in advance. When the last question is answered, ``"get report"`` button has to be clicked to enter into the report page. 
+
 The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first. The dark grey icons on the navigation bar in the following picture indicate the unanswered questions.
 
 <img src="img/question9.png" width="700" />
 
-Then click ``"next"`` button to go into the next question or ``"get report"`` button to stop answering the rest of questions but enter into the report page in advance. When the last question is answered, ``"get report"`` button has to be clicked to enter into the report page. 
 
 <a name="_5.3"></a>
 ### - Wireframe: report page
