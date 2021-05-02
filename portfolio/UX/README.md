@@ -217,7 +217,7 @@ The final design of report page is shown as below.
 
 ### - Interaction flow diagrams for final key subsystems
 
-<img src="img/flow_diagram.jpg" width="700" />
+<img src="img/flow_diagram.png" width="700" />
 
 
 </br></br>
