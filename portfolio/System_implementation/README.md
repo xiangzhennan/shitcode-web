@@ -159,6 +159,8 @@ The following table lists the components we design and create. Then we develop f
 | 9    | report    | report      | Text box, the content is obtained from json |   |
 | 10   | report    | goback      | Button, return to the question page |   |
 
+</br>
+
 <a name="_welcome"></a>
 ### - Welcome page
 For the welcome page, it mainly lies in making the page design simple and easy to understand and how to match the logo.
