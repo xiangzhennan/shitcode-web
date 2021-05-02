@@ -194,6 +194,8 @@ The first version is show as below.
 The final version is show as below which has much more detail with more vivid UI design.
 <img src="img/question8.png" width="700" />
 
+Then click "next" button to go into next question or "get report" button to end answering the rest of questions but enter to the report page. When the last question is answered, "get report" button has to be clicked to enter to the report page.
+
 
 ### - Wireframe: report page
 
