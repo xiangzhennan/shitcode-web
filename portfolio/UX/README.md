@@ -238,10 +238,12 @@ The final design of report page is shown as below.
 
 <img src="img/report3.png" width="700" />
 
+</br>
+
 <a name="_5.4"></a>
 ### - Interaction flow diagrams for final key subsystems
 
-<img src="img/flow_diagram1.png" />
+<img src="img/flow_diagram1.png" width="900" />
 
 
 </br></br>
