@@ -197,7 +197,8 @@ The final version is show as below which has much more detail with more vivid UI
 The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first
 <img src="img/question9.png" width="700" />
 
-Then click "next" button to go into next question or "get report" button to end answering the rest of questions but enter to the report page. When the last question is answered, "get report" button has to be clicked to enter to the report page.
+Then click "next" button to go into next question or "get report" button to end answering the rest of questions but enter to the report page. When the last question is answered, "get report" button has to be clicked to enter to the report page. The grey icons on the navigation bar in the following picture indicate unanswered questions.
+
 
 
 ### - Wireframe: report page
