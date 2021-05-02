@@ -95,3 +95,14 @@ We involved our users to better conceptualise our product and visualise how it w
 
 This really tested our hypothesis and helped us to better understand our product and users.
 
+<a name="_4"></a>
+## Understanding of user group
+
+<a name="_4.1"></a>
+### - User story 1: Emma (coding novice)
+
+<a name="_4.2"></a>
+### - User story 2: Max (coding lover)
+
+<a name="_4.3"></a>
+### - User story 3: Raymond (active user of online coding community)
