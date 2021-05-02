@@ -147,6 +147,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | **Users stories**   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. There is only one question. I had no idea how to play with it. The interface looks too plain though. It is only a simple web page with some texts and buttons. |
 | Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the two more APIs by further development on back-end |
 
+</br>
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
 
@@ -161,7 +162,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introductory text of the game;</br>Work on report page to make the game more competitive |
 
 
-
+</br>
 <a name="_s5"></a>
 ### - Sprint 3: Beta version release (8 Apr – 22 Apr)
 
@@ -175,7 +176,7 @@ During each iteration we defined the requirements based on the backlog from prev
 | **Users stories**   | **Emma (End-user)**:</br>When I open the website again, it is colorful and vivid. The user interface looks more like a playful game now. It make me want to explore the game more. However, the font of some texts is too small to read. Besides, the option box and the content in it could be designed more user-friendly. |
 | Review          | Backlog and things to do:</br>Further adjustment on UI design according to user's feedback;</br>User acceptance testing;</br>Write portfolio, record demo video |
 
-
+</br>
 <a name="_s6"></a>
 ### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
 
@@ -193,7 +194,7 @@ During each iteration we defined the requirements based on the backlog from prev
 ### - Meeting logs
 
 [Click here to check meeting logs](meeting_log/README.md)
-</br>
+</br></br>
 
 <a name="_git"></a>
 ## 4. Team use of Git - continuous integration and deployment
@@ -203,6 +204,6 @@ To control and manage development in a robust and systematic way, we implement v
 Because the frontend development work was allocated to three persons, the frontend team integrated their work by merging all changes to frontdev branch. Then frontend and backend working copies were merged to dev branch regularly whenever we completed a significant set of proper unit tests and functional tests. 
 
 Our principle is to merge code progressively from branch to branch. One group member of our team was in charge of merging dev into main when our codes were fully tested and sophisticated enough to be a release version to serve users. The person was also mainly responsible for running the build script each time, creating issues and allocating specific tasks on group members. The issues would get closed when they were solved.
-</br>
+</br></br>
 
 [Back to the homepage](../../README.md)
