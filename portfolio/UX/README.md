@@ -222,7 +222,7 @@ The player could also click the specific question number on the navigation bar t
 <a name="_5.3"></a>
 ### - Wireframe: report page
 
-The report page is to show the result and performance of the player with three button to choose next step. 
+The report page is to show the result and performance of a player and with three buttons to choose next step. 
 
 The initial design of report page is drawn as below.
 
@@ -232,16 +232,16 @@ The final design of report page is shown as below.
 
 <img src="img/report2.png" width="700" />
 
-- Click "replay" button to restart the game, which would clear your performance record in your current report.
-- Click "home" button to come back to the welcome page. If you click "play" button again, the question pages will show you existed previous answering state of yours. You could click "get report" button, then "replay" button on the report page to replay the game if you want.
-- Click " review answers" button to come back to the question pages to check the answer of each question. You could click "next" button to check one by one. Or you could click specific questions on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
+- Click ``"replay"`` button to restart the game, which would clear your performance record in your current report.
+- Click ``"home"`` button to come back to the welcome page. If you click "play" button again, the question pages will show you previous existed answering state of your last play. You could click ``"get report"`` button, then ``"replay"`` button on the report page to replay the game if you want.
+- Click ``"review answers"`` button to come back to the question pages to check the answer of each question. You could click ``"next"`` button to check answers one by one. Or you could click specific questions on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
 
 <img src="img/report3.png" width="700" />
 
 <a name="_5.4"></a>
 ### - Interaction flow diagrams for final key subsystems
 
-<img src="img/flow_diagram.png" width="700" />
+<img src="img/flow_diagram.png" />
 
 
 </br></br>
