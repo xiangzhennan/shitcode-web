@@ -144,7 +144,26 @@ If there is a game that you could play to find out shit code, how do you feel ab
 </br>
 
 <a name="_5"></a>
-## Wireframes and interaction flow diagrams for final key subsystems
+## 5. Wireframes and interaction flow diagrams for final key subsystems
+
+### - Wireframe: welcome page
+
+The welcome page is to display the game theme and logo and introduce what the game is and how to play with it. Click "start/play" button to start the game.
+
+The initial design of welcome page was drawn as below.
+<img src="img/welcome1.png" width="700" />
+
+The final design of welcome page was show as below.
+<img src="img/welcome2.png" width="700" />
+
+### - Wireframe: question page
+
+
+### - Wireframe: report page
+
+
+### - Interaction flow diagrams for final key subsystems
+
 
 </br></br>
 
