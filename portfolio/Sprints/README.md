@@ -146,8 +146,8 @@ During each iteration we defined the requirements based on the backlog from prev
 | Deployment      | Deploy on local [(Click here to check video of first prototype)](https://youtu.be/6PBFm8z1YCs) |
 | **Users stories**   | **Emma (End-user)**:</br>I only saw some buttons to click to jump to different pages. There is only one question. I had no idea how to play with it. The interface looks too plain though. It is only a simple web page with some texts and buttons. |
 | Review          | Backlog and things to do:</br>Develop on front-end to make it more functional and interactive;</br>Build up database to store related data;</br>Work on the two more APIs by further development on back-end |
-
 </br>
+
 <a name="_s4"></a>
 ### - Sprint 2: Alpha version release (18 Mar – 8 Apr)
 
@@ -160,9 +160,9 @@ During each iteration we defined the requirements based on the backlog from prev
 | Deployment      | Deploy on docker [(Click here to check video of Alpha version)](https://youtu.be/Z3gb-ht5-jM) |
 | **Users stories**   | **Emma (End-user)**:</br>I can see what the system looks like and what I can do with it, although the UI design is not pretty. There are several questions now. I'm willing to have a try and play with it, however, the whole experience looks like taking a test. I don't enjoy it or feel it playful. |
 | Review          | Backlog and things to do:</br>Enhance UI design and make it more playful;</br>Design the welcome page and introductory text of the game;</br>Work on report page to make the game more competitive |
-
-
 </br>
+
+
 <a name="_s5"></a>
 ### - Sprint 3: Beta version release (8 Apr – 22 Apr)
 
@@ -175,8 +175,8 @@ During each iteration we defined the requirements based on the backlog from prev
 | Deployment      | Deploy on docker [(Click here to check video of Beta version)](https://youtu.be/5RtuafF8Iko) |
 | **Users stories**   | **Emma (End-user)**:</br>When I open the website again, it is colorful and vivid. The user interface looks more like a playful game now. It make me want to explore the game more. However, the font of some texts is too small to read. Besides, the option box and the content in it could be designed more user-friendly. |
 | Review          | Backlog and things to do:</br>Further adjustment on UI design according to user's feedback;</br>User acceptance testing;</br>Write portfolio, record demo video |
-
 </br>
+
 <a name="_s6"></a>
 ### - Sprint 4: Version 1.0 release (22 Apr – 7 May)
 
