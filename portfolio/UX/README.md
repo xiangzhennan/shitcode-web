@@ -170,24 +170,29 @@ The final design of welcome page is show as below. Click ``"play"`` button to st
 <a name="_5.2"></a>
 ### - Wireframe: question page
 
-The question page is to show questions and right answer of each question.
+The question page is to show quiz questions and right answer of each question after a player choose an option.
 
 The initial design of question page is drawn as below.
+
 <img src="img/question1.png" width="700" />
 
 The first version of question page is show as below.
 - There is navigation bar on the top to show the progress.
 - The shitcode type is a hint of this question.
 - The player should choose one answer from two option boxes.
+- 
 <img src="img/question2.png" width="700" />
 
 The final version of question page is show as below. It renders color of the page and adds cute shit logo on the navigation bar.
+
 <img src="img/question3.png" width="700" />
 
 The option box chosen by player will be highlighted as below.
+
 <img src="img/question4.png" width="700" />
 
 If the player don't choose an answer but directly click "confirm" button, a prompt box will pop up to give a reminder.
+
 <img src="img/question5.png" width="700" />
 
 After confirming, the page will show 
@@ -196,15 +201,19 @@ After confirming, the page will show
 - the updated navigation which display the answering status of this question (correctly answered questions and incorrectly answered questions have different icons)
 
 The initial design is drawn as below.
+
 <img src="img/question6.png" width="700" />
 
 The first version is show as below.
+
 <img src="img/question7.png" width="700" />
 
 The final version is show as below which has much more detail with more vivid UI design.
+
 <img src="img/question8.png" width="700" />
 
 The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first. The grey icons on the navigation bar in the following picture indicate unanswered questions.
+
 <img src="img/question9.png" width="700" />
 
 Then click "next" button to go into next question or "get report" button to end answering the rest of questions and enter to the report page in advance. When the last question is answered, "get report" button has to be clicked to enter to the report page. 
@@ -215,14 +224,17 @@ Then click "next" button to go into next question or "get report" button to end 
 The report page is to show the result and performance of the player with three button to choose next step. 
 
 The initial design of report page is drawn as below.
+
 <img src="img/report1.png" width="700" />
 
 The final design of report page is shown as below.
+
 <img src="img/report2.png" width="700" />
 
 - Click "replay" button to restart the game, which would clear your performance record in your current report.
 - Click "home" button to come back to the welcome page. If you click "play" button again, the question pages will show you existed previous answering state of yours. You could click "get report" button, then "replay" button on the report page to replay the game if you want.
 - Click " review answers" button to come back to the question pages to check the answer of each question. You could click "next" button to check one by one. Or you could click specific questions on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
+
 <img src="img/report3.png" width="700" />
 
 <a name="_5.4"></a>
