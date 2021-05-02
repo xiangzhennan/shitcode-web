@@ -2,17 +2,17 @@
 
 ## Contents
 
-* [Early prototyping and ideation](#_1)
+* [1. Early prototyping and ideation](#_1)
     * [Early ideation and mood boards](#_1.1)
     * [Paper prototyping](#_1.2)
-* [Identification of interacting users and broader stakeholders](#_2)
+* [2. Identification of interacting users and broader stakeholders](#_2)
     * [End user - coding novice](#_2.1)
     * [End user - coding lover](#_2.2)
     * [Broader stakeholder - online coding community](#_2.3)
-* [UX approach](#_3)
+* [3. UX approach](#_3)
     * [Design thinking](#_3.1)
     * [Prototyping and think-loud](#_3.2)
-* [Understanding of user group](#_4)
+* [4. Understanding of user group](#_4)
     * [User story 1: Emma (coding novice)](#_4.1)
     * [User story 2: Max (coding lover)](#_4.2)
     * [User story 3: Raymond (active user of online coding community)](#_4.3)
@@ -20,7 +20,7 @@
 
 
 <a name="_1"></a>
-## Early prototyping and ideation
+## 1. Early prototyping and ideation
 
 <a name="_1.1"></a>
 ### - Early ideation and mood boards
@@ -38,7 +38,7 @@ After several rounds of discussion and voting, we finally chose the idea about s
 ### - Paper prototyping
 
 <a name="_2"></a>
-## Identification of interacting users and broader stakeholders
+## 2. Identification of interacting users and broader stakeholders
 
 Our system is mainly designed for two types of end user: coding novice and coding lover. Online coding community is also our broader stakeholder.
 
@@ -56,7 +56,7 @@ Developers tend to like discussing problems they meet in an online coding commun
 
 
 <a name="_3"></a>
-## UX approach
+## 3. UX approach
 
 A UX approach involves deeply understanding the users through research, organizing information, visual design (and more), all with the goal of meeting user needs and doing it elegantly. It involves putting users at the centre of the design and development process, and establishing an iterative cycle of research, design and evaluation.
 
@@ -100,7 +100,7 @@ We involved our users to better conceptualise our product and visualise how it w
 This really tested our hypothesis and helped us to better understand our product and users.
 
 <a name="_4"></a>
-## Understanding of user group
+## 4. Understanding of user group
 
 User story is a popular way to record user needs. To make the picture clear, we identify and introduce the following three typical user stories through interviewing related people around us.
 
