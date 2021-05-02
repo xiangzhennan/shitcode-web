@@ -52,6 +52,7 @@ The application is designed and provides service according to the following sequ
 We create three main components "welcome", "question" and "report" to render related pages and process business logic. We also create a data service to fetch and modify data between server and frontend. Read the following sessions for detail of each part.
 
 ![Class](class_diagram.jpeg)
+</br>
 
 <a name="_backend"></a>
 ## 2.  Back End - MongoDB - database implementation
@@ -78,6 +79,7 @@ var QuestionSchema = new Schema({
    numOfCorrect: Number
 });
 ```
+</br>
 
 <a name="_middle"></a>
 ## 3.  Middle Tier - Express, Node, the RESTful API
@@ -130,6 +132,7 @@ if (req.query.id !== undefined){
 Second, there is a post request in the API design, which submits the information of whether user answered a specific question correctly. This request can sure be changed to a get request but the request will have influence on the database, so we think get request can be dangerous. Malicious attack can make use of get request to ruin the validity of data inside database, which is designed to provide history answering info.  
 
 We used post request so that every data the server needs hides safely in request body instead of url. Also, this practice cost us some more time on understanding a post request and how to get param from request body.
+</br>
 
 <a name="_frontend"></a>
 ## 4.  Front End - Angular
@@ -188,7 +191,7 @@ There are buttons on the bottom linked to review the answers, return to the home
    <a class="button" routerLink="/question" (click)="clearAnswers()">replay</a>
 </div>
 ```
-
+</br>
 
 <a name="_additional"></a>
 ## 5.  Additional element - cookie/session or local storage
@@ -198,6 +201,7 @@ In the project, we tried to avoid the user to repetitively answer the questions,
 Session can be seen as some memory on the server side while cookie is on client side. Session is designed to have limited survival time, so it is not what we want. By contrast, cookie can be a better choice, living on client side so user can take advantage of it to tell the server that the user has already done the questions once. However, cookie is carried to the server every time there is a http request, which put some pressure on the server side.
 
 Our group finally chose local storage, which also lives permanently on client side but doesn't engage in client-server communication, exactly what we wanted.
+</br>
 
 <a name="_deploy"></a>
 ## 6.  Deployment details - Docker
@@ -252,6 +256,6 @@ const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${M
 ```
 
 Our final decision is to develop locally until we have a fully functioning website and only do user testing on docker. Docker provide quite reliable support when we tried to test and improve through wide user testing. Simple `docker-compose build` and `docker-compose up` did the whole job of modify and redeploy.
-
+</br></br>
 
 [Back to the homepage](../../README.md)
