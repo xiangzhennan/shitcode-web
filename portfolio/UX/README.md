@@ -208,7 +208,7 @@ The first version is show as below.
 
 <img src="img/question7.png" width="700" />
 
-The final version is show as below which has much more detail with more vivid UI design.
+The final version is show as below which has much more details and polished UI design.
 
 <img src="img/question8.png" width="700" />
 
