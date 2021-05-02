@@ -132,3 +132,11 @@ If there is a game that requires you to find out shit code, how do you feel abou
 
 <a name="_4.3"></a>
 ### - User story 3: Raymond (active user of online coding community)
+
+```I'm a professional software engineer and also an active user on Stack Overflow. I appreciate the culture of sharing on the internet. As a developer, I'm willing to share my coding knowledge and experience with others. I am eager to provide debugging support and help others solve coding problems on Stack Overflow. It's also an opportunity for me to increase my coding skills. However, Stack Overflow is more like BBS. It would be great and more helpful for coding learner if posted issues in online coding community could be tagged and further categorized.```
+
+If there is a game that you could play to find out shit code, how do you feel about it? Would you like to contribute some shit codes for the database of this quiz game?
+
+```I think it would be a great game, right? As a software engineer, one of our main principles is to avoid writing any shit codes. I'm willing to contribute any shit code I meet from my daily work or online coding community like Stack Overflow. It's a good idea to share and improve everyone's coding level through a simple game. Learning from fun is one of beliefs I hold as a developer. As the saying goes, interest is the best teacher. I can't agree more.```
+
+</br>
