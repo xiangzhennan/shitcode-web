@@ -177,10 +177,10 @@ The initial design of question page is drawn as below.
 <img src="img/question1.png" width="700" />
 
 The first version of question page is show as below.
-- There is navigation bar on the top to show the progress.
-- The shitcode type is a hint of this question.
+- There is navigation bar on the top to show the progress and answering status.
+- The shitcode rule/type is a hint for the current question.
 - The player should choose one answer from two option boxes.
-- 
+
 <img src="img/question2.png" width="700" />
 
 The final version of question page is show as below. It renders color of the page and adds cute shit logo on the navigation bar.
