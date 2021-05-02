@@ -128,7 +128,7 @@ If there is a game that requires you to find out shit code, how do you feel abou
 
 If there is a game that requires you to find out shit code, how do you feel about it? Would you like to try? What's your expectation for it?
 
-```Oh, play a game about coding? That sounds fun. I definitely would try. I hope I could learn something from that and reflect on whether I write similar shit code in my practice.```
+```Oh, play a game about coding? That sounds fun. I definitely would try. I hope I could learn something from that and reflect on whether I write similar stupid shit code in my own practice.```
 
 <a name="_4.3"></a>
 ### - User story 3: Raymond (active user of online coding community)
