@@ -194,17 +194,30 @@ The first version is show as below.
 The final version is show as below which has much more detail with more vivid UI design.
 <img src="img/question8.png" width="700" />
 
-The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first
+The player could also click the specific question number on the navigation bar to skip some questions but answer a particular one first. The player has complete freedom to choose which question to answer first. The grey icons on the navigation bar in the following picture indicate unanswered questions.
 <img src="img/question9.png" width="700" />
 
-Then click "next" button to go into next question or "get report" button to end answering the rest of questions but enter to the report page. When the last question is answered, "get report" button has to be clicked to enter to the report page. The grey icons on the navigation bar in the following picture indicate unanswered questions.
-
+Then click "next" button to go into next question or "get report" button to end answering the rest of questions and enter to the report page in advance. When the last question is answered, "get report" button has to be clicked to enter to the report page. 
 
 
 ### - Wireframe: report page
 
+The report page is to show the result and performance of the player with three button to choose next step. 
+
+The initial design of report page is drawn as below.
+<img src="img/report1.png" width="700" />
+
+The final design of report page is shown as below.
+<img src="img/report2.png" width="700" />
+
+- Click "replay" button to restart the game, which would clear your performance record in your current report.
+- Click "home" button to come back to the welcome page. If you click "play" button again, the question pages will show you existed previous answering state of yours. You could click "get report" button, then "replay" button on the report page to replay the game if you want.
+- Click " review answers" button to come back to the question pages to check the answer of each question. You could click "next" button to check one by one. Or you could click specific questions on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
+<img src="img/report3.png" width="700" />
 
 ### - Interaction flow diagrams for final key subsystems
+
+<img src="img/flow_diagram.jpg" width="700" />
 
 
 </br></br>
