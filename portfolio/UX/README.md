@@ -198,7 +198,7 @@ If a player don't choose an answer but directly click ``"confirm"`` button, a pr
 After confirming, the page will show 
 - the right answer which will be highlighted
 - the right coding rule for reference
-- the updated navigation which display the answering status of this question (correctly answered questions and incorrectly answered questions have different icons)
+- the updated navigation bar which displays the answering status (correctly answered questions and incorrectly answered questions have different icons)
 
 The initial design is drawn as below.
 
