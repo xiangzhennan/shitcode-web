@@ -5,13 +5,16 @@
 * [1. Early prototyping and ideation](#_1)
     * [Early ideation and mood boards](#_1.1)
     * [Paper prototyping](#_1.2)
+    
 * [2. Identification of interacting users and broader stakeholders](#_2)
     * [End user - coding novice](#_2.1)
     * [End user - coding lover](#_2.2)
     * [Broader stakeholder - online coding community](#_2.3)
+    
 * [3. UX approach](#_3)
     * [Design thinking](#_3.1)
     * [Prototyping and think-loud](#_3.2)
+    
 * [4. Understanding of user group](#_4)
     * [User story 1: Emma (coding novice)](#_4.1)
     * [User story 2: Max (coding lover)](#_4.2)
@@ -37,6 +40,8 @@ After several rounds of discussion and voting, we finally chose the idea about s
 <a name="_1.2"></a>
 ### - Paper prototyping
 
+</br>
+
 <a name="_2"></a>
 ## 2. Identification of interacting users and broader stakeholders
 
@@ -54,6 +59,7 @@ The coding lover is a group of people who have much interest in coding but not m
 * **Broader stakeholder - online coding community**<br/>
 Developers tend to like discussing problems they meet in an online coding community. So there is much coding experience in practice that could be found in those online communities. This could be a good example for teaching which is good code and identifying which is shit code, which would be a good source to enrich database of quiz questions.
 
+</br>
 
 <a name="_3"></a>
 ## 3. UX approach
@@ -98,6 +104,8 @@ We involved our users to better conceptualise our product and visualise how it w
 ```Using cute shit elements and images to display result of my answer to each question is very vivid and fits the shit-code theme.```
 
 This really tested our hypothesis and helped us to better understand our product and users.
+
+</br>
 
 <a name="_4"></a>
 ## 4. Understanding of user group
