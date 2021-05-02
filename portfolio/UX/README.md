@@ -20,6 +20,12 @@
     * [User story 2: Max (coding lover)](#_4.2)
     * [User story 3: Raymond (active user of online coding community)](#_4.3)
 
+* [5. Wireframes and interaction flow diagrams for final key subsystems](#_5)
+    * [Wireframe: welcome page](#_5.1)
+    * [Wireframe: question page](#_5.2)
+    * [Wireframe: report page](#_5.3)
+    * [Interaction flow diagrams for final key subsystems](#_5.4)
+
 
 
 <a name="_1"></a>
@@ -148,9 +154,10 @@ If there is a game that you could play to find out shit code, how do you feel ab
 
 The development of wireframes of each page is according to user's feedback in different phases.
 
+<a name="_5.1"></a>
 ### - Wireframe: welcome page
 
-The welcome page is to display the game theme and logo and introduce what the game is and how to play with it. Click "start/play" button to start the game.
+The welcome page is to display the game theme and logo as well as introduce what the game is and how to play with it. Click "start/play" button to start the game.
 
 The initial design of welcome page is drawn as below.
 <img src="img/welcome1.png" width="700" />
@@ -158,6 +165,7 @@ The initial design of welcome page is drawn as below.
 The final design of welcome page is show as below.
 <img src="img/welcome2.png" width="700" />
 
+<a name="_5.2"></a>
 ### - Wireframe: question page
 
 The question page is to show questions and right answer of each question.
@@ -199,7 +207,7 @@ The player could also click the specific question number on the navigation bar t
 
 Then click "next" button to go into next question or "get report" button to end answering the rest of questions and enter to the report page in advance. When the last question is answered, "get report" button has to be clicked to enter to the report page. 
 
-
+<a name="_5.3"></a>
 ### - Wireframe: report page
 
 The report page is to show the result and performance of the player with three button to choose next step. 
@@ -215,6 +223,7 @@ The final design of report page is shown as below.
 - Click " review answers" button to come back to the question pages to check the answer of each question. You could click "next" button to check one by one. Or you could click specific questions on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
 <img src="img/report3.png" width="700" />
 
+<a name="_5.4"></a>
 ### - Interaction flow diagrams for final key subsystems
 
 <img src="img/flow_diagram.png" width="700" />
