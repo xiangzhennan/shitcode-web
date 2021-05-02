@@ -216,7 +216,7 @@ The player could also click the specific question number on the navigation bar t
 
 <img src="img/question9.png" width="700" />
 
-Then click "next" button to go into next question or "get report" button to end answering the rest of questions and enter to the report page in advance. When the last question is answered, "get report" button has to be clicked to enter to the report page. 
+Then click ``"next"`` button to go into the next question or ``"get report"`` button to stop answering the rest of questions but enter into the report page in advance. When the last question is answered, ``"get report"`` button has to be clicked to enter into the report page. 
 
 <a name="_5.3"></a>
 ### - Wireframe: report page
