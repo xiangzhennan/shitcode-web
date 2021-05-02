@@ -1,5 +1,5 @@
 # Find Out Shitcode
-<img src="portfolio/images/game_logo.jpeg" width="500" />
+<img src="portfolio/images/game_logo.jpeg" width="500" div align=center />
 
 A quiz challenge aimed to help new coders get rid of bad coding habit in a playful way. Find out bad coding practice from the listed coding snippets. Watch out 💩 on the screen if you choose wrong answers. We’ve concluded several good coding principles for you to build up a better awareness of how to avoid writing shitcode.
 
