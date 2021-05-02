@@ -8,10 +8,14 @@
 * [Identification of interacting users and broader stakeholders](#_2)
     * [End user - coding novice](#_2.1)
     * [End user - coding lover](#_2.2)
-    * [Broader stakeholder - online coding community](#_2.2)
+    * [Broader stakeholder - online coding community](#_2.3)
 * [UX approach](#_3)
     * [Design thinking](#_3.1)
     * [Prototyping and think-loud](#_3.2)
+* [Understanding of user group](#_4)
+    * [User story 1: Emma (coding novice)](#_4.1)
+    * [User story 2: Max (coding lover)](#_4.2)
+    * [User story 3: Raymond (active user of online coding community)](#_4.3)
 
 
 
@@ -98,8 +102,12 @@ This really tested our hypothesis and helped us to better understand our product
 <a name="_4"></a>
 ## Understanding of user group
 
+User story is a popular way to record user needs. To make the picture clear, we identify and introduce the following three typical user stories through interviewing related people around us.
+
 <a name="_4.1"></a>
 ### - User story 1: Emma (coding novice)
+
+```As a freshman majoring in computer science, I just start my journey on coding. I feel exciting but also nervous. I could learn technical skills and algorithm from books. However, this is a very practical subject. Sometimes, I didn't get high score for my assignments and feel frustrated on the reality that my code is a little messy compared with others. I want to figure out how to write elegant and efficient code, so that I could be a solid and professional software engineer in the future. I know this requires accumulation of much experience, but it would be better if there is tutorial or guidance about that somewhere. There are many tutorials on the market about how to write code using specific programming language. I expect more there would be tutorials about teaching me how to write readable, stable, sustainable and robust code to solve problems elegantly. ```
 
 <a name="_4.2"></a>
 ### - User story 2: Max (coding lover)
