@@ -108,9 +108,9 @@ c. User acceptance testing
 
 [Click here](portfolio/Conclusion/README.md) to see:
 
-a. Conclusion on the group working practices
+a. Conclusion on working practices of the group
 
-b. Conclusion on the success of the project
+b. Conclusion on success of the project
 
 c. How coronavirus has affected the project
 
