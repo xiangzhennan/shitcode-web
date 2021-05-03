@@ -5,10 +5,10 @@
 * [1. Details of evaluation of our design](#_1)
     * [Techniques used & awareness of their limitations](#_1.1)
     * [A timeline of evaluation of our design](#_1.2)
-    * [Test plan](#_1.3)
 
 * [2. Unit testing / Functional testing](#_2)
-    * [API testing with python](#_2.1)    
+    * [API testing with python](#_2.1) 
+    * [Test plan for frontend page and function](#_2.2)   
 
 * [3. User acceptance testing](#_3)
     * [Cognitive walk-through](#_3.1)     
@@ -42,24 +42,6 @@ After integrating the frontend and backend, all team members pull from “dev”
 At this stage, only a little changes are made based on testing. After first round of user testing (23rd April), “dev” branch is merged into “main” for the first time, but still, some bug fixing remain in “dev” branch.
 * Final push to “main” to form a completed project and report after bug free in “dev” branch.
 
-<a name="_1.3"></a>
-### - Test plan
-We create this web application, hoping that users can test their knowledge of code quality and raise their awareness on good coding practice at the end.
-
-**Access to our website**</br>
-- Make sure that user's network is good and that they can access our website through a browser.
-- We use Google Chrome, Firefox, Safari, QQ browser to test, to ensure that users can access through these browsers.
-
-**Welcome page**</br>
-- Images on page load correctly.
-- The text of the page is displayed correctly.</br>
-*Find Out Shitcode*</br>
-*Do you think you've known how to avoid shitcode?
-Some little piece of shitcode may mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and have fun!*
-- The `play` button works. Click the `play` button and jump to the question page to start the quiz.
-
-
-
 </br>
 
 <a name="_2"></a>
@@ -82,6 +64,42 @@ answerCorrectNumAfter = json.loads(afterPost)['historyCorrectNum']
 assert (answerCorrectNumAfter == answerCorrectNumBefore + 1)
 assert (answerNumAfter == answerNumBefore + 1)
 ```
+
+<a name="_2.2"></a>
+### - Test plan for frontend page and function
+We create this web application, hoping that users can test their knowledge of code quality and raise their awareness on good coding practice at the end.
+
+**Access to our website**</br>
+- Make sure that user's network is good and that they can access our website through a browser.
+- We use Google Chrome, Firefox, Safari, QQ browser to test, to ensure that users can access through these browsers.
+
+**Welcome page**</br>
+- Images on page load correctly.
+- The text of the page is displayed correctly.</br>
+*Find Out Shitcode*</br>
+*Do you think you've known how to avoid shitcode?
+Some little piece of shitcode may mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and have fun!*
+- The `play` button works. Click `play` button and jump to the question page to start the quiz.
+
+**Question page**</br>
+- Options can be displayed correctly on the page.
+- The option box selected by user will be highlighted.
+- Select one option and click `confirm` button to check the answer.
+- When a user clicks on the `confirm` button without selecting an option, a pop-up window will show up to give a reminder.
+- The answer page shows right option with highlighted effect and percentage of people who answered the question correctly.
+- Click `next` button to go to the next question.
+- Click `get report` button to enter the report page and get result.
+
+**Report page**</br>
+- The result can be displayed correctly.</br>
+If the user is correct more than 80%, the image of happy icon is displayed along with the text "You may not be a master of shitcode, but guess what, you can be a good coder!".</br>
+If the user is correct between 60% and 80%, the image of normal icon is displayed along with the text .</br>
+If the user is correct below 60%, the image of sad icon is displayed along with the text "Congratulations, you were born to be a shitcode writer!".
+- If the user click `home` button to return to the welcome page.
+- If the user click `review answers` button to return to the question page, where the answer of each question could be checked.
+- If the user click `replay` button to restart the game, a new round of game will start and the previous records will be cleared.
+
+The test plan is to ensure all of the core functions will be tested and the interaction with backend will work properly.
 
 </br>
 
