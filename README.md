@@ -97,7 +97,7 @@ d. Team use of Git - continuous integration and deployment
 
 [Click here](portfolio/Evaluation/README.md) to see:
 
-a. Details of design evaluation
+a. Details of evaluation of our design
 
 b. Unit testing / Functional testing
 
