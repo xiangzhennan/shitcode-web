@@ -40,7 +40,7 @@ Everyone is friendly and reachable in our team. We respected each person's work 
 
 <a name="_1.3"></a>
 ### - Git workflow
-Apart from early documenting, component listing and separated frontend and backend, Git plays an essential role along the whole process. The detail of our team use of Git is [here](../Sprints/README.md #_git).
+Apart from early documenting, component listing and separated frontend and backend, Git plays an essential role along the whole process. The detail of our team use of Git is [here](../Sprints/README.md/#_git).
 
 
 <a name="_2"></a>
