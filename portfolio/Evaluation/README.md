@@ -92,14 +92,14 @@ Some little piece of shitcode may mess with your code. Test your skills and judg
 
 **Report page**</br>
 - The result can be displayed correctly.</br>
-If the user is correct more than 80%, the image of happy icon is displayed along with the text "You may not be a master of shitcode, but guess what, you can be a good coder!".</br>
-If the user is correct between 60% and 80%, the image of normal icon is displayed along with the text .</br>
-If the user is correct below 60%, the image of sad icon is displayed along with the text "Congratulations, you were born to be a shitcode writer!".
+-If a user's accuracy is more than 80%, the image of happy shit icon will be displayed along with the text "You may not be a master of shitcode, but guess what, you can be a good coder!".</br>
+-If a user's accuracy is between 60% and 80%, the image of normal shit icon will be displayed along with the text .</br>
+-If a user's accuracy is below 60%, the image of sad shit icon will be displayed along with the text "Congratulations, you were born to be a shitcode writer!".
 - If the user click `home` button to return to the welcome page.
 - If the user click `review answers` button to return to the question page, where the answer of each question could be checked.
 - If the user click `replay` button to restart the game, a new round of game will start and the previous records will be cleared.
 
-The test plan is to ensure all of the core functions will be tested and the interaction with backend will work properly.
+The test plan is to ensure all of the core frontend functions will be tested and the interaction with backend will work properly.
 
 </br>
 
