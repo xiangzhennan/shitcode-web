@@ -2,9 +2,9 @@
 
 ## Contents
 
-* [1. Conclusion on the group working practices](#_1)
+* [1. Conclusion on working practices of the group](#_1)
 
-* [2. Conclusion on the success of the project](#_2)
+* [2. Conclusion on success of the project](#_2)
 
 * [3. How coronavirus has affected the project](#_3)
     * [Pair programming](#_3.1)
@@ -19,14 +19,14 @@
     * [Evaluation part](#_5.3)
     
 <a name="_1"></a>
-## 1. Conclusion on the group working practices
+## 1. Conclusion on working practices of the group
 
 Git workflow
 The key part of the success of this project is efficient team play, apart from early documenting, component listing and separated frontend and backend, git plays an essential role along the whole process.
 
 
 <a name="_2"></a>
-## 2. Conclusion on the success of the project
+## 2. Conclusion on success of the project
 
 <a name="_3"></a>
 ## 3. How coronavirus has affected the project
