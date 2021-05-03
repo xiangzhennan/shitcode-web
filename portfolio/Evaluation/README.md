@@ -53,9 +53,9 @@ We create this web application, hoping that users can test their knowledge of co
 **Welcome page**</br>
 - Images on page load correctly.
 - The text of the page is displayed correctly.</br>
-``*Find Out Shitcode*``</br>
-``*Do you think you've known how to avoid shitcode?
-Some little piece of shitcode may mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and have fun!*``
+*Find Out Shitcode*</br>
+*Do you think you've known how to avoid shitcode?
+Some little piece of shitcode may mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and have fun!*
 - The `play` button works. Click the `play` button and jump to the question page to start the quiz.
 
 
