@@ -14,6 +14,7 @@
     * [Cognitive walk-through](#_3.1)     
     * [Questionnaire design](#_3.2)   
     * [Feedback analysis](#_3.3) 
+    * [Conclusion on user testing](#_3.4) 
 
 <a name="_1"></a>
 ## 1. Details of evaluation of our design
@@ -114,7 +115,7 @@ For the third question, 50% of the users choose excellently, and 50% choose poor
 
 <img src="img/q5.png" width="600" />
 
-For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of the code specification and do not need to learn from our website.
+For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of coding principles so that they have less demand to learn from our website.
 However, in general, the help of our website to users is significant.
 
 <img src="img/q6.png" width="600" />
@@ -123,6 +124,15 @@ For the last question of the questionnaire, the acceptance of our website is hig
 
 <img src="img/q7.png" width="600" />
 
+<a name="_3.4"></a>
+### - Conclusion on user testing
+
+* The majority of users think the website is easy to explore and all of them manage to finish the quiz. This is a strong proof of the success of UX design. 
+* Half of the users think that the style of the website is not good enough.
+* Over 75% of the users have realized the big difference between good code and shit code through the game, and willing to pay more attention to code quality afterwards.
+* Around 50% of the users think it is a playful game.
+
+The application is originally designed to help new coders to realize how important code quality is. Therefore, despite of some complaint about our UI design (did our best), we think it meets our initial expectations. Besides, some people are actually getting fun from it, which meets the target that is “to design a playful web application but also to deal with serious problem”. 
 
 </br></br>
 
