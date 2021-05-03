@@ -11,8 +11,9 @@
     * [API testing with python](#_2.1)    
 
 * [3. User acceptance testing](#_3)
-    
-    
+    * [Cognitive walk-through](#_3.1)     
+    * [Design questionnaire](#_3.2)   
+    *  
 
 <a name="_1"></a>
 ## 1. Details of evaluation of our design
@@ -77,7 +78,7 @@ We introduced user testing in each cycle of our sprints. But the first several s
 First, we want the user to do what is called cognitive walk-through. In this stage, users are given no guidance for exploring the whole website so they will have to read the sentences on the page and try any buttons they can see. In this way, we can get useful feedbacks about how well we designed the UX.
 
 <a name="_3.2"></a>
-### - Design questionnaire to get feedback
+### - Design questionnaire
 Second, we want users to comment on the real content of the website. In our case, it is how they feel about the importance of code quality after playing the quiz game.
 An online survey of four multiple-choice questions is designed to collect advice as well as complaints, in order to help us understand and analyze feedback from users. 
 
@@ -96,8 +97,8 @@ a.yes    b.no
 
 The final online version is shown as below.
 
-<img src="img/q1.png" />
-<img src="img/q2.png" />
+<img src="img/q1.png" width="700" />
+<img src="img/q2.png" width="700" />
 
 
 </br></br>
