@@ -46,6 +46,11 @@ Apart from early documenting, component listing and separated frontend and backe
 <a name="_2"></a>
 ## 2. Conclusion on success of the project
 
+| No. | objectives | achieve or not | comments |
+| --- | ---------- | -------------- | -------- |
+| 1 | Build up a web application with MEAN stack | achieve | We built a completely working web application with `MongoDB`, `Express`, `Angular` and `Node.js`. |
+| 2 |
+
 <a name="_3"></a>
 ## 3. How coronavirus has affected the project
 
