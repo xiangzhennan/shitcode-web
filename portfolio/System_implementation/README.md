@@ -188,7 +188,7 @@ The logic of status bar is to jump between questions, by clicking a specific but
 
 To implement it, every button on the bar is binding to the function showed in the picture below. This function aim to get the corresponding data from API, and by dom operation, the webpage will display new data.
 
-<img src="images/ques2.png" width="700" />
+<img src="images/ques8.png" width="700" />
 
 Shit-code principle should be visible while the webpage is loaded, while real principle is displayed to the user after he or she makes a choice. This is implemented by `fadeInOutAnimation module`. Whether the user has answered the question is set to a variable called `isAnswered`. By judging the status of the variable, the webpage can decide when the real principle will be displayed.
 
