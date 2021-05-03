@@ -12,8 +12,8 @@
 
 * [3. User acceptance testing](#_3)
     * [Cognitive walk-through](#_3.1)     
-    * [Design questionnaire](#_3.2)   
-    *  
+    * [Questionnaire design](#_3.2)   
+    * [Feedback analysis](#_3.3) 
 
 <a name="_1"></a>
 ## 1. Details of evaluation of our design
@@ -71,14 +71,14 @@ assert (answerNumAfter == answerNumBefore + 1)
 
 Good thing about user acceptance testing for our website is all our classmates of MSc computer science program can be a member of potential user. They have learnt some basic knowledge and skills about coding but are not professional enough or experienced enough, very close to target user of this website.
 
-We introduced user testing in each cycle of our sprints. But the first several sprints only involved small-scale tests which focused on our key users. Check user stories of each sprint for detail. The massive user acceptance test was taken on 23rd April onwards. Two stages were set for that, cognitive walk-through and user questionnaire. 
+We introduced user testing in each cycle of our sprints. But the first several sprints only involved small-scale tests which focused on our key users. Check user stories of each sprint for detail. The massive user acceptance test was taken on 23rd April onwards. Three stages were set for the testing, which are cognitive walk-through, questionnaire design and feedback analysis. 
 
 <a name="_3.1"></a>
 ### - Cognitive walk-through
 First, we want the user to do what is called cognitive walk-through. In this stage, users are given no guidance for exploring the whole website so they will have to read the sentences on the page and try any buttons they can see. In this way, we can get useful feedbacks about how well we designed the UX.
 
 <a name="_3.2"></a>
-### - Design questionnaire
+### - Questionnaire design
 Second, we want users to comment on the real content of the website. In our case, it is how they feel about the importance of code quality after playing the quiz game.
 An online survey of four multiple-choice questions is designed to collect advice as well as complaints, in order to help us understand and analyze feedback from users. 
 
@@ -97,8 +97,27 @@ a.yes    b.no
 
 The final online version is shown as below.
 
-<img src="img/q1.png" width="700" />
-<img src="img/q2.png" width="700" />
+<img src="img/q1.png" width="600" />
+<img src="img/q2.png" width="600" />
+
+<a name="_3.3"></a>
+### - Feedback analysis
+
+We get approximately 50 valid feedbacks from our users.
+
+For the first and second questions of the questionnaire, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the website.
+<img src="img/q3.png" width="600" />
+<img src="img/q4.png" width="600" />
+
+For the third question, 50% of the users choose excellently, and 50% choose poorly. The main reason is that the reading effect is not ideal. This is the next part we need to improve to make the whole website more readable. 
+<img src="img/q5.png" width="600" />
+
+For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of the code specification and do not need to learn from our website.
+However, in general, the help of our website to users is significant.
+<img src="img/q6.png" width="600" />
+
+For the last question of the questionnaire, the acceptance of our website is high, but 25% of the people think that the function is not good enough. 
+<img src="img/q7.png" width="600" />
 
 
 </br></br>
