@@ -74,49 +74,49 @@ The key activities we follow during each Agile development cycle are as below:
 ## 2. A summary of team roles and individual contributions
 
 <a name="_Xiang"></a>
-* **Zhennan Xiang**
+**Zhennan Xiang**
 
 Xiang's role in the team is more focused on technical side and project structure. Since early stage when idea of website was set, I began to design and document the essential frontend components, backend APIs and data models.
 
-To be specific, Xiang has done the following things:<br/>
--API documenting<br/>
--component listing<br/>
--backend development and first version of prototype website (including only static json in backend and router in frontend)<br/>
--database building and integrating<br/>
--testing and evaluation
+To be specific, Xiang has done the following things:
+- API documenting
+- component listing
+- backend development and first version of prototype website (including only static json in backend and router in frontend)
+- database building and integrating
+- testing and evaluation
 
 <a name="_Liu"></a>
-* **Shujie Liu**
+**Shujie Liu**
 
 Liu's role in the team is a organiser and communicator， working on hosting weekly meeting, coordinating works and communication among teammates and controlling the progress of the project. She participated in the development of the backend and was mainly responsible for the implementation of report API and related features.
 
-To be specific, Liu mainly contributed to the following things:<br/>
--part of backend development<br/>
--UX design including paper prototyping and understanding of user group<br/>
--project management<br/>
--report integration and quality control
+To be specific, Liu mainly contributed to the following things:
+- part of backend development
+- UX design including paper prototyping and understanding of user group
+- project management
+- report integration and quality control
 
 <a name="_Guo"></a>
-* **Sheng Guo**
+**Sheng Guo**
 
 Guo works on frontend and mainly takes responsibility for the three components on question page which are `principle`, `option` and `status-bar`. He is in charge of the implementation and testing of these functions and features.
 
 <a name="_Liang"></a>
-* **Karine Liang**
+**Karine Liang**
 
 
 <a name="_Qin"></a>
-* **Shengzhe Qin**
+**Shengzhe Qin**
 
 Qin's role in the team is more inclined to the front-end page design and peripheral system building assistance.
 Qin participated in the specific function design on the initial creative stage of the website, responsible for development and style design of welcome and report pages. Qin also designed the questionnaire and collected user feedback for analysis during the evaluation phase.
 
-Specifically, Qin mainly contributed to the following things:<br/>
--Initial creativity<br/>
--Part of function design<br/>
--Design for welcome page and report page<br/>
--Research on font and image library and providing suitable options<br/>
--Designing questionnaire and analyzing user feedback for evaluation
+Specifically, Qin mainly contributed to the following things:
+- Initial creativity
+- Part of function design
+- Design for welcome page and report page
+- Research on font and image library and providing suitable options
+- Designing questionnaire and analyzing user feedback for evaluation
 </br>
 
 <a name="_sprints"></a>
