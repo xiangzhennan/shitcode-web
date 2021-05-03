@@ -5,7 +5,7 @@
 * [1. Details of evaluation of our design](#_1)
     * [Techniques used & awareness of their limitations](#_1.1)
     * [A timeline of evaluation of our design](#_1.2)
-    
+    * [Test plan](#_1.3)
 
 * [2. Unit testing / Functional testing](#_2)
     * [API testing with python](#_2.1)    
@@ -41,6 +41,24 @@ After integrating the frontend and backend, all team members pull from “dev”
 * **User acceptance testing** (23rd April onwards)<br/>
 At this stage, only a little changes are made based on testing. After first round of user testing (23rd April), “dev” branch is merged into “main” for the first time, but still, some bug fixing remain in “dev” branch.
 * Final push to “main” to form a completed project and report after bug free in “dev” branch.
+
+<a name="_1.3"></a>
+### - Test plan
+We create this web application, hoping that users can test their knowledge of code quality and raise their awareness on good coding practice at the end.
+
+* **Access to our website**</br>
+- Make sure that user's network is good and that they can access our website through a browser.
+- We use Google Chrome, Firefox, Safari, QQ browser to test, to ensure that users can access through these browsers.
+
+* **Welcome page**</br>
+- Images on page load correctly.
+- The text of the page is displayed correctly.
+``Find Out Shitcode``
+``Do you think you've known how to avoid shitcode?
+Some little piece of shitcode may mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and have fun!``
+- The `play` button works. Click the `play` button and jump to the question page to start the quiz.
+
+
 
 </br>
 
