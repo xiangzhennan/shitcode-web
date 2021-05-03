@@ -18,6 +18,10 @@
 <a name="_1"></a>
 ## 1. Conclusion on the group working practices
 
+Git workflow
+The key part of the success of this project is efficient team play, apart from early documenting, component listing and separated frontend and backend, git plays an essential role along the whole process.
+
+
 <a name="_2"></a>
 ## 2. Conclusion on the success of the project
 
