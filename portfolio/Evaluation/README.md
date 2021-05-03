@@ -28,7 +28,7 @@ First we will describe the techniques we used and evaluate if they are suitable 
   Our team strictly follow the recommended technical stack, and as we design, implement and test our application, we find it is truly the most appropriate one. Have a look at our application, we can find that it is a front-end-leading project. Therefore, we need a strong frontend framework to support fast-developing and a relatively simple backend framework to deal with requests. Angular and Express, in the end, serve quite well. As will be discussed in future work section, the good part of express can be a weakness when the website grows, but currently for a SPA web page, it is the best chance.
   
 * **MongoDB vs. relational database**<br/>
-  We have a simple and clear data model for database part. Since the website always treat visitors as anonymous guests, we are not expecting the database to hold username or passwords. Also, the website contains only one function that is a quiz game, which makes non-relational database a better choice over relational ones like MySQL.
+  We have a simple and clear data model for database part. Since the web application always treat visitors as anonymous guests, we are not expecting the database to hold username or passwords. Also, the web application contains only one function that is a quiz game, which makes non-relational database a better choice over relational ones like MySQL.
 
 <a name="_1.2"></a>
 ### - A timeline of evaluation of our design
@@ -70,17 +70,17 @@ assert (answerNumAfter == answerNumBefore + 1)
 <a name="_3"></a>
 ## 3. User acceptance testing
 
-Good thing about user acceptance testing for our website is all our classmates of MSc computer science program can be a member of potential user. They have learnt some basic knowledge and skills about coding but are not professional enough or experienced enough, very close to target user of this website.
+Good thing about user acceptance testing for our web application is all our classmates of MSc computer science program can be a member of potential user. They have learnt some basic knowledge and skills about coding but are not professional enough or experienced enough, very close to target user of this web application.
 
 We introduced user testing in each cycle of our sprints. But the first several sprints only involved small-scale tests which focused on our key users. Check user stories of each sprint for detail. The massive user acceptance test was taken on 23rd April onwards. Three stages were set for the testing, which are cognitive walk-through, questionnaire design and feedback analysis. 
 
 <a name="_3.1"></a>
 ### - Cognitive walk-through
-First, we want the user to do what is called cognitive walk-through. In this stage, users are given no guidance for exploring the whole website so they will have to read the sentences on the page and try any buttons they can see. In this way, we can get useful feedbacks about how well we designed the UX.
+First, we want the user to do what is called cognitive walk-through. In this stage, users are given no guidance for exploring the whole web application so they will have to read the sentences on the page and try any buttons they can see. In this way, we can get useful feedbacks about how well we designed the UX.
 
 <a name="_3.2"></a>
 ### - Questionnaire design
-Second, we want users to comment on the real content of the website. In our case, it is how they feel about the importance of code quality after playing the quiz game.
+Second, we want users to comment on the real content of the web application. In our case, it is how they feel about the importance of code quality after playing the quiz game.
 An online survey of four multiple-choice questions is designed to collect advice as well as complaints, in order to help us understand and analyze feedback from users. 
 
 The first draft of the questionnaire is shown as below.
@@ -106,33 +106,33 @@ The final online version is shown as below.
 
 We get approximately 50 valid feedbacks from our users.
 
-For the first and second questions of the questionnaire, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the website.
+For the first and second questions of the questionnaire, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the web application.
 
 <img src="img/q3.png" width="600" />
 <img src="img/q4.png" width="600" />
 
-For the third question, 50% of the users choose excellently, and 50% choose poorly. The main reason is that the reading effect is not ideal. This is the next part we need to improve to make the whole website more readable. 
+For the third question, 50% of the users choose excellently, and 50% choose poorly. The main reason is that the reading effect is not ideal. This is the next part we need to improve to make the whole web application more readable. 
 
 <img src="img/q5.png" width="600" />
 
-For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of coding principles so that they have less demand to learn from our website.
-However, in general, the help of our website to users is significant.
+For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of coding principles so that they have less demand to learn from our web application.
+However, in general, the help of our web application to users is significant.
 
 <img src="img/q6.png" width="600" />
 
-For the last question of the questionnaire, the acceptance of our website is high, but 25% of the people think that the function is not good enough. 
+For the last question of the questionnaire, the acceptance of our web application is high, but 25% of the people think that the function is not good enough. 
 
 <img src="img/q7.png" width="600" />
 
 <a name="_3.4"></a>
 ### - Conclusion on user testing
 
-* The majority of users think the website is easy to explore and all of them manage to finish the quiz. This is a strong proof of the success of UX design. 
-* Half of the users think that the style of the website is not good enough.
+* The majority of users think the web application is easy to explore and all of them manage to finish the quiz. This is a strong proof of the success of UX design. 
+* Half of the users think that the style of the web application is not good enough.
 * Over 75% of the users have realized the big difference between good code and shit code through the game, and willing to pay more attention to code quality afterwards.
 * Around 50% of the users think it is a playful game.
 
-The application is originally designed to help new coders to realize how important code quality is. Therefore, despite of some complaint about our UI design (did our best), we think it meets our initial expectations. Besides, some people are actually getting fun from it, which meets the target that is “to design a playful web application but also to deal with serious problem”. 
+The web application is originally designed to help new coders to realize how important code quality is. Therefore, despite of some complaint about our UI design (did our best), we think it meets our initial expectations. Besides, some people are actually getting fun from it, which meets the target that is “to design a playful web application but also to deal with serious problem”. 
 
 </br></br>
 
