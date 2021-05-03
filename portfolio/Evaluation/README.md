@@ -106,17 +106,21 @@ The final online version is shown as below.
 We get approximately 50 valid feedbacks from our users.
 
 For the first and second questions of the questionnaire, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the website.
+
 <img src="img/q3.png" width="600" />
 <img src="img/q4.png" width="600" />
 
 For the third question, 50% of the users choose excellently, and 50% choose poorly. The main reason is that the reading effect is not ideal. This is the next part we need to improve to make the whole website more readable. 
+
 <img src="img/q5.png" width="600" />
 
 For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of the code specification and do not need to learn from our website.
 However, in general, the help of our website to users is significant.
+
 <img src="img/q6.png" width="600" />
 
 For the last question of the questionnaire, the acceptance of our website is high, but 25% of the people think that the function is not good enough. 
+
 <img src="img/q7.png" width="600" />
 
 
