@@ -8,7 +8,7 @@
     
 
 * [2. Unit testing / Functional testing](#_2)
-    
+    * [API testing with python](#_2.1)    
 
 * [3. User acceptance testing](#_3)
     
@@ -55,13 +55,20 @@ For integration test, since we only have three APIs to test and logic behind tho
 response = requests.post(url, data=json.dumps(data), headers={"Content-Type": "application/json"})
 assert (response.text == 'ok')
 response = requests.get(questionUrl + "1").text
-# after a post request
+// after a post request
 afterPost = requests.get(questionUrl + "1").text
 answerNumAfter = json.loads(afterPost)['historyAnswerNum']
 answerCorrectNumAfter = json.loads(afterPost)['historyCorrectNum']
 assert (answerCorrectNumAfter == answerCorrectNumBefore + 1)
 assert (answerNumAfter == answerNumBefore + 1)
 ```
+
+</br>
+
+<a name="_3"></a>
+## 3. User acceptance testing
+
+
 
 </br></br>
 
