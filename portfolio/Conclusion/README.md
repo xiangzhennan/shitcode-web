@@ -8,6 +8,7 @@
     * [Git workflow](#_1.3)
 
 * [2. Conclusion on success of the project](#_2)
+    * [A checklist of success evaluation](#_2.1)
 
 * [3. How coronavirus has affected the project](#_3)
     * [Pair programming](#_3.1)
@@ -42,9 +43,16 @@ Everyone is friendly and reachable in our team. We respected each person's work 
 ### - Git workflow
 Apart from early documenting, component listing and separated frontend and backend, Git plays an essential role along the whole process. The detail of our team use of Git is [here](../Sprints/README.md/#_git).
 
+<br/>
 
 <a name="_2"></a>
 ## 2. Conclusion on success of the project
+
+Overall we have achieved as a group the objectives we set at the beginning of the project. We have delivered a working web application of an idea we crafted in the early phase of this unit. Although UI design of webpages might be polished a little more with more intuitive design insight according to the opinion of half of the users in our massive user acceptance test, it looks good in other aspects.
+
+
+<a name="_2.1"></a>
+### - A checklist of success evaluation
 
 | No. | objectives | achieve or not | comments |
 | --- | ---------- | -------------- | -------- |
@@ -59,7 +67,7 @@ Apart from early documenting, component listing and separated frontend and backe
 | 9 | Implement full testing | achieve | We completed unit test, functional test and user acceptance test to make sure all functions and interaction work correctly as expected. |
 | 10 | Make a positive influence on raising awareness of code quality | achieve | Over 75% of the users in our massive user acceptance test realized the big difference between good code and shit code through the game, and willing to pay more attention to code quality afterwards. |
 
-
+<br/>
 
 <a name="_3"></a>
 ## 3. How coronavirus has affected the project
@@ -80,11 +88,13 @@ It's a big challenge when we can't do UI design in person as a group. It took mu
 ### - Think-aloud evaluation
 We have to implement our user acceptance testing online and collect feedback through questionnaires. We can't do think-aloud formative user testing in person which would be better for us to collect response directly from users who are able to say aloud what they are thinking on site with our observer and facilitator in think-aloud evaluation.
 
+<br/>
+
 <a name="_4"></a>
 ## 4. Social and Ethical implications
 
 
-
+<br/>
 
 <a name="_5"></a>
 ## 5. Future work
