@@ -68,6 +68,30 @@ assert (answerNumAfter == answerNumBefore + 1)
 <a name="_3"></a>
 ## 3. User acceptance testing
 
+Good thing about user acceptance testing for our website is all our classmates of MSc computer science program can be a member of potential user. They have learnt some basic knowledge and skills about coding but are not professional enough or experienced enough, very close to target user of this website.
+
+Two stages were set for a user acceptance testing plan. 
+
+<a name="_3.1"></a>
+### - Cognitive walk-through
+First, we want the user to do what is called cognitive walk-through. In this stage, users are given no guidance for exploring the whole website so they will have to read the sentences on the page and try any buttons they can see. In this way, we can get useful feedbacks about how well we designed the UX.
+
+<a name="_3.2"></a>
+### - Design questionnaire to get feedback
+Second, we want users to comment on the real content of the website. In our case, it is how they feel about the importance of code quality after playing the quiz game.
+An online survey of four multiple-choice questions is designed to collect advice as well as complaints. 
+The first draft of the questionnaire is shown as below.
+
+```
+Can you manage to finish the whole quiz without any help from developers?
+a.	yes   b. met some problems
+How do you feel about the quiz process?
+a.	easy to explore  b. not good, sometimes I get lost
+How do you feel about the style of the website?
+a.	good  b. ugly
+Do you think this website help raise your awareness of the importance of code quality?
+a.	yes    b. no
+```
 
 
 </br></br>
