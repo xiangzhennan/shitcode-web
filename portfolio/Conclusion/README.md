@@ -7,6 +7,9 @@
 * [2. Conclusion on the success of the project](#_2)
 
 * [3. How coronavirus has affected the project](#_3)
+    * [Pair programming](#_3.1)
+    * [UI design](#_3.2)
+    * [Think-aloud evaluation](#_3.3)
     
 * [4. Social and Ethical implications](#_4)
 
@@ -28,8 +31,27 @@ The key part of the success of this project is efficient team play, apart from e
 <a name="_3"></a>
 ## 3. How coronavirus has affected the project
 
+This work has been impacted by the global pandemic COVID-19, as 2 out of 5 group members stay in China and all of our works and meetings have to be carried out online. Besides, the 7-hour time difference made communication harder. 
+
+The difficulties and obstacles are also reflected in the following aspects.
+
+<a name="_3.1"></a>
+### - Pair programming
+We can't do pair programming in person which is very necessary for frontend team in some ways. We have to use video calls and share screen as an alternative, which is not that efficient.
+
+<a name="_3.2"></a>
+### - UI design
+It's a big challenge when we can't do UI design in person as a group. It took much more effort every time we discussed and adjusted the style, color, font and format of every detail of user interface. It's a little frustrated we can't sit together in a big room to display our ideas with paper and pencil. As a result, it limited the implementation of our design and influenced the final UI effect of our product to some extent.
+
+<a name="_3.3"></a>
+### - Think-aloud evaluation
+We have to implement our user acceptance testing online and collect feedback through questionnaires. We can't do think-aloud formative user testing in person which would be better for us to collect response directly from users who are able to say aloud what they are thinking on site with our observer and facilitator in think-aloud evaluation.
+
 <a name="_4"></a>
 ## 4. Social and Ethical implications
+
+
+
 
 <a name="_5"></a>
 ## 5. Future work
