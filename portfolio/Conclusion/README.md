@@ -48,7 +48,7 @@ Apart from early documenting, component listing and separated frontend and backe
 <a name="_2"></a>
 ## 2. Conclusion on success of the project
 
-Overall we have achieved as a group the objectives we set at the beginning of the project. We have delivered a working web application of an idea we crafted in the early phase of this unit. Although UI design of webpages might be polished a little more with more intuitive design insight according to the opinion of half of the users in our massive user acceptance test, it looks good in other aspects.
+Overall we have achieved as a group the objectives we set at the beginning of the project. We have delivered a working web application of an idea we crafted in the early phase of this unit. Although UI design of our webpages might be polished a little bit with more intuitive design insight according to the opinion of half of the users in our massive user acceptance test, it looks good in other aspects.
 
 
 <a name="_2.1"></a>
