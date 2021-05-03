@@ -17,6 +17,8 @@
 * [4. Front End - Angular](#_frontend)
     * [List of components](#_list)
     * [Welcome page](#_welcome)
+    * [Question page](#_ques)
+        * [Component implementation (principle, option and status-bar)](#_ques1)
     * [Report page](#_report)
 
 * [5. Additional element - cookie/session or local storage](#_additional)
@@ -170,7 +172,45 @@ For the design of the theme color, it is based on yellow, and the same color sch
 <a name="_ques"></a>
 ### - Question page
 
-#### Component (principle, option and status-bar)
+<a name="_ques1"></a>
+#### -- Component implementation (principle, option and status-bar)
+
+* **HTML file**
+Basically, we use ngfor to create 10 buttons and make them bound with 10 questions respectively. We use floating to make 2 option boxes (called button in html file) which show the question contents distributed horizontally. On top of the option box, there is a title to tell the user which is shit code and which is good code after the user makes a choice. It is empty at the begining and it shows appropriate contents by dom operation written in `question.compontent.ts` file. Besides, there is a footer at the bottom of the option box to show a feedback to the user. As for principles, we use `fadeInOut module` to make real principle appear at appropriate time.
+
+<img src="images/ques1.png" width="700" />
+
+* **Type script**
+The logic of status bar is to jump between questions, by clicking a specific button, the user can jump to a specific question directly. Besides, when the user finished a question, the bar should tell the user whether he or she has made a right choice with corresponding icons.
+
+To implement it, every button on the bar is binding to the function showed in the picture below. This function aim to get the corresponding data from API, and by dom operation, the webpage will display new data.
+
+<img src="images/ques2.png" width="700" />
+
+Shit-code principle should be visible while the webpage is loaded, while real principle is displayed to the user after he or she makes a choice. This is implemented by `fadeInOutAnimation module`. Whether the user has answered the question is set to a variable called `isAnswered`. By judging the status of the variable, the webpage can decide when the real principle will be displayed.
+
+In terms of questions, every question has two options and the user can choose one of them. After the user chooses an option, we need to tell the user which one is shit-code and show a feedback according to the chosen option. This is implemented mainly by `dom` operation. The function showed below will be called in `confirm() function`, therefore it can achieve the effect we want.
+
+<img src="images/ques3.png" width="700" />
+
+Besides, to record the user’s answers, an `array` is established in local storage and it is initialised to be an array of -1 which represent the question is not answerd yet. Every time when the user submit the answer, the array will change the value at corresponding position. In our rules, 0 represents wrong and 1 represents right. Finally the array will be sent to API, then we can get a report from API. During the process, the picture and background color of the navigator bar at corresponding position is also changed based on the user’s choice.
+
+<img src="images/ques4.png" width="700" />
+
+Last but not least, each time a new question is loaded, the title and the footer of the question button would be reset and the variable that represents whether this question is answerd or not would also be reset. The functions are showed as below.
+
+<img src="images/ques5.png" width="700" />
+
+* **UI and style**
+Until now our website can work though it is ugly, so the last step is to improve the user interface. Like changing the background color of the website, changing the pictures of the navigator bar, changing font style of the principles, etc. These are implemented in `question.component.ts` file by dom operation. For example, by changing the opacity of the option box, users can know they have made a choice.
+
+<img src="images/ques6.png" width="700" />
+
+This is also about writing css, for example, to make the website more beautiful. We use box shadow when the user hovers the mouse on the bar or the option. 
+
+<img src="images/ques7.png" width="700" />
+
+
 
 <a name="_report"></a>
 ### - Report page
