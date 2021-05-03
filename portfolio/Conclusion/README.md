@@ -34,7 +34,7 @@ We focused on coding implementation and tried to do our best with what we have. 
 
 <a name="_1.2"></a>
 ### - Team communication & management of issues
-We arranged twice video calls on Teams weekly to make sure everyone would catch up with the progress as planned. We held a total of 19 meetings. Our integrated meeting logs are [here](../Sprints/meeting_log/README.md). After each group meeting, we would always make a conclusion based on our discussion and allocate related members to follow up the issues. We used WeChat group in our daily work to communicate and manage issues of the project in a timely manner.
+We arranged twice video calls on Teams weekly to make sure everyone would catch up with the progress as planned. We held a total of 19 online meetings. Our integrated meeting logs are [here](../Sprints/meeting_log/README.md). After each group meeting, we would always make a conclusion based on our discussion and allocate related members to follow up the issues. We used WeChat group in our daily work to communicate and manage issues of the project in a timely manner.
 
 Everyone is friendly and reachable in our team. We respected each person's work and took advice from each other with an open mind. We had a great time working together and learned a lot from each other in the whole process. 
 
