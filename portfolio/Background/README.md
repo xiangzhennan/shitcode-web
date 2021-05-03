@@ -1,20 +1,20 @@
-# Sprints & Project Management
+# Background and Motivation
 
 ## Contents
 
-* [1. Group working methods](#_group)
+* [1. Background literature and academic research review](#_1)
     * [Workflow](#_workflow)
     * [Agile development](#_agile)
     * [Communication channel](#_communication)
 
-* [2. A summary of team roles and individual contributions](#_team)
+* [2. State of the art survey and current industry review](#_2)
     * [Zhennan Xiang](#_Xiang)
     * [Shujie Liu](#_Liu)
     * [Sheng Guo](#_Guo)
     * [Karine Liang](#_Liang)
     * [Shengzhe Qin](#_Qin)
 
-* [3. Documentation of sprints](#_sprints)
+* [3. Definition, scope and challenge of the problem](#_3)
     * [High level overview](#_s1)
     * [Timeline](#_s2)
     * [Sprint 1: First prototype (25 Feb – 18 Mar)](#_s3)
@@ -23,7 +23,6 @@
     * [Sprint 4: Version 1.0 release (22 Apr – 7 May)](#_s6)
     * [Meeting logs](#_s7)
     
-* [4. Team use of Git - continuous integration and deployment](#_git)
     
 
 <a name="_group"></a>
