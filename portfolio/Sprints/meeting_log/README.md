@@ -1,6 +1,7 @@
 # Meeting logs
 
 We held a total of 19 online meetings in the whole process of the project.
+<br/><br/>
 
 ### Meeting on Feb 11
 <img src="2.11.png">
