@@ -28,7 +28,7 @@ The key part of the success of the project is efficient team play. The final com
 
 <a name="_1.1"></a>
 ### - Agile development (complete four sprint cycles)
-This project has followed closely with agile development principles. We designed the system around user needs and kept them as our top priority. We were open to changes and adapted them quickly once they rose. We have been working on development at a progressive pace, following our [timeline](../Sprints/timeline_chart.png). After each sprint we measured the progress by testing and review before moving on to the next sprint. 
+This project has followed closely with agile development principles. We designed the system around user needs and kept them as our top priority. We were open to changes and adapted them quickly once they rose. We worked on development at a progressive pace by following our [timeline](../Sprints/README.md/#_s2). After each sprint we measured the progress by testing and review before moving on to the next sprint. 
 
 We focused on coding implementation and tried to do our best with what we have. We minimized unnecessary work when adapting changes to our goal. We divided ourselves into two sub-groups with 2-3 teammates in each. Within each sub-group we organized tasks for our own and reflect regularly on what had been achieved.
 
