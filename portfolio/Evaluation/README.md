@@ -46,14 +46,14 @@ At this stage, only a little changes are made based on testing. After first roun
 ### - Test plan
 We create this web application, hoping that users can test their knowledge of code quality and raise their awareness on good coding practice at the end.
 
-* **Access to our website**</br>
+**Access to our website**</br>
 - Make sure that user's network is good and that they can access our website through a browser.
 - We use Google Chrome, Firefox, Safari, QQ browser to test, to ensure that users can access through these browsers.
 
-* **Welcome page**</br>
+**Welcome page**</br>
 - Images on page load correctly.
-- The text of the page is displayed correctly.
-``Find Out Shitcode``
+- The text of the page is displayed correctly.</br>
+``Find Out Shitcode``</br>
 ``Do you think you've known how to avoid shitcode?
 Some little piece of shitcode may mess with your code. Test your skills and judge which snippet is shitcode. We've concluded several principles for you to get rid of shitcode, start and have fun!``
 - The `play` button works. Click the `play` button and jump to the question page to start the quiz.
