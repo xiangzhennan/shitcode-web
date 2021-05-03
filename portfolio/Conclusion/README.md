@@ -49,8 +49,17 @@ Apart from early documenting, component listing and separated frontend and backe
 | No. | objectives | achieve or not | comments |
 | --- | ---------- | -------------- | -------- |
 | 1 | Build up a web application with MEAN stack | achieve | We built a completely working web application with `MongoDB`, `Express`, `Angular` and `Node.js`. |
-| 2 | Address a serious problem in the real world | achieve | We addressed in the game that it's important to have a good coding habit and always pay attention to code quality with several examples | 
-| 3 | The web app is "serious play" with playful features | achieve | We used shit code theme with cute shit icons throughout the game. The game is set as a quiz which is much practical. Around 50% of the users in our massive user acceptance testing think it is a playful game. |
+| 2 | Address a serious problem in the real world | achieve | We addressed in the game that it's important to have a good coding habit and always pay attention to code quality with several examples. | 
+| 3 | The web app is "serious play" with playful features | achieve | We used shit code theme with cute shit icons throughout the game.<br/>The game is set as a quiz which is much practical.<br/>Around 50% of the users in our massive user acceptance testing think it is a playful game. |
+| 4 | Fulfill the functions of the game | achieve | The functions set from UX design were all fulfilled at the end which could be briefly concluded as introduction, finding out shit code and getting report. |
+| 5 | Use Angular to complete frontend construction | achieve | We designed and implemented three main components (welcome, question, report) and several data services on the frontend. |
+| 6 | Use Express to complete backend construction | achieve | We designed and implemented three main APIs (question, report, submit) to get request and post request. |
+| 7 | Use MangoDB to manage the storage of data | achieve | We stored our dynamic data (history correct num, history answer num) on MangoDB and designed a database model and schema for that. |
+| 8 | Deploy on Docker | achieve | We deployed our whole application on Docker which makes setting up instances of Node and Mongo very easy.<br/>Everyone can easily recreate our production system. |
+| 9 | Implement full testing | achieve | We completed unit test, functional test and user acceptance test to make sure all functions and interaction work correctly as expected. |
+| 10 | Make a positive influence on raising awareness of code quality | achieve | Over 75% of the users in our massive user acceptance test realized the big difference between good code and shit code through the game, and willing to pay more attention to code quality afterwards. |
+
+
 
 <a name="_3"></a>
 ## 3. How coronavirus has affected the project
