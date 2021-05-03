@@ -3,6 +3,9 @@
 ## Contents
 
 * [1. Conclusion on working practices of the group](#_1)
+    * [Agile development (complete four sprint cycles)](#_1.1)
+    * [Team communication](#_1.2)
+    * [Git workflow](#_1.3)
 
 * [2. Conclusion on success of the project](#_2)
 
@@ -21,8 +24,23 @@
 <a name="_1"></a>
 ## 1. Conclusion on working practices of the group
 
-Git workflow
-The key part of the success of this project is efficient team play, apart from early documenting, component listing and separated frontend and backend, git plays an essential role along the whole process.
+The key part of the success of the project is efficient team play. The final completion is based on everyone's hard work and commitment to the team.
+
+<a name="_1.1"></a>
+### - Agile development (complete four sprint cycles)
+This project has followed closely with agile development principles. We designed the system around user needs and kept them as our top priority. We were open to changes and adapted them quickly once they rose. We have been working on development at a progressive pace, following our [timeline](../Sprints/timeline_chart.png). After each sprint we measured the progress by testing and review before moving on to the next sprint. 
+
+We focused on coding implementation and tried to do our best with what we have. We minimized unnecessary work when adapting changes to our goal. We divided ourselves into two sub-groups with 2-3 teammates in each. Within each sub-group we organized tasks for our own and reflect regularly on what had been achieved.
+
+<a name="_1.2"></a>
+### - Team communication
+We arranged twice video calls on Teams weekly to make sure everyone would catch up with the progress as planned. Our integrated meeting logs are [here](../Sprints/meeting_log/README.md). After each group meeting, we would always make a conclusion based on our discussion and allocate related members to follow up the issues. We used WeChat group in our daily work to communicate and manage issues of the project in a timely manner.
+
+Everyone is friendly and reachable in our team. We respected each person's work and took advice from each other with an open mind. We had a great time working together and learned a lot from each other in the process of the project. 
+
+<a name="_1.3"></a>
+### - Git workflow
+Apart from early documenting, component listing and separated frontend and backend, Git plays an essential role along the whole process. The detail of our team use of Git is [here](../Sprints/README.md #_git).
 
 
 <a name="_2"></a>
