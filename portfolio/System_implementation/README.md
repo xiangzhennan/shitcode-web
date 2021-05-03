@@ -194,11 +194,11 @@ Shit-code principle should be visible while the webpage is loaded, while real pr
 
 In terms of questions, every question has two options and the user can choose one of them. After the user chooses an option, we need to tell the user which one is shit-code and show a feedback according to the chosen option. This is implemented mainly by `dom` operation. The function showed below will be called in `confirm() function`, therefore it can achieve the effect we want.
 
-<img src="images/ques3.png" width="700" />
+<img src="images/ques9.png" width="700" />
 
 Besides, to record the user’s answers, an `array` is established in local storage and it is initialised to be an array of -1 which represent the question is not answerd yet. Every time when the user submit the answer, the array will change the value at corresponding position. In our rules, 0 represents wrong and 1 represents right. Finally the array will be sent to API, then we can get a report from API. During the process, the picture and background color of the navigator bar at corresponding position is also changed based on the user’s choice.
 
-<img src="images/ques4.png" width="700" />
+<img src="images/ques10.png" width="700" />
 
 Last but not least, each time a new question is loaded, the title and the footer of the question button would be reset and the variable that represents whether this question is answerd or not would also be reset. The functions are showed as below.
 
