@@ -41,6 +41,14 @@ Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-ar
 <a name="_background"></a>
 ## 3.  Background and Motivation
 
+[Click here](portfolio/Background/README.md) to see:
+
+a. Background literature and academic research review
+
+b. State of the art survey and current industry review
+
+c. Definition, scope and challenge of the problem
+
 <a name="_implementation"></a>
 ## 4.  System Implementation
 
@@ -86,6 +94,14 @@ d. Team use of Git - continuous integration and deployment
 
 <a name="_evaluation"></a>
 ## 7.  Evaluation
+
+[Click here](portfolio/Evaluation/README.md) to see:
+
+a. Details of design evaluation
+
+b. Unit testing / Functional testing
+
+c. User acceptance testing
 
 <a name="_conclusion"></a>
 ## 8.  Conclusion
