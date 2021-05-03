@@ -194,7 +194,7 @@ During each iteration we defined the requirements based on the backlog from prev
 <a name="_s7"></a>
 ### - Meeting logs
 
-[Click here to check meeting logs](meeting_log/README.md)
+We held a total of 19 online meetings in the whole process of the project. [Click here to check our integrated meeting logs](meeting_log/README.md)
 </br></br>
 
 <a name="_git"></a>
