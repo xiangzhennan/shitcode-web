@@ -173,7 +173,7 @@ For the design of the theme color, it is based on yellow, and the same color sch
 ### - Question page
 
 <a name="_ques1"></a>
-#### * Component implementation (principle, option and status-bar)
+* **Component implementation (principle, option and status-bar)**
 
 **HTML file**
 
