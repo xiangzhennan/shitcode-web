@@ -79,7 +79,7 @@ The key activities we follow during each Agile development cycle are as below:
 Xiang's role in the team is more focused on technical side and project structure. Since early stage when idea of website was set, I began to design and document the essential frontend components, backend APIs and data models.
 
 To be specific, Xiang has done the following things:
-1)	API documenting
+- API documenting
 2)	component listing
 3)	backend development and first version of prototype website (including only static json in backend and router in frontend)
 4)	database building and integrating
