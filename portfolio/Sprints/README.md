@@ -99,7 +99,7 @@ To be specific, Liu mainly contributed to the following things:
 <a name="_Guo"></a>
 * **Sheng Guo**
 
-Guo works on question component on frontend and mainly takes responsibility for the navigator bar on top of the website, principle display and two option boxes that show the questions. He is in charge of the implementation and testing of these functions and features.
+Guo works on frontend and mainly takes responsibility for the three components on question page which are `principle`, `option` and `status-bar`. He is in charge of the implementation and testing of these functions and features.
 
 <a name="_Liang"></a>
 * **Karine Liang**
