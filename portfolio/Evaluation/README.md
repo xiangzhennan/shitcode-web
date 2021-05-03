@@ -8,7 +8,8 @@
 
 * [2. Unit testing / Functional testing](#_2)
     * [API testing with python](#_2.1) 
-    * [Test plan for frontend page and function](#_2.2)   
+    * [Test plan for frontend page and function](#_2.2)
+    * [Functional testing for components](#_2.3)
 
 * [3. User acceptance testing](#_3)
     * [Cognitive walk-through](#_3.1)     
@@ -100,6 +101,20 @@ Some little piece of shitcode may mess with your code. Test your skills and judg
 - If the user click `replay` button to restart the game, a new round of game will start and the previous records will be cleared.
 
 The test plan is to ensure all of the core frontend functions will be tested and the interaction with backend will work properly.
+
+<a name="_2.3"></a>
+### - Functional testing for components
+
+We designed three functional tests for components on question page. 
+* Firstly, when the component is loaded, the first question would be shown in the webpage. 
+* Secondly, when the user clicks `confirm` button, the real principle and right answer would be shown in the webpage. 
+* Thirdly, when the user clicks `next` button, the next question would be loaded. 
+
+The testing is shown as below.
+
+<img src="img/t1.png" width="700" />
+
+<img src="img/t2.png" width="700" />
 
 </br>
 
