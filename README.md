@@ -31,9 +31,11 @@ Shengzhe Qin: <fb20957@bristol.ac.uk> [Frontend]
 
 <a name="_intro"></a>
 ## 2.  Introduction
-Find-out-shitcode is a quiz game designed for coders especially novices to improve their coding skills and learn how to write readable code. Good habits for coding are important when learning programming as well as coding in a team. New coders always feel confused about which is good practice for implementing a piece of code. There are many tutorials on the market that teach you how to write code, but few teach you how to avoid writing shit code. The game is aimed at this kind of niche market and offered in a playful way to make learning more fun.
+Find-out-shitcode is a quiz game designed for coders especially novices to improve their coding habit and learn how to write elegant code. Good habits for coding are important when learning programming as well as coding in a team. New coders always feel confused about which is good practice for implementing a piece of code. There are many tutorials on the market that teach you how to write code, but few teach you how to avoid writing shit code. The game is aimed at this kind of niche market and offered in a playful way to make learning more fun.
 
-Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-art-shitcode) principles, each question provides two code snippets through examples of good and bad style in the game. The user is encouraged to distinguish between them and choose the bad practice which is defined as shitcode. The corresponding principle for good practice will be displayed afterwards. To increase the challenge of the game, the user will get relevant medal badge and ranking according to answer accuracy in the end.
+Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-art-shitcode) principles, each question provides two code snippets with examples of good and bad style in the game. The user is encouraged to distinguish between them and choose the bad one which is defined as shitcode. The corresponding principle for good coding practice will be displayed afterwards. To increase the challenge of the game, the user will get report and ranking at the end.
+
+A checklist against which our team could evaluate the success of our project is [here](portfolio/Conclusion/README.md/#_2.1).
 
 ### Demo video
 [<img src="portfolio/images/demo_video.png" width="700" />](https://youtu.be/QZWNW-RlVLs)
