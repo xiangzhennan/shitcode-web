@@ -40,6 +40,28 @@ After integrating the frontend and backend, all team members pull from “dev”
 At this stage, only a little changes are made based on testing. After first round of user testing (23rd April), “dev” branch is merged into “main” for the first time, but still, some bug fixing remain in “dev” branch.
 * Final push to “main” to form a completed project and report after bug free in “dev” branch.
 
+</br>
+
+<a name="_2"></a>
+## 2. Unit testing / Functional testing
+
+Testing happens along with developing. Some details are introduced in the system implementing part.
+
+<a name="_2.1"></a>
+### - API testing with python
+For integration test, since we only have three APIs to test and logic behind those requests is easy, our team decided to use python scripts to automatically test APIs. The basic idea is to use assert to check the contents of responses. For example, to test the post request which updates history info in MongoDB, we sent a mock get request to localhost before and after post request, then we check the history info to see if historyAnswerNum increased by one. You can refer to the part of code as below.
+
+```javascript
+response = requests.post(url, data=json.dumps(data), headers={"Content-Type": "application/json"})
+assert (response.text == 'ok')
+response = requests.get(questionUrl + "1").text
+# after a post request
+afterPost = requests.get(questionUrl + "1").text
+answerNumAfter = json.loads(afterPost)['historyAnswerNum']
+answerCorrectNumAfter = json.loads(afterPost)['historyCorrectNum']
+assert (answerCorrectNumAfter == answerCorrectNumBefore + 1)
+assert (answerNumAfter == answerNumBefore + 1)
+```
 
 </br></br>
 
