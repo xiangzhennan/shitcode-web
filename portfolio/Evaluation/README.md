@@ -70,7 +70,7 @@ assert (answerNumAfter == answerNumBefore + 1)
 
 Good thing about user acceptance testing for our website is all our classmates of MSc computer science program can be a member of potential user. They have learnt some basic knowledge and skills about coding but are not professional enough or experienced enough, very close to target user of this website.
 
-Two stages were set for a user acceptance testing plan. 
+We introduced user testing in each cycle of our sprints. But the first several sprints only involved small-scale tests which focused on our key users. Check user stories of each sprint for detail. The massive user acceptance test was taken on 23rd April onwards. Two stages were set for that, cognitive walk-through and user questionnaire. 
 
 <a name="_3.1"></a>
 ### - Cognitive walk-through
@@ -79,19 +79,25 @@ First, we want the user to do what is called cognitive walk-through. In this sta
 <a name="_3.2"></a>
 ### - Design questionnaire to get feedback
 Second, we want users to comment on the real content of the website. In our case, it is how they feel about the importance of code quality after playing the quiz game.
-An online survey of four multiple-choice questions is designed to collect advice as well as complaints. 
+An online survey of four multiple-choice questions is designed to collect advice as well as complaints, in order to help us understand and analyze feedback from users. 
+
 The first draft of the questionnaire is shown as below.
 
 ```
 Can you manage to finish the whole quiz without any help from developers?
-a.yes   b. met some problems
+a.yes   b.met some problems
 How do you feel about the quiz process?
-a.easy to explore  b. not good, sometimes I get lost
+a.easy to explore  b.not good, sometimes I get lost
 How do you feel about the style of the website?
-a.good  b. ugly
+a.good  b.ugly
 Do you think this website help raise your awareness of the importance of code quality?
-a.yes    b. no
+a.yes    b.no
 ```
+
+The final online version is shown as below.
+
+<img src="img/q1.png" />
+<img src="img/q2.png" />
 
 
 </br></br>
