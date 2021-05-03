@@ -49,7 +49,8 @@ Apart from early documenting, component listing and separated frontend and backe
 | No. | objectives | achieve or not | comments |
 | --- | ---------- | -------------- | -------- |
 | 1 | Build up a web application with MEAN stack | achieve | We built a completely working web application with `MongoDB`, `Express`, `Angular` and `Node.js`. |
-| 2 |
+| 2 | Address a serious problem in the real world | achieve | We addressed in the game that it's important to have a good coding habit and always pay attention to code quality with several examples | 
+| 3 | The web app is "serious play" with playful features | achieve | We used shit code theme with cute shit icons throughout the game. The game is set as a quiz which is much practical. Around 50% of the users in our massive user acceptance testing think it is a playful game. |
 
 <a name="_3"></a>
 ## 3. How coronavirus has affected the project
