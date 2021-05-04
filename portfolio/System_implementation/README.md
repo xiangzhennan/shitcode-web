@@ -18,7 +18,8 @@
     * [List of components](#_list)
     * [Welcome page](#_welcome)
     * [Question page](#_ques)
-        * [Component implementation (principle, option and status-bar)](#_ques1)
+        * [Implementation of component (principle, option and status-bar)](#_ques1)
+        * [Implementation of component (confirm button, get-report button, history)](#_ques2)
     * [Report page](#_report)
 
 * [5. Additional element - cookie/session or local storage](#_additional)
@@ -173,7 +174,7 @@ For the design of the theme color, it is based on yellow, and the same color sch
 ### - Question page
 
 <a name="_ques1"></a>
-#### Component implementation (principle, option and status-bar)
+#### Implementation of component (principle, option and status-bar)
 
 **HTML file**
 
@@ -214,7 +215,20 @@ This is also about writing css, for example, to make the website more beautiful.
 
 <img src="images/ques7.png" width="700" />
 
+<a name="_ques2"></a>
+#### Implementation of component (confirm button, get-report button, history)
 
+**Implementation of confirm button & get-report button**
+According to our design in previous section, we need two buttons: `confirm` & `get report` to submit answer, load next question and jump to report page. 
+
+Firstly let’s take a look at confirm button. Click event is binding to the <button>, when the user clicks in the <button>, Angular executes the `confirmAnswer()` expression.
+
+```html
+<button id= "confirm" type="button" (click)="confirmAnswer()">confirm</button>
+```
+
+
+</br>
 
 <a name="_report"></a>
 ### - Report page
