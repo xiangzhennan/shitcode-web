@@ -167,6 +167,8 @@ The final design of welcome page is show as below. Click ``"play"`` button to st
 
 <img src="img/welcome2.png" width="700" />
 
+</br>
+
 <a name="_5.2"></a>
 ### - Wireframe: question page
 
@@ -218,6 +220,7 @@ The player could also click the specific question number on the navigation bar t
 
 <img src="img/question9.png" width="700" />
 
+</br>
 
 <a name="_5.3"></a>
 ### - Wireframe: report page
