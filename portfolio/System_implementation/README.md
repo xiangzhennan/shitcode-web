@@ -19,7 +19,8 @@
     * [Welcome page](#_welcome)
     * [Question page](#_ques)
         * [Implementation of component (principle, option and status-bar)](#_ques1)</br>
-          [HTML file](#_ques1.1)
+          - [HTML file](#_ques1.1)
+          - 
         * [Implementation of component (confirm button, get-report button, history)](#_ques2)
     * [Report page](#_report)
 
