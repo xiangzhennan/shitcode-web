@@ -155,7 +155,7 @@ The final online version is shown as below.
 <a name="_3.3"></a>
 ### - Feedback analysis
 
-We get approximately 50 valid feedbacks from our users. The result data of the testing has been approximately rounded.
+We get approximately 50 valid feedbacks from our users. The data of the testing result has been approximately rounded.
 
 For the first and second questions of the questionnaire, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the web application.
 
