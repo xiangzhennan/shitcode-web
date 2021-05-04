@@ -19,6 +19,7 @@
     * [Welcome page](#_welcome)
     * [Question page](#_ques)
         * [Implementation of component (principle, option and status-bar)](#_ques1)
+            *[HTML file](#_ques1.1)
         * [Implementation of component (confirm button, get-report button, history)](#_ques2)
     * [Report page](#_report)
 
@@ -176,14 +177,15 @@ For the design of the theme color, it is based on yellow, and the same color sch
 <a name="_ques1"></a>
 #### Implementation of component (principle, option and status-bar)
 
-**HTML file**
+<a name="_ques1.1"></a>
+* **HTML file**
 
 Basically, we use ngfor to create 10 buttons and make them bound with 10 questions respectively. We use floating to make 2 option boxes (called button in html file) which show the question contents distributed horizontally. On top of the option box, there is a title to tell the user which is shit code and which is good code after the user makes a choice. It is empty at the begining and it shows appropriate contents by dom operation written in `question.compontent.ts` file. Besides, there is a footer at the bottom of the option box to show a feedback to the user. As for principles, we use `fadeInOut module` to make real principle appear at appropriate time.
 
 <img src="images/ques0.png" width="700" />
 
 
-**Type script**
+* **Typescript file**
 
 The logic of status bar is to jump between questions, by clicking a specific button, the user can jump to a specific question directly. Besides, when the user finished a question, the bar should tell the user whether he or she has made a right choice with corresponding icons.
 
