@@ -543,7 +543,7 @@ retainAnsweredState(id: number): void{
 }
 ```
 
-By changing the opacity of the option box, users can know they have made a choice.
+We change the opacity of the option box when the user has made a choice.
 
 <img src="images/ques6.png" width="700" />
 
