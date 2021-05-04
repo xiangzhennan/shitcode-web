@@ -68,7 +68,7 @@ However, the tools only control the outcome in a stage when the code quality iss
 <a name="_2.3"></a>
 ### - Related work
 
-**"shitcode" forum**[9]
+**"shitcode" forum**[9]</br>
 It is a forum named ‘shitcode’ where users can post a piece of code of any language and get the code quality feedback totally from other users: ‘vote up’ / ‘vote down’ / comments.</br>
 **pros**:</br> 
 funny name and theme;</br>
@@ -78,7 +78,7 @@ ranking of top/worst code</br>
 not suitable for beginners (outcomes voted by users might be wrong);</br> 
 much code is not voted at all
 
-**An online judge to access students code quality**
+**An online judge to access students code quality**</br>
 Remin Kasahara et al. proposed a gamified system that an online judge measures student submitted code for a programming problem, and instantly shows the CC (cyclomatic complexity) score with a leaderboard to the student. Student can resubmit multiple times, but the system only records the smallest CC score.[10]</br>
 **pros**:</br> 
 leaderboard</br>
@@ -87,7 +87,7 @@ only one aspect of code quality(CC);</br>
 no suggestions of improvement;</br> 
 insufficient fun elements
 
-**Refactor4Green: a game to teach code refactoring**
+**Refactor4Green: a game to teach code refactoring**</br>
 Vartika Agrahari and Sridhar Chimalakonda proposed a game that player as a nature lover & novice software engineer, need to solve puzzles and quizzes related to code smell, and collect awarded coins to recover the greenery.[11]</br>
 **pros**:</br> 
 interesting with a storyline;</br> 
@@ -96,7 +96,7 @@ clear guidance of code smell’s category</br>
 challenges are static;</br> 
 Discordant question UI
 
-**Clean Game: a game to identify code smells**
+**Clean Game: a game to identify code smells**</br>
 Hoyama Maria dos Santos et al. proposed a gamified software tool that is composed of smell-related quiz (presented in multiple choices) and code smell identification task (presented in IDE). The correct answers and time bonus are awarded with points, while wrong answers, skip or get tips will get points penalty. [12]</br>
 **pros**:</br> 
 leaderboard;</br> 
