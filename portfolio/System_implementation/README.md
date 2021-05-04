@@ -215,10 +215,13 @@ This is also about writing css, for example, to make the website more beautiful.
 
 <img src="images/ques7.png" width="700" />
 
+</br>
+
 <a name="_ques2"></a>
 #### Implementation of component (confirm button, get-report button, history)
 
-**Implementation of confirm button & get-report button**
+**Implementation of confirm button**
+
 According to our design in previous section, we need two buttons: `confirm` & `get report` to submit answer, load next question and jump to report page. 
 
 Firstly let’s take a look at confirm button. Click event is binding to the <button>, when the user clicks in the <button>, Angular executes the `confirmAnswer()` expression.
@@ -226,6 +229,82 @@ Firstly let’s take a look at confirm button. Click event is binding to the <bu
 ```html
 <button id= "confirm" type="button" (click)="confirmAnswer()">confirm</button>
 ```
+In the method of `confirmAnswer()`, an `if` statement determines which state of the clicked button is staying (`confirm`/`next`). The function `document.getElementById()` is to get element in the template by the id. If the state is `confirm`, a check for option selected status is necessary, only after which the program is allowed to submit answer and display feedbacks. 
+
+```typescript
+confirmAnswer(): void {
+    // if answered, jump to next question / report page
+    const confirmNext: any = document.getElementById('confirm');
+    if (confirmNext.innerHTML === 'next') {
+      ……
+    }
+    // otherwise, confirm answer
+    if (this.selectedOption === -1) {
+      alert('please choose an answer!');
+      return;
+    }
+    this.updateAnswer();
+    this.feedbackAnswer();
+}
+```
+
+The method of `updateAnswer()` modifies the state of `isAnswered` attribute, which is used as a controller for other features’ activity in the same component. 
+The method `checkAnswer()` gets result of the answer and is stored in the `isCorrect` attribute. The result of the answer is submitted to the server through the `dataService`. It also worths mentioning that `submitAnswer()` is a synchronous approach to post answer to the server and then returns an observable object, so we need to subscribe this method.
+
+```typescript
+updateAnswer(): void {
+  this.isAnswered = true;
+  this.checkAnswer();
+  this.dataService.submitAnswer(JSON.stringify(
+    {questionId: this.data.questionId, isCorrect: this.isCorrect})).subscribe();
+}
+```
+
+The method of feedback change the text inside `confirm` button to be replaced by `next`. Therefore, when user clicks this button again, the `next` function in `confirmAnswer()` method is now activated for use. 
+Before request for loading next question data, it is necessary to check if it is at the end of all questions and determine whether the page should jump to the report page directly.
+
+```typescript
+feedbackAnswer(): void {
+const confirmNext: any = document.getElementById('confirm');
+confirmNext.innerHTML = 'next';
+}
+
+confirmAnswer(): void {
+    // if answered, jump to next question / report page
+    const confirmNext: any = document.getElementById('confirm');
+    if (confirmNext.innerHTML === 'next') {
+      if (this.data.questionId === 10) {
+        this.getReport();
+      } else {
+        this.loadQuestion(this.data.questionId + 1);
+      }
+      return;
+    }
+……
+}
+```
+
+**Implementation of get-report button**
+
+Then let’s look at the `get report` button. The click event is also binding to this button, and Angular executes the method `getReport()` when the button is clicked. Different from `confirm` button, the `[disabled]` is an attribute of the template. When the state of `isAnswered` is false, the button functionality is banned (i.e. when clicked, no response) until the question is answered.
+The `setTimeout()` method hold on `getReport()` method for 2s before it responds to jump to report page.
+
+```html
+<button id= "report" [disabled]="!isAnswered" type="button" (click)="getReport()">get report</button>
+```
+
+```typescript
+getReport(): void{
+  // disabled until it is answered
+  if (this.isAnswered) {
+    setTimeout(() => {
+      this.router.navigate(['/report']); }, 2000);
+  }
+}
+```
+
+**Implementation of history block**
+
 
 
 </br>
