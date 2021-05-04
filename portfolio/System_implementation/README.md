@@ -18,11 +18,19 @@
     * [List of components](#_list)
     * [Welcome page](#_welcome)
     * [Question page](#_ques)
-        * [Implementation of component (principle, option and status-bar)](#_ques1)</br>
+        * [Implementation of component I (principle, option and status-bar)](#_ques1)</br>
           - [HTML file](#_ques1.1)
           - [Typescript file](#_ques1.2)
-          - [UI and style](#_ques1.3)
-        * [Implementation of component (confirm button, get-report button, history)](#_ques2)
+        * [Implementation of component II (confirm button, get-report button, history)](#_ques2)
+          - [Implementation of confirm button](#_ques2.1)
+          - [Implementation of get-report button](#_ques2.2)
+          - [Implementation of history block](#_ques2.3)
+          - [Implementation of animation](#_ques2.4)
+        * [Implementation of UI](#_ques3)
+          - [Theme color](#_ques3.1)
+          - [Navigation Bar](#_ques3.2)
+          - [Nav box & Option selected style](#_ques3.3)
+          - [Button cursor & Font](#_ques3.4)
     * [Report page](#_report)
 
 * [5. Additional element - cookie/session or local storage](#_additional)
@@ -177,7 +185,7 @@ For the design of the theme color, it is based on yellow, and the same color sch
 ### - Question page
 
 <a name="_ques1"></a>
-#### Implementation of component (principle, option and status-bar)
+### Implementation of component I (principle, option and status-bar)
 
 <a name="_ques1.1"></a>
 * **HTML file**
@@ -209,21 +217,10 @@ Last but not least, each time a new question is loaded, the title and the footer
 
 <img src="images/ques5.png" width="700" />
 
-<a name="_ques1.3"></a>
-* **UI and style**
-
-Until now our website can work though it is ugly, so the last step is to improve the user interface. Like changing the background color of the website, changing the pictures of the navigator bar, changing font style of the principles, etc. These are implemented in `question.component.ts` file by dom operation. For example, by changing the opacity of the option box, users can know they have made a choice.
-
-<img src="images/ques6.png" width="700" />
-
-This is also about writing css, for example, to make the website more beautiful. We use box shadow when the user hovers the mouse on the bar or the option. 
-
-<img src="images/ques7.png" width="700" />
-
 </br>
 
 <a name="_ques2"></a>
-#### Implementation of component (confirm button, get-report button, history)
+### Implementation of component II (confirm button, get-report button, history)
 
 <a name="_ques2.1"></a>
 * **Implementation of confirm button**
@@ -352,8 +349,235 @@ export const fadeInOutAnimation =
   ]);
 ```
 
+To make the animation definition available in our application, we adding the reusable animation (`fadeInOutAnimation`) to the animations metadata of the component.
+
+```typescript
+import {fadeInOutAnimation} from '../../animations';
+@Component({
+  selector: 'app-question',
+  templateUrl: './question.component.html',
+  styleUrls: ['./question.component.css'],
+  animations: [
+    fadeInOutAnimation
+  ]
+})
+```
+
+To enable router animation, firstly, we add the data property of each route to define the key animation-specific configuration associated with a route. In the file of `app-routing.module.ts`:
+
+```typescript
+const routes: Routes = [
+  {path: 'welcome', component: WelcomeComponent, data: {animation: 'WelcomePage'}},
+  {path: 'question', component: QuestionComponent, data: {animation: 'QuestionPage'}},
+  {path: 'report', component: ReportComponent, data: {animation: 'ReportPage'}},
+  {path: '**', redirectTo: 'welcome'},
+];
+```
+
+Secondly, we need to tell the Angular router where to render the views when matched with a route. Here, the `prepareRoute()` method takes the value of the outlet directive (established through `#outlet="outlet"`) and returns a string value representing the state of the animation based on the custom data of the current active route. In the component of `app-component`:
+
+```html
+<div [@routeAnimations]="prepareRoute(outlet)" class="content" role="main">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+```
+
+```typescript
+import {RouterOutlet} from '@angular/router';
+import {slideInAnimation} from './animations';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  animations: [
+    slideInAnimation
+  ]
+})
+export class AppComponent {
+  title = 'shitcode';
+  // tslint:disable-next-line:typedef
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+  }
+}
+```
+
+Finally, we define animations in the file of `animation.ts`. It’s too long so here we emit the later part which repeats the definition except for the transition statement.
+
+```typescript
+export const slideInAnimation =
+  trigger('routeAnimations', [
+    transition('WelcomePage => QuestionPage', [
+      style({ position: 'relative' }),
+      query(':enter, :leave', [
+        style({
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%'
+        })
+      ]),
+      query(':enter', [
+        style({ left: '100%' })
+      ]),
+      query(':leave', animateChild()),
+      group([
+        query(':leave', [
+          animate('100ms ease-out', style({ left: '-100%' }))
+        ]),
+        query(':enter', [
+          animate('300ms ease-out', style({ left: '0%' }))
+        ])
+      ]),
+      query(':enter', animateChild()),
+    ]),
+    transition('QuestionPage <=> ReportPage',[
+      ……
+    ]) 
+]);
+```
+
+</br>
+
+<a name="_ques3"></a>
+### Implementation of UI
+
+Until now our website can work though it is ugly, so the last step is to improve the user interface. Like changing the background color of the website, changing the pictures of the navigator bar, changing font style of the principles, etc. These are implemented in `question.component.ts` file by dom operation.
+
+<a name="_ques3.1"></a>
+* **Theme color**
+
+We define a 10-element array as an attribute to store background colors for each question. Every time the question page is reloaded, the program will change its theme color depends on the current question ID.
+
+```typescript
+private themeColors: any[] = ['#FEC89A', '#FFD7BA', '#FCD5CE', '#FAE1DD', '#E8E8E4', '#D8E2DC', '#ECE4DB', '#FFE5D9',
+  '#FFD7BA', '#FEC89A'];
+document.body.style.backgroundColor = this.themeColors[id - 1];
+```
+
+<a name="_ques3.2"></a>
+* **Navigation Bar**
+
+The idea in UI implementation of navigation bar, is to replace the inner text of question number and background color of each navigation box, with images that can represent different answer status. Therefore, we alter the `ngAfterViewInit()` method and `checkAnswer()` method, to get the sub elements in the template and change the source of images as well as box background color according to the answer status of a question (correct, wrong, default).
+
+```typescript
+private stateColors: any = {correct: '#FFA000', wrong: 'red', default: ''};
+
+ngAfterViewInit(): void {
+	……
+// init nav bar with different status colors & img
+for (i = 0; i < 10; i++) {
+  console.log((i + 1).toString());
+  const navBox: any = document.getElementById((i + 1).toString());
+  if (this.answerStatus[i] === 1) {
+    navBox.style.backgroundColor = this.stateColors.correct;
+    navBox.childNodes[0].src = '../../../assets/img/nav/good.png';
+  } else if (this.answerStatus[i] === 0) {
+    navBox.style.backgroundColor = this.stateColors.wrong;
+    navBox.childNodes[0].src = '../../../assets/img/nav/bad.png';
+  } else {
+    navBox.style.backgroundColor = this.stateColors.default;
+    navBox.childNodes[0].src = '../../../assets/img/nav/default.png';
+  }
+}
+}
+
+checkAnswer(): void {
+  let color: string;
+  let imgUrl: string;
+  this.isCorrect = this.selectedOption === this.data.correctId;
+  if (this.isCorrect){
+    color = this.stateColors.correct;
+    imgUrl = '../../../assets/img/nav/good.png';
+    this.answerStatus[this.data.questionId - 1] = 1;
+  } else{
+    color = this.stateColors.wrong;
+    imgUrl = '../../../assets/img/nav/bad.png';
+    this.answerStatus[this.data.questionId - 1] = 0;
+  }
+  localStorage.setItem('answerStatus', JSON.stringify(this.answerStatus));
+  const navBox: any = document.getElementById(this.data.questionId.toString());
+  navBox.style.backgroundColor = color;
+  navBox.childNodes[0].src = imgUrl;
+}
+```
+
+<a name="_ques3.3"></a>
+* **Nav box & Option selected style**
+
+The idea to highlight selected option and navigation box is using the change of opacity. Opacity of 0.6 refers to the unselected state, while opacity of 1 is considered as the selected state. After loading the question data, it highlights the navigation box which it is located in.
+
+```typescript
+// to highlight current navBox
+this.questionIDArray.forEach(item => {
+  const navBox: any = document.getElementById(item.toString());
+  navBox.style.opacity = '0.6';
+  if (item === id){
+    navBox.style.opacity = '1';
+  }
+});
+```
+
+As for the option selected style, because the selected status needed to be retained when reviewing an answered question, but be cleared when go to an unanswered question. However, the option selected status of last question would be maintained if not reset it timely. Therefore, we reset the option status right after we load the question. 
+
+```typescript
+resetAnswerState(): void{
+   …
+   // reset selected status
+   const left: any = document.getElementById('left');
+   const right: any = document.getElementById('right');
+   left.style.opacity = '0.6';
+   right.style.opacity = '0.6';
+}
+
+retainAnsweredState(id: number): void{
+   this.isAnswered = true;
+   // retain selected status
+   this.isCorrect = this.answerStatus[id - 1] === 1;
+   const optionIdSet = [2, 1];   // a trick to return 1 when input 2, and vice versa
+   this.selectedOption = this.isCorrect ? this.data.correctId : (optionIdSet.indexOf(this.data.correctId) + 1);
+   this.selectedOption === 1 ? this.chooseLeft() : this.chooseRight();
+   // reset & generate feedback
+   this.resetOptionFeedback();
+   this.feedbackAnswer();
+}
+```
+
+By changing the opacity of the option box, users can know they have made a choice.
+
+<img src="images/ques6.png" width="700" />
+
+We also use box shadow when the user hovers the mouse on the bar or the option. 
+
+<img src="images/ques7.png" width="700" />
 
 
+<a name="_ques3.4"></a>
+* **Button cursor & Font**
+
+For user-friendly reasons, it’s better to change mouse style from pointer to not-allowed logo as well as to make the color gray when the button is disabled. Here are a CSS solutions to it.
+
+```css
+[disabled]{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+```
+
+To make our UI more harmonized, we have tried multiple solutions of font, and finally decide to adopt `Josefin Sans` series font for the body of our webpage. Here are the attempts that we have made about the font design.
+
+```css
+.font{
+ /* font-family: "Brush Script MT", cursive;
+  font-family: Georgia, serif;
+  font-family: Garamond, serif;*/
+  //font-family: 'Architects Daughter',serif;
+  /*font-family: 'Amatic SC',serif;
+  letter-spacing: 3px;*/
+  //font-family: 'Exo 2',serif;
+  font-family: Josefin Sans, serif;
+}
+```
 
 </br>
 
