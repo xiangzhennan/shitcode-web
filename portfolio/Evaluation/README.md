@@ -149,7 +149,7 @@ a.yes    b.no
 
 The final online version is shown as below.
 
-<img src="img/q1.png" width="600" />
+<img src="img/q8.png" width="600" />
 <img src="img/q2.png" width="600" />
 
 <a name="_3.3"></a>
