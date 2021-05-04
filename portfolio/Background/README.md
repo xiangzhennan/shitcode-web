@@ -19,7 +19,7 @@ In this section, we describe the theoretical foundation (i.e., code quality and 
     * [Problem definition & challenge](#_3.1)
     * [Motivation](#_3.2)
 
-* [Reference](#_4)
+* [4. Reference](#_4)
 
 <a name="_1"></a>
 ## 1. Background literature and academic research review
@@ -69,41 +69,41 @@ However, the tools only control the outcome in a stage when the code quality iss
 ### - Related work
 
 **"shitcode" forum**[9]
-It is a forum named ‘shitcode’ where users can post a piece of code of any language and get the code quality feedback totally from other users: ‘vote up’ / ‘vote down’ / comments.
+It is a forum named ‘shitcode’ where users can post a piece of code of any language and get the code quality feedback totally from other users: ‘vote up’ / ‘vote down’ / comments.</br>
 **pros**:</br> 
 funny name and theme;</br>
 open-source platform;</br>
-ranking of top/worst code
+ranking of top/worst code</br>
 **cons**:</br> 
 not suitable for beginners (outcomes voted by users might be wrong);</br> 
 much code is not voted at all
 
 **An online judge to access students code quality**
-Remin Kasahara et al. proposed a gamified system that an online judge measures student submitted code for a programming problem, and instantly shows the CC (cyclomatic complexity) score with a leaderboard to the student. Student can resubmit multiple times, but the system only records the smallest CC score.[10]
+Remin Kasahara et al. proposed a gamified system that an online judge measures student submitted code for a programming problem, and instantly shows the CC (cyclomatic complexity) score with a leaderboard to the student. Student can resubmit multiple times, but the system only records the smallest CC score.[10]</br>
 **pros**:</br> 
-leaderboard
+leaderboard</br>
 **cons**:</br> 
 only one aspect of code quality(CC);</br> 
 no suggestions of improvement;</br> 
 insufficient fun elements
 
 **Refactor4Green: a game to teach code refactoring**
-Vartika Agrahari and Sridhar Chimalakonda proposed a game that player as a nature lover & novice software engineer, need to solve puzzles and quizzes related to code smell, and collect awarded coins to recover the greenery. [11]
+Vartika Agrahari and Sridhar Chimalakonda proposed a game that player as a nature lover & novice software engineer, need to solve puzzles and quizzes related to code smell, and collect awarded coins to recover the greenery.[11]</br>
 **pros**:</br> 
 interesting with a storyline;</br> 
-clear guidance of code smell’s category
+clear guidance of code smell’s category</br>
 **cons**:</br> 
 challenges are static;</br> 
 Discordant question UI
 
 **Clean Game: a game to identify code smells**
-Hoyama Maria dos Santos et al. proposed a gamified software tool that is composed of smell-related quiz (presented in multiple choices) and code smell identification task (presented in IDE). The correct answers and time bonus are awarded with points, while wrong answers, skip or get tips will get points penalty. [12]
+Hoyama Maria dos Santos et al. proposed a gamified software tool that is composed of smell-related quiz (presented in multiple choices) and code smell identification task (presented in IDE). The correct answers and time bonus are awarded with points, while wrong answers, skip or get tips will get points penalty. [12]</br>
 **pros**:</br> 
 leaderboard;</br> 
 progress bar;</br> 
 skip button;</br> 
 adjustable difficulty level (time limit, tips);</br> 
-multiple functions
+multiple functions</br>
 **cons**:</br> 
 insufficient fun elements (UI similar to online exam)
 
@@ -135,18 +135,18 @@ The motivation behind our webpage is to create a game which is capable of combin
 </br>
 
 <a name="_4"></a>
-## Reference
-[1] Fowler, Martin. Refactoring: improving the design of existing code. Addison-Wesley Professional, 2018.
-[2] "Definition of the term "Technical Debt" (plus, some background information and an "explanation")". Techopedia. Retrieved August 11, 2016.
-[3] Martini, Antonio, Terese Besker, and Jan Bosch. "Technical debt tracking: Current state of practice: A survey and multiple case study in 15 large organizations." Science of Computer Programming 163 (2018): 42-61.
-[4] Kirk, Diana, et al. "On assuring learning about code quality." Proceedings of the Twenty-Second Australasian Computing Education Conference. 2020.
-[5] Sebastian Deterding; Dan Dixon; Rilla Khaled; Lennart Nacke (2011). From game design elements to gamefulness: Defining "gamification". Proceedings of the 15th International Academic MindTrek Conference. pp. 9–15. 
-[6] Djaouti, Damien; Alvarez, Julian; Jessel, Jean-Pierre; Rampnoux, Olivier (2011). "Origins of serious games". Serious Games and Edutainment Applications. Springer: 25–43. 
-[7] Moro, Christian; Phelps, Charlotte; Stromberga, Zane (2020-08-14). "Utilizing serious games for physiology and anatomy learning and revision". Advances in Physiology Education. 44 (3): 505–507. 
-[8] Alhammad, Manal M., and Ana M. Moreno. "Gamification in software engineering education: A systematic mapping." Journal of Systems and Software 141 (2018): 131-150.
-[9] https://shitcode.net/best
-[10] Kasahara, Remin, et al. "Applying gamification to motivate students to write high-quality code in programming assignments." Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education. 2019.
-[11] Agrahari, Vartika, and Sridhar Chimalakonda. "Refactor4Green: a game for novice programmers to learn code smells." 2020 IEEE/ACM 42nd International Conference on Software Engineering: Companion Proceedings (ICSE-Companion). IEEE, 2020.
+## 4. Reference
+[1] Fowler, Martin. Refactoring: improving the design of existing code. Addison-Wesley Professional, 2018.</br>
+[2] "Definition of the term "Technical Debt" (plus, some background information and an "explanation")". Techopedia. Retrieved August 11, 2016.</br>
+[3] Martini, Antonio, Terese Besker, and Jan Bosch. "Technical debt tracking: Current state of practice: A survey and multiple case study in 15 large organizations." Science of Computer Programming 163 (2018): 42-61.</br>
+[4] Kirk, Diana, et al. "On assuring learning about code quality." Proceedings of the Twenty-Second Australasian Computing Education Conference. 2020.</br>
+[5] Sebastian Deterding; Dan Dixon; Rilla Khaled; Lennart Nacke (2011). From game design elements to gamefulness: Defining "gamification". Proceedings of the 15th International Academic MindTrek Conference. pp. 9–15. </br>
+[6] Djaouti, Damien; Alvarez, Julian; Jessel, Jean-Pierre; Rampnoux, Olivier (2011). "Origins of serious games". Serious Games and Edutainment Applications. Springer: 25–43. </br>
+[7] Moro, Christian; Phelps, Charlotte; Stromberga, Zane (2020-08-14). "Utilizing serious games for physiology and anatomy learning and revision". Advances in Physiology Education. 44 (3): 505–507. </br>
+[8] Alhammad, Manal M., and Ana M. Moreno. "Gamification in software engineering education: A systematic mapping." Journal of Systems and Software 141 (2018): 131-150.</br>
+[9] https://shitcode.net/best </br>
+[10] Kasahara, Remin, et al. "Applying gamification to motivate students to write high-quality code in programming assignments." Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education. 2019.</br>
+[11] Agrahari, Vartika, and Sridhar Chimalakonda. "Refactor4Green: a game for novice programmers to learn code smells." 2020 IEEE/ACM 42nd International Conference on Software Engineering: Companion Proceedings (ICSE-Companion). IEEE, 2020.</br>
 [12] dos Santos, Hoyama Maria, et al. "CleanGame: Gamifying the Identification of Code Smells." Proceedings of the XXXIII Brazilian Symposium on Software Engineering. 2019.
 
 </br></br>
