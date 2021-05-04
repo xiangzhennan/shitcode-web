@@ -1,0 +1,21 @@
+
+1. Introduction page
+
+Find Out Shitcode (name of game with game logo attached)
+
+Do you think you’ve known how to avoid shitcode?
+Some little piece of shitcode may probably mess with your code. Test your skills and judge which snippet is shitcode. We’ve concluded several principles for you to get rid of shitcode, start and try it.
+
+2. Question page
+
+Which one is shitcode?
+(show principle and choices)
+After submission, show real principle.
+
+3. Report page
+
+Nice Try!
+Badge: Excellent/Nice work/Try harder
+You have correctly answered X questions with X% accuracy!
+
+
