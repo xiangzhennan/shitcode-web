@@ -20,7 +20,8 @@
     * [Question page](#_ques)
         * [Implementation of component (principle, option and status-bar)](#_ques1)</br>
           - [HTML file](#_ques1.1)
-          - 
+          - [Typescript file](#_ques1.2)
+          - [UI and style](#_ques1.3)
         * [Implementation of component (confirm button, get-report button, history)](#_ques2)
     * [Report page](#_report)
 
@@ -311,6 +312,46 @@ getReport(): void{
 
 <a name="_ques2.3"></a>
 * **Implementation of history block**
+
+History block refers to the statistical data of all answer records in a question. In the template, history message is a paragraph with embedding `getAccuracy()` method as interpolation. Angular first evaluates the expression, and then converts to a string.
+`[hidden]` is an attribute of the template, which will hide the whole `<div></div>` block when the question is not answered.
+
+```html
+<div [@fadeInOut]="isAnswered ? 'Answered':'notAnswered'" [hidden]="!isAnswered">
+    <p class="history">{{getAccuracy()}} people find the shit code!</p>
+</div>
+```
+
+```typescript
+getAccuracy(): string {
+  if (this.data.historyCorrectNum === 0 || this.data.historyAnswerNum === 0){
+    return '0%';
+  }
+  return (Math.round(this.data.historyCorrectNum / this.data.historyAnswerNum * 10000) / 100.00) + '%';
+}
+```
+
+<a name="_ques2.4"></a>
+* **Implementation of animation**
+
+In order to re-use the animations and facilitate the management of animations, we are defining the animations in a separate file. To make the appear and disappear of principles and history messages more smooth and naturally, we use `fade in` & `fade out` animation. The `notAnswered => Answered` transition sets an initial opacity of 0, and then animates it to change that opacity to 1 as the element is inserted into the view. 
+
+```typescript
+import {animate, animateChild, group, query, state, style, transition, trigger} from '@angular/animations';
+export const fadeInOutAnimation =
+  // fade in & fade out animation + fixed position
+  trigger('fadeInOut', [
+    state('notAnswered', style({ opacity: 0 })),
+    state('Answered', style({ opacity: 1 })),
+    transition('notAnswered => Answered', [
+      animate('500ms')
+    ]),
+    transition('Answered => notAnswered', [
+      animate('500ms')
+    ])
+  ]);
+```
+
 
 
 
