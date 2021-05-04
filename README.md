@@ -35,6 +35,8 @@ Find-out-shitcode is a quiz game designed for coders especially novices to impro
 
 Based on [state-of-the-art-shitcode](https://github.com/trekhleb/state-of-the-art-shitcode) principles, each question provides two code snippets with examples of good and bad style in the game. The user is encouraged to distinguish between them and choose the bad one which is defined as shitcode. The corresponding principle for good coding practice will be displayed afterwards. To increase the challenge of the game, the user will get report and ranking at the end.
 
+The web application is built on MEAN stack. We design and implement three main components (welcome, question, report) and three main APIs (question, report, submit) to fulfill the functions and features of our system. We store our dynamic data in MangoDB which doesn't involve any personal information of users but only game statistics. We carry out testing for each API and component as well as functional testing based on our [test plan](portfolio/Evaluation/README.md/ #_2.2). Over 75% of the users in our final massive user acceptance test agree that the game has raised their awareness of code quality and they have realized the big difference between good code and shit code through the game. Overall, we think our web application has made a positive influence on promoting good coding practice by distinguishing from the bad one.
+
 A checklist against which our team could evaluate the success of our project is [here](portfolio/Conclusion/README.md/#_2.1).
 
 ### Demo video
