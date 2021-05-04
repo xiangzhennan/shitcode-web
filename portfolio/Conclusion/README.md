@@ -59,7 +59,7 @@ Overall we have achieved as a group the objectives we set at the beginning of th
 | 1 | Build up a web application with MEAN stack | achieve | We built a completely working web application with `MongoDB`, `Express`, `Angular` and `Node.js`. |
 | 2 | Address a serious problem in the real world | achieve | We addressed in the game that it's important to have a good coding habit and always pay attention to code quality with several examples. | 
 | 3 | The web app is "serious play" with playful features | achieve | We used shit code theme with cute shit icons throughout the game.<br/>The game is set as a quiz which is much practical.<br/>Around 50% of the users in our massive user acceptance testing think it is a playful game. |
-| 4 | Fulfill the functions of the game | achieve | The functions set from UX design were all fulfilled at the end which could be briefly concluded as introduction, finding out shit code and getting report. |
+| 4 | Fulfill the functions of the game | achieve | The functions set in UX design were all fulfilled at the end which could be briefly concluded as introduction, finding out shit code and getting report. |
 | 5 | Use Angular to complete frontend construction | achieve | We designed and implemented three main components (welcome, question, report) and several data services on the frontend. |
 | 6 | Use Express to complete backend construction | achieve | We designed and implemented three main APIs (question, report, submit) to get request and post request. |
 | 7 | Use MangoDB to manage the storage of data | achieve | We stored our dynamic data (history correct num, history answer num) on MangoDB and designed a database model and schema for that. |
