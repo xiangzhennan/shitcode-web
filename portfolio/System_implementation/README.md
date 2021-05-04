@@ -18,8 +18,8 @@
     * [List of components](#_list)
     * [Welcome page](#_welcome)
     * [Question page](#_ques)
-        * [Implementation of component (principle, option and status-bar)](#_ques1)
-            *[HTML file](#_ques1.1)
+        * [Implementation of component (principle, option and status-bar)](#_ques1)</br>
+          [HTML file](#_ques1.1)
         * [Implementation of component (confirm button, get-report button, history)](#_ques2)
     * [Report page](#_report)
 
@@ -184,7 +184,7 @@ Basically, we use ngfor to create 10 buttons and make them bound with 10 questio
 
 <img src="images/ques0.png" width="700" />
 
-
+<a name="_ques1.2"></a>
 * **Typescript file**
 
 The logic of status bar is to jump between questions, by clicking a specific button, the user can jump to a specific question directly. Besides, when the user finished a question, the bar should tell the user whether he or she has made a right choice with corresponding icons.
@@ -207,7 +207,8 @@ Last but not least, each time a new question is loaded, the title and the footer
 
 <img src="images/ques5.png" width="700" />
 
-**UI and style**
+<a name="_ques1.3"></a>
+* **UI and style**
 
 Until now our website can work though it is ugly, so the last step is to improve the user interface. Like changing the background color of the website, changing the pictures of the navigator bar, changing font style of the principles, etc. These are implemented in `question.component.ts` file by dom operation. For example, by changing the opacity of the option box, users can know they have made a choice.
 
@@ -222,7 +223,8 @@ This is also about writing css, for example, to make the website more beautiful.
 <a name="_ques2"></a>
 #### Implementation of component (confirm button, get-report button, history)
 
-**Implementation of confirm button**
+<a name="_ques2.1"></a>
+* **Implementation of confirm button**
 
 According to our design in previous section, we need two buttons: `confirm` & `get report` to submit answer, load next question and jump to report page. 
 
@@ -286,7 +288,8 @@ confirmAnswer(): void {
 }
 ```
 
-**Implementation of get-report button**
+<a name="_ques2.2"></a>
+* **Implementation of get-report button**
 
 Then let’s look at the `get report` button. The click event is also binding to this button, and Angular executes the method `getReport()` when the button is clicked. Different from `confirm` button, the `[disabled]` is an attribute of the template. When the state of `isAnswered` is false, the button functionality is banned (i.e. when clicked, no response) until the question is answered.
 The `setTimeout()` method hold on `getReport()` method for 2s before it responds to jump to report page.
@@ -305,7 +308,8 @@ getReport(): void{
 }
 ```
 
-**Implementation of history block**
+<a name="_ques2.3"></a>
+* **Implementation of history block**
 
 
 
