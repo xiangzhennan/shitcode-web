@@ -12,7 +12,7 @@ In this section, we describe the theoretical foundation (i.e., code quality and 
     * [SE education game](#_2.1)
     * [Code quality-related applications](#_2.2)
     * [Related work](#_2.3)
-    * [Trend analysis & implication for us](#_2.4)
+    * [Trend analysis & implication](#_2.4)
     * [Gap in the market](#_2.5)
 
 * [3. Definition and challenge of the problem](#_3)
@@ -108,7 +108,7 @@ multiple functions</br>
 insufficient fun elements (UI similar to online exam)
 
 <a name="_2.4"></a>
-### - Trend analysis & implication for us
+### - Trend analysis & implication
 It’s clear that previous code quality-related game prototypes mainly use the quiz as a main method to convey the knowledge (such as e.g., 3 & 4). Leaderboard is extensively used among all the prototypes, because it would create another incentive for users with frustrating grade. It’s also worth highlighting the importance of adding fun and interesting elements to a game to motivate users (such as e.g., 1 & 3). To make our game more user-friendly, some features such as ‘skip button’, ‘progress bar’ and ‘guidance of smell category’ are also worthy to be added to the scope of our product.
 
 <a name="_2.5"></a>
