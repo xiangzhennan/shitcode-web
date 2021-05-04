@@ -105,6 +105,7 @@ Guo works on frontend and mainly takes responsibility for the three components o
 **Karine Liang**
 
 Liang's role in the team is mainly as a developer in the frontend.
+
 To be specific, she have done the following thing:
 -	Frontend development in question component
 -	UI design
