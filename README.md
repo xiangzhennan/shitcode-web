@@ -49,7 +49,7 @@ a. Background literature and academic research review
 
 b. State of the art survey and current industry review
 
-c. Definition, scope and challenge of the problem
+c. Definition and challenge of the problem
 
 <a name="_implementation"></a>
 ## 4.  System Implementation
