@@ -16,6 +16,10 @@
     * [Think-aloud evaluation](#_3.3)
     
 * [4. Social and Ethical implications](#_4)
+    * [Social benefits](#_4.1)
+    * [Honesty & Integrity](#_4.2)
+    * [Respect](#_4.3)
+    * [Transparency](#_4.4)
 
 * [5. Future work](#_5)
     * [Design part](#_5.1)
@@ -93,6 +97,29 @@ We have to implement our user acceptance testing online and collect feedback thr
 <a name="_4"></a>
 ## 4. Social and Ethical implications
 
+To reduce the potential ethical risks of IT professionals, all developers in our team follow the [BCS Code of Conduct](https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/) when developing the product. Regarding the ethical integrity of our product design, we apply a framework that is particular focused in gamification - “[Open Gamification Code of Ethics](https://ethics.gamified.uk)” to support our analysis. 
+
+<a name="_4.1"></a>
+### - Social benefits
+We designed our quiz game in hopes of providing incentives for programming beginners to learn about code quality and develop good coding habits. Besides educational acquisition for individual players, the product also has a profound influence on the SE education and the ecosystem of software development. In SE education, our game will attract lecturers and students’ attention to the topic of code quality and hence more programming learners will get the opportunity to know about code quality issues and relevant concepts. Regarding the ecosystem of software development, above benefits will accumulate and finally contribute to the improvement of the SE ecosystem. It is because people’s behavior of code writing will be changed positively, thus the cost and risk related to code quality is greatly reduced, and the productivity in the SE community and society increases.
+
+<a name="_4.2"></a>
+### - Honesty & Integrity
+In terms of honesty, all the data we used in this report are authentic, some of which are approximations. The data sources are literatures and our real users. All the answered data and survey data collected have got the user’s ethical approval.
+
+In terms of Integrity, since the topic is just about identification of code smell from good code, and all the contents in principles and options are checked ethical compliant, we can conclude that there are not any illegal activities, breaks of regional social practices or human rights issues etc. in the gamification process of our product.
+
+<a name="_4.3"></a>
+### - Respect
+For many people, the element of ‘shit’ and its emoji image is funny and ironic, so we choose it to represent code smell. However, there is also possibility that people might think the ‘shit’ as a symbol of unrespect, or impolite to those who used to write the similar ‘shit code’. Although this is not clear whether this could be an issue, our solution plan to this is to add some statements in the welcome page to explain the hidden meaning of ‘shit’ to avoid misunderstand.
+
+<a name="_4.4"></a>
+### - Transparency
+To encourage openness about the site to both players and investors, we clarify that the aims of our site, what data will be collected, how do we use and deal with the data in the introduction page of our site. 
+
+In terms of the data usage, the answer status data are stored in the local storage of player’s browser, to reload the last answer status; the result of answer is submitted anonymously to the server, and store into our database to update the leaderboard. Data is only collected and used by our services and will not be shared with any other entities, unless users request.
+
+In terms of data privacy and security, data in our product are not protected with a medium password, thus there is a risk that data breach will be exploited by hackers. However, all the data collected and used are not sensitive personal data, so our site still complies with GDPR. When the site is expanded to more functions and need to include biometric data, the data privacy and security management should be put on the agenda.
 
 <br/>
 
