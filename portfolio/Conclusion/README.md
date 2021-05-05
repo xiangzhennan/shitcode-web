@@ -132,11 +132,11 @@ The shitcode website is designed originally to educate new coders about the impo
 
 <a name="_5.2"></a>
 ### - Development part
-Angular and Express is quite good for implementing prototype website. However, when a website becomes popular and functions become complex, stronger framework for backend like spring for Java can be a better choice to deal with possible issues like huge traffic.
+Angular and Express is quite good for implementing prototype application. However, when the application becomes popular and functions become complex, stronger framework for backend like spring for Java can be a better choice to deal with possible issues like huge traffic.
 
 <a name="_5.3"></a>
 ### - Evaluation part
-Our team did our best for testing the website, but the scale of test sample is still not satisfying, we are looking forward to spreading the website further and getting more useful advice.
+Our team did our best on testing, but the scale of test sample is still not satisfying. We are looking forward to spreading the application further and getting more useful advice.
 The main target user of the application is new coder. In the future, we plan to do testing on wider groups to see if they find it helpful for raising awareness of writing not only correct but good-styled code.
 
 
