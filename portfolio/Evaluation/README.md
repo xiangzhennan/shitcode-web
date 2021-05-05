@@ -137,14 +137,14 @@ An online survey of four multiple-choice questions is designed to collect advice
 The first draft of the questionnaire is shown as below.
 
 ```
-Can you manage to finish the whole quiz without any help from developers?
-a.yes   b.met some problems
-How do you feel about the quiz process?
-a.easy to explore  b.not good, sometimes I get lost
-How do you feel about the style of the website?
-a.good  b.ugly
-Do you think this website help raise your awareness of the importance of code quality?
-a.yes    b.no
+1. Can you manage to finish the whole quiz without any help from developers?
+   a.yes   b.met some problems
+2. How do you feel about the quiz process?
+   a.easy to explore  b.not good, sometimes I get lost
+3. How do you feel about the style of the website?
+   a.good  b.ugly
+4. Do you think this website help raise your awareness of the importance of code quality?
+   a.yes    b.no
 ```
 
 The final online version is shown as below.
