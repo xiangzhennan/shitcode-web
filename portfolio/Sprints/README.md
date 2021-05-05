@@ -3,7 +3,7 @@
 ## Contents
 
 * [1. Group working methods](#_group)
-    * [Workflow](#_workflow)
+    * [Workflow management](#_workflow)
     * [Agile development](#_agile)
     * [Communication channel](#_communication)
 
@@ -32,7 +32,7 @@
 To develop an application in a group, we apply the principles of DevOps and stick to the selected methodology to keep out project on track and moving at a constant pace.
 
 <a name="_workflow"></a>
-### - Workflow
+### - Workflow management
 We take an iterative approach to workflow management and break down larger issues into smaller units of work to help us meet our goals faster. Our workflow includes the following four states.
 * **TO DO**<br/>
   Work that has not been started
@@ -68,6 +68,7 @@ The key activities we follow during each Agile development cycle are as below:
 * **Teams** - We use Teams to have our weekly meeting and schedule team standups.
 * **GitHub** - We use GitHub to share documents, implement version control and merge our outputs for effective collaboration.
 * **Kanban** - We use Kanban Board for task allocation and progress monitoring. It makes the progress of our project transparent and helps us more better monitor how far we've come and what's left to do.
+* **WeChat group** - We use WeChat (instant messaging App) group to communicate in our daily work and manage issues of the project in a timely manner.
 </br>
 
 <a name="_team"></a>
