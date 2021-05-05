@@ -92,7 +92,7 @@ interesting with a storyline;</br>
 clear guidance of code smell’s category</br>
 * **cons**:</br> 
 challenges are static;</br> 
-Discordant question UI
+discordant question UI
 
 **Clean Game: a game to identify code smells**</br>
 Hoyama Maria dos Santos et al. proposed a gamified software tool that is composed of smell-related quiz (presented in multiple choices) and code smell identification task (presented in IDE). The correct answers and time bonus are awarded with points, while wrong answers, skip or get tips will get points penalty. [12]</br>
