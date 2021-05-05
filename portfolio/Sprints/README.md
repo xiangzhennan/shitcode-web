@@ -23,7 +23,7 @@
     * [Sprint 4: Version 1.0 release (22 Apr – 7 May)](#_s6)
     * [Meeting logs](#_s7)
     
-* [4. Team use of Git - continuous integration and deployment](#_git)
+* [4. Team use of Git](#_git)
     
 
 <a name="_group"></a>
@@ -209,7 +209,7 @@ We held a total of 19 online meetings in the whole process of the project. [Clic
 </br></br>
 
 <a name="_git"></a>
-## 4. Team use of Git - continuous integration and deployment
+## 4. Team use of Git
 
 To control and manage development in a robust and systematic way, we implement version control using a public GitHub repo and setup main, dev and other feature branches. Each team member developed their codes locally and pushed them to their own individual dev branch when code is finalized and they are happy with it. These individual branches were updated by each team member and were a working, moving copy of the latest shared version of their code.
 
