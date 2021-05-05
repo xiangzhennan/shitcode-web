@@ -103,7 +103,7 @@ Test out different solutions at small-scale, reject those that will not work and
 
 Paper prototyping is a user-centred design method that involves the development of user interface mock-ups and drawn sketches which are presented to end users for evaluation.
 
-We involved our users to better conceptualise our product and visualise how it will be used. Feedback from **end-user Emma** is listed as below.
+We involved our users in paper prototyping to better conceptualise our product and visualise how it will be used. Feedback from **end-user Emma** is listed as below.
 * **Product concept and goals**<br/>
 ```I think it's very clear for the game to choose out shitcode in order to get scores as high as possible.```
 * **Logic and flow of user journeys**<br/>
