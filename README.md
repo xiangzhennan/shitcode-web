@@ -82,7 +82,7 @@ d. Front End - Angular - details of implementation
 
 e. Additional element - cookie/session or local storage
 
-f. Deployment details - Docker - continuous integration
+f. Deployment details - Docker
 
 <a name="_UX"></a>
 ## 5.  UX Design
@@ -108,7 +108,7 @@ b. A summary of team roles and individual contributions
 
 c. Documentation of sprints
 
-d. Team use of Git - continuous integration and deployment
+d. Team use of Git
 
 <a name="_evaluation"></a>
 ## 7.  Evaluation
