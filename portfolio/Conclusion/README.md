@@ -90,7 +90,7 @@ It's a big challenge when we can't do UI design in person as a group. It took mu
 
 <a name="_3.3"></a>
 ### - Think-aloud evaluation
-We have to implement our user acceptance testing online and collect feedback through questionnaires. We can't do think-aloud formative user testing in person which would be better for us to collect response directly from users who are able to say aloud what they are thinking on site with our observer and facilitator in think-aloud evaluation.
+We have to implement our user acceptance testing online and collect feedback through questionnaires. We can't do think-aloud formative user testing in person which would be better for us to collect response directly from users who are able to say aloud what they are thinking with our observer and facilitator on site.
 
 <br/>
 
