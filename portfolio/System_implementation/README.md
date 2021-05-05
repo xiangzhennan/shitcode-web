@@ -117,6 +117,12 @@ API documents had only some little change over the implementing process. To be s
 We define a service to handle the http calls and hook it up to our application components. In the service, we create function `getQuestion()`, `getReport()` and `submitAnswer()` to make the right call to our APIs.
 
 ```javascript
+  public REST_API_QUESTION = 'http://localhost:3000/api/question?id=';
+  public REST_API_REPORT = 'http://localhost:3000/api/report?correctNum=';
+  public REST_API_SUBMIT = 'http://localhost:3000/api/submit';
+```
+
+```javascript
   public getQuestion(id: number){
     const url = this.REST_API_QUESTION + id;
     return this.httpClient.get(url);
