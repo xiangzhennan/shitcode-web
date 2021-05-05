@@ -4,10 +4,10 @@
 
 * [1. Background literature and academic research review](#_1)
     * [Code quality](#_1.1)
-    * [Gamification in SE education](#_1.2)
+    * [Gamification in SE (software engineering) education](#_1.2)
 
 * [2. State of the art survey and current industry review](#_2)
-    * [SE education game](#_2.1)
+    * [SE (software engineering) education game](#_2.1)
     * [Code quality-related applications](#_2.2)
     * [Related work](#_2.3)
     * [Trend analysis & implication](#_2.4)
@@ -36,7 +36,7 @@ With the concern of risk and cost management of product in team developing, it�
 Therefore, we believe it’s worthwhile to raise the awareness of programmers, especially programming learners, about the importance of code quality and increase their ability to identify elegant code and sniff the code smell.
 
 <a name="_1.2"></a>
-### - Gamification in SE education
+### - Gamification in SE (software engineering) education
 
 Gamification is a strategy that apply game-design elements and game principles in non-game contexts[5]. In particular, the concept of ‘Serious Game’ provides a useful design pattern to reflect a serious problem in reality which aims at thoughtful educational but not entertaining purpose[6], and present the serious problem in an interesting way. 
 
@@ -50,7 +50,7 @@ Therefore, we decide to choose the strategy of ‘serious game’ to increase us
 ## 2. State of the art survey and current industry review
 
 <a name="_2.1"></a>
-### - SE education game
+### - SE (software engineering) education game
 
 In recent years, numerous coding games designed for beginners are appearing. Some are designed to familiar users with a certain language, such as SQL Murder Mystery and CSS Diner; some are designed for practicing algorithm optimization, such as Elevator Saga; some are focused on training modular programming skill, such as Code Combat. 
 
