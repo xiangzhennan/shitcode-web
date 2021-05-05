@@ -184,7 +184,7 @@ For the last question, the acceptance of our web application is high, but 25% of
 
 * The majority of users think the web application is easy to explore and all of them manage to finish the quiz. This is a strong proof of the success of UX design. 
 * Half of the users think that the style of the web application could be improved more.
-* Over 75% of the users think they have realized the big difference between good code and shit code through the game and they are willing to pay more attention to code quality in the future.
+* Over 75% of the users think through the game they have realized the big difference between good code and shit code and they are willing to pay more attention to code quality in the future.
 * Around 50% of the users think it is a playful game.
 
 The web application is originally designed to help new coders to realize how important code quality is. Therefore, despite of some complaint about our UI design (did our best), we think it meets our initial expectations. Besides, some people are actually getting fun with it, which meets the project target that is “to design a playful web application but also to deal with serious problem”. 
