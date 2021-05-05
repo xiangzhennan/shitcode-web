@@ -11,7 +11,7 @@
 
 * [3. Middle Tier - Express, Node, the RESTful API](#_middle)
     * [RESTful API](#_api)
-    * [Connect component to API](#_connect)
+    * [Connect components to APIs](#_connect)
     * [Technical challenge](#_problem)
 
 * [4. Front End - Angular - details of implementation](#_frontend)
@@ -113,8 +113,9 @@ Read the following API documents for details.
 API documents had only some little change over the implementing process. To be specific, only some details of json data were changed. This allows the whole team being quite efficient when implementing.
 
 <a name="_connect"></a>
-### - Connect component to API
-We define a service to handle the http calls and hook it up to our application components. In the service, we create function `getQuestion()` and `getReport()` to make the right call to our APIs.
+### - Connect components to APIs
+We define a service to handle the http calls and hook it up to our application components. In the service, we create function `getQuestion()`, `getReport()` and `submitAnswer()` to make the right call to our APIs.
+
 ```javascript
   public getQuestion(id: number){
     const url = this.REST_API_QUESTION + id;
@@ -126,6 +127,14 @@ We define a service to handle the http calls and hook it up to our application c
   public getReport(correctNum: number){
     const url = this.REST_API_REPORT + correctNum;
     return this.httpClient.get(url);
+  }
+```
+
+```javascript
+  public submitAnswer(answer: any) {
+    console.log('post request sent');
+    console.log(answer);
+    return this.httpClient.post(this.REST_API_SUBMIT, answer, this.httpOptions);
   }
 ```
 
