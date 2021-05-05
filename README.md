@@ -78,7 +78,7 @@ b. Back End - MongoDB - database implementation
 
 c. Middle Tier - Express, Node, the RESTful API
 
-d. Front End - Angular
+d. Front End - Angular - details of implementation
 
 e. Additional element - cookie/session or local storage
 
