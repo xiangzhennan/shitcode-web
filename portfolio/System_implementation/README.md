@@ -10,7 +10,7 @@
     * [Data model and how to assemble json](#_model)
 
 * [3. Middle Tier - Express, Node, the RESTful API](#_middle)
-    * [RESTful API](#_api)
+    * [RESTful APIs](#_api)
     * [Connect components to APIs](#_connect)
     * [Technical challenge](#_problem)
 
@@ -103,7 +103,7 @@ Node.js is the backbone of the MEAN stack. We choose Express as a web applicatio
 Since the whole project takes a separated front-end and back-end method to implement. Early confirmation of API interface and data model becomes really vital. This part is finished by back-end team so that front-end team can focus more on displaying. 
 
 <a name="_api"></a>
-### - RESTful API
+### - RESTful APIs
 Our group use the Express framework for our APIs. We build up three main APIs in `api.js` file to operate data between frontend and backend. These APIs originally came from paper prototyping stage where we explored further into what kind of action/url and data models the website need. 
 Read the following API documents for details.
 * [Document for `submit` API](submit_api.md)
