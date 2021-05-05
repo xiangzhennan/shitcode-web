@@ -35,7 +35,7 @@
 
 * [5. Additional element - cookie/session or local storage](#_additional)
 
-* [6. Deployment details - Docker - continuous integration](#_deploy)
+* [6. Deployment details - Docker](#_deploy)
     * [Develop frontend with static data](#_6.1)
     * [Develop backend with no view](#_6.2)
     * [Integrate frontend and backend](#_6.3)
@@ -635,7 +635,7 @@ Our group finally chose local storage, which also lives permanently on client si
 </br></br>
 
 <a name="_deploy"></a>
-## 6.  Deployment details - Docker - continuous integration
+## 6.  Deployment details - Docker
 
 To improve portability and ease deployment, we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
 
