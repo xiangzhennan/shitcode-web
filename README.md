@@ -46,8 +46,9 @@ A checklist against which our team could evaluate the success of our project is 
 [<img src="portfolio/images/demo_video.png" width="700" />](https://youtu.be/QZWNW-RlVLs)
 
 ### Running instruction
-To run our web application on Docker in local, you could clone/download the repo on `main` branch. Then change to the directory of `shitcode` where the source codes reside.
+To run our web application on Docker in local, you could clone/download the repo on `main` branch.
 
+* Change to the directory of `shitcode` where the source codes reside.
 * Run `npm install` to get `node_modules` locally.
 * Run `ng build` to create and populate the build folder (dist).
 * Run `docker-compose up -d` to start the service running on Docker.
