@@ -110,11 +110,15 @@ We designed three functional tests for components on question page.
 * Secondly, when the user clicks `confirm` button, the real principle and right answer would be shown in the webpage. 
 * Thirdly, when the user clicks `next` button, the next question would be loaded. 
 
-The testing is shown as below.
+The testing codes are shown as below.
 
 <img src="img/t1.png" width="700" />
 
 <img src="img/t2.png" width="700" />
+
+The following is the test running result.
+
+<img src="img/q9.png" width="700" />
 
 </br>
 
