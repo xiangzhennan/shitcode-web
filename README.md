@@ -57,6 +57,7 @@ To run our web application on Docker in local, you could clone/download the repo
 
 The directory of `portfolio` is where we store the documents of report.
 
+
 <a name="_background"></a>
 ## 3.  Background and Motivation
 
