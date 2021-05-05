@@ -8,7 +8,7 @@
 
 * [2. Unit testing / Functional testing](#_2)
     * [API testing with python](#_2.1) 
-    * [Test plan for frontend page and function](#_2.2)
+    * [Test plan for frontend pages and functions](#_2.2)
     * [Functional testing for components](#_2.3)
 
 * [3. User acceptance testing](#_3)
@@ -67,7 +67,7 @@ assert (answerNumAfter == answerNumBefore + 1)
 ```
 
 <a name="_2.2"></a>
-### - Test plan for frontend page and function
+### - Test plan for frontend pages and functions
 We create this web application, hoping that users can test their knowledge of code quality and raise their awareness on good coding practice at the end.
 
 **Access to our website**</br>
