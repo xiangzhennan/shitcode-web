@@ -161,7 +161,7 @@ The final online version is shown as below.
 
 We get approximately 50 valid feedbacks from our users. The data of the testing result has been approximately rounded.
 
-For the first and second questions of the questionnaire, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the web application.
+For the first and second questions, the satisfaction is 100%, which proves that there is no problem with the guidance and interaction of the web application.
 
 <img src="img/q3.png" width="600" />
 <img src="img/q4.png" width="600" />
@@ -170,12 +170,12 @@ For the third question, 50% of the users choose excellently, and 50% choose poor
 
 <img src="img/q5.png" width="600" />
 
-For the feedback of the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of coding principles so that they have less demand to learn from our web application.
+For the fourth question, 75% of the users feel that they have improved, and 25% of the users feel that they have not. The reasons are very diverse. It is possible that some users have a deep understanding of coding principles so that they have less demand to learn from our web application.
 However, in general, the help of our web application to users is significant.
 
 <img src="img/q6.png" width="600" />
 
-For the last question of the questionnaire, the acceptance of our web application is high, but 25% of the people think that the function is not good enough. 
+For the last question, the acceptance of our web application is high, but 25% of the people think that the function is not good enough. 
 
 <img src="img/q7.png" width="600" />
 
