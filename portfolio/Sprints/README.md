@@ -52,7 +52,7 @@ We take an iterative approach to workflow management and break down larger issue
 By contrasting the different models for software development, we decide to go for the Agile approach to develop application in incremental and rapid cycles. 
 Following Agile model, we decide what can be accomplished in the timeframe at the beginning of a sprint and sets out to build a series of features, deliver working software that can be installed in a production environment at the end of the sprint, which meets the demand for faster software development.
 
-The key activities we follow during each Agile development cycle are as below. The detail of each part in every Agile cycle refers to part 3 ([Documentation of sprints](#_s3)).
+The key activities we follow during each Agile development cycle are as below. The implementation detail of each part in every Agile cycle refers to part 3 [(Documentation of sprints)](#_s3).
 * **Requirements** - Define the requirements for the iteration based on the application backlog and stakeholder feedback.
 * **Design** - The team discusses how to tackle these requirements, and proposes the tools needed to achieve the best result. The developers discuss the feature implementation and the internal structure of the outcome.
 * **Development** - Start working on the project, which aims to deploy a working application. The application will undergo various stages of improvement and comprise of simple, minimal functionality.
