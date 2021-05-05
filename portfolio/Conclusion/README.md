@@ -111,7 +111,7 @@ In terms of Integrity, since the topic is just about identification of code smel
 
 <a name="_4.3"></a>
 ### - Respect
-For many people, the element of ‘shit’ and its emoji image is funny and ironic, so we choose it to represent code smell. However, there is also possibility that people might think the ‘shit’ as a symbol of unrespect, or impolite to those who used to write the similar ‘shit code’. Although this is not clear whether this could be an issue, our solution plan to this is to add some statements in the welcome page to explain the hidden meaning of ‘shit’ to avoid misunderstand.
+For many people, the element of "shit" and its emoji image is funny and ironic, so we choose it to represent code smell. However, there is also possibility that people might think the "shit" as a symbol of unrespect, or impolite to those who used to write the similar "shit code". Although this is not clear whether this could be an issue, our solution plan to this is to add some statements in the welcome page to explain the hidden meaning of "shit" to avoid misunderstand.
 
 <a name="_4.4"></a>
 ### - Transparency
