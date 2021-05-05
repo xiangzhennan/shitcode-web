@@ -36,11 +36,11 @@ First we describe the techniques we used and evaluate if they are suitable for o
 
 Under the guidance of workbook, we follow the workflow as below.
 * **Unit testing timeline** - roughly from the beginning of TB2 to the middle of Easter vacation</br></br>
-For separated implementing stage, frontend team members pull from “frontdev”, implementing their own part of work and executing unit tests, then push it back to frontdev, and backend team did similar thing with “xzn” branch.
+For separated implementing stage, frontend team members pull from “frontdev”, implementing their own part of work and executing unit tests, then push it back to frontdev, and backend team did similar thing with “xzn” branch.</br>
 * **Functional testing timeline** - during Easter vacation until 23rd April</br></br>
-After integrating the frontend and backend, all team members pull from “dev”, execute functional tests and push back. At this stage, some changes are made based on testing.
+After integrating the frontend and backend, all team members pull from “dev”, execute functional tests and push back. At this stage, some changes are made based on testing.</br>
 * **User acceptance testing timeline** - 23rd April onwards</br></br>
-At this stage, only a little changes are made based on testing. After first round of user testing (23rd April), “dev” branch is merged into “main” for the first time, but still, some bug fixing remain in “dev” branch.
+At this stage, only a little changes are made based on testing. After first round of user testing (23rd April), “dev” branch is merged into “main” for the first time, but still, some bug fixing remain in “dev” branch.</br>
 * Finally we push all the changes to `main` branch to release our final delievery after all bugs are free in `dev` branch.
 
 </br>
