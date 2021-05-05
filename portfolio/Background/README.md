@@ -1,7 +1,5 @@
 # Background and Motivation
 
-In this section, we describe the theoretical foundation (i.e., code quality and gamification), discuss the industrial survey of our product, and explain the problem definition and our motivation.
-
 ## Contents
 
 * [1. Background literature and academic research review](#_1)
