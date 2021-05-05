@@ -7,4 +7,4 @@ To run our web application on Docker in local, you could clone/download the repo
 - Open 'http://localhost:3000/' to load the site and play with the game.
 - Run 'docker-compose down' to stop the containers on Docker.
 
-The folder of 'portfolio' is where we store the documents for our report.
+The directory of 'portfolio' is where we store the documents of report.
