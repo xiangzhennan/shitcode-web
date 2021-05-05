@@ -1,0 +1,46 @@
+.body{
+  background-color: rgba(255,231,16,126);
+}
+
+.title{
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.font{
+  //font-family: Copperplate, Papyrus, fantasy;
+  font-family: Zen dots, serif;
+}
+
+.logo{
+  margin:0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width:800px;
+  text-align: center;
+}
+
+.box{
+  margin:0 auto;
+  padding:15px 15px 25px 15px;
+  width:800px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 10px;
+  border:1px solid rgba(255,255,255,0.5);
+}
+
+.button{
+  background: #e0f8ff;
+  margin: auto;
+  text-align: center;
+  border-radius: 48px;
+  vertical-align: middle;
+  display: inline-block;
+  color: #59A3F8;
+  size:25px;
+  line-height: 40px;
+  font-weight: bolder;
+  text-decoration:none;
+  width:200px;
+}

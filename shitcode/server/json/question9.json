@@ -1,0 +1,15 @@
+{
+  "questionId":9,
+  "principle": "shitcode type nine: Always name your boolean value a flag",
+  "realPrinciple": "coding rule nine: Name boolean value based on judgement condition",
+  "options": [{
+    "optionId": 1,
+    "content": "let flag = true;"
+  },
+    {"optionId": 2,
+      "content": "let isDone = false;\nlet isEmpty = false;"
+    }],
+  "correctId":1,
+  "historyCorrectNum": 0,
+  "historyAnswerNum": 0
+}

@@ -1,0 +1,199 @@
+{
+  "question": [
+  {
+    "questionId":1,
+    "principle": "shitcode one: Name variables in an obfuscated way",
+    "realPrinciple": "coding rule one: Name variables with valid meaning",
+    "options": [{
+      "optionId": 1,
+      "content": "int a = 42;"
+    },
+      {"optionId": 2,
+        "content": "int age = 42;"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":2,
+    "principle": "shitcode two: Mix variable/functions naming style",
+    "realPrinciple": "coding rule two: Maintain consistency in variable/functions naming style",
+    "options": [{
+      "optionId": 1,
+      "content": "let wWidth = 640;\nlet w_height = 480;"
+    },
+      {"optionId": 2,
+        "content": "let windowWidth = 640;\nlet windowHeight = 480;"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":3,
+    "principle": "shitcode three: Never write comments",
+    "realPrinciple": "coding rule three: Write comments\nMore often comments should contain some 'why' and not some 'what'. If the 'what' is not clear in the code, the code is probably too messy.",
+    "options": [{
+      "optionId": 1,
+      "content": "const cdr = 700;"
+    },
+      {"optionId": 2,
+        "content": "// The number of 700ms has been calculated empirically based on UX A/B test results.\n// @see: <link to experiment or to related JIRA task or to something that explains number 700 in details>\nconst callbackDebounceRate = 700;"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":4,
+    "principle": "shitcode four: Try to mix formatting style as much as possible",
+    "realPrinciple": "coding rule four: Maintain consistency in formatting style",
+    "options": [{
+      "optionId": 1,
+      "content": "let i = ['tomato', 'onion', 'mushrooms'];\nlet d = [ \"ketchup\", \"mayonnaise\" ];"
+    },
+      {"optionId": 2,
+        "content": "let ingredients = ['tomato', 'onion', 'mushrooms'];\nlet dressings = ['ketchup', 'mayonnaise'];"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":5,
+    "principle": "shitcode five: Put as much code as possible into one line",
+    "realPrinciple": "coding rule five: Put code into different lines based on readability",
+    "options": [{
+      "optionId": 1,
+      "content": "document.location.search.replace(/(^\\?)/,'').split('&').reduce(function(o,n){n=n.split('=');o[n[0]]=n[1];return o},{})"
+    },
+      {"optionId": 2,
+        "content": "document.location.search\n  .replace(/(^\\?)/, '')\n  .split('&')\n  .reduce((searchParams, keyValuePair) => {\n    keyValuePair = keyValuePair.split('=');\n    searchParams[keyValuePair[0]] = keyValuePair[1];\n    return searchParams;\n  },\n  {}\n)"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":6,
+    "principle": "shitcode six: Fail silently",
+    "realPrinciple": "coding rule six: Set error modals and whenever you catch an error, it is necessary to send back log messages or report exceptions",
+    "options": [{
+      "optionId": 1,
+      "content": "try {\n  // Something unpredictable.\n} catch (error) {\n  // tss...\n}"
+    },
+      {"optionId": 2,
+        "content": "try {\n  // Something unpredictable.\n} catch (error) {\n  setErrorMessage(error.message);\n  // and/or\n  logError(error);\n}\n"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":7,
+    "principle": "shitcode seven: Use global variables extensively",
+    "realPrinciple": "coding rule seven: Only use global variables when necessary",
+    "options": [{
+      "optionId": 1,
+      "content": "let x = 5;\n\nfunction square() {\n  x = x ** 2;\n}\n\nsquare(); // Now x is 25."
+    },
+      {"optionId": 2,
+        "content": "let x = 5;\n\nfunction square(num) {\n  return num ** 2;\n}\n\nx = square(x); // Now x is 25."
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":8,
+    "principle": "shitcode eight: Create variables that you're not going to use",
+    "realPrinciple": "coding rule eight: Only create variables that you're going to use",
+    "options": [{
+      "optionId": 1,
+      "content": "function sum(a, b, c) {\n  const timeout = 1300;\n  const result = a + b;\n  return a + b;\n}"
+    },
+      {"optionId": 2,
+        "content": "function sum(a, b) {\n  return a + b;\n}"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":9,
+    "principle": "shitcode nine: No types specified and/or no type checks if language allows you to do so",
+    "realPrinciple": "coding rule nine: Always specify types and/or do type checks",
+    "options": [{
+      "optionId": 1,
+      "content": "function sum(a, b) {\n  return a + b;\n}\n\n// Having untyped fun here.\nconst guessWhat = sum([], {}); // -> \"[object Object]\"\nconst guessWhatAgain = sum({}, []); // -> 0"
+    },
+      {"optionId": 2,
+        "content": "function sum(a: number, b: number): ?number {\n  // Covering the case when we don't do translation and/or Flow type checks in JS.\n  if (typeof a !== 'number' && typeof b !== 'number') {\n    return undefined;\n  }\n  return a + b;\n}\n\n// This one should fail during the translation/compilation.\nconst guessWhat = sum([], {}); // -> undefined"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":10,
+    "principle": "shitcode ten: Have an unreachable piece of code",
+    "realPrinciple": "coding rule ten: Don't have any unreachable piece of code",
+    "options": [{
+      "optionId": 1,
+      "content": "function square(num) {\n  if (typeof num === 'undefined') {\n    return undefined;\n  }\n  else {\n    return num ** 2;\n  }\n  return null; // This is my \"Plan B\".\n}"
+    },
+      {"optionId": 2,
+        "content": "function square(num) {\n  if (typeof num === 'undefined') {\n    return undefined;\n  }\n  return num ** 2;\n}"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":11,
+    "principle": "shitcode eleven: Write codes in a much-nested structure",
+    "realPrinciple": "coding rule eleven: Don't write codes in a triangle structure. Divide a program logic into readable pieces",
+    "options": [{
+      "optionId": 1,
+      "content": "function someFunction() {\n  if (condition1) {\n    if (condition2) {\n      asyncFunction(params, (result) => {\n        if (result) {\n          for (;;) {\n            if (condition3) {\n            }\n          }\n        }\n      })\n    }\n  }\n}"
+    },
+      {"optionId": 2,
+        "content": "async function someFunction() {\n  if (!condition1 || !condition2) {\n    return;\n  }\n  \n  const result = await asyncFunction(params);\n  if (!result) {\n    return;\n  }\n  \n  for (;;) {\n    if (condition3) {\n    }\n  }\n}"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":12,
+    "principle": "shitcode twelve: Mess with indentations",
+    "realPrinciple": "coding rule twelve: Handle indentations in a uniform form",
+    "options": [{
+      "optionId": 1,
+      "content": "const fruits = ['apple',\n  'orange', 'grape', 'pineapple'];\n  const toppings = ['syrup', 'cream', \n                    'jam', \n                    'chocolate'];\nconst desserts = [];\nfruits.forEach(fruit => {\ntoppings.forEach(topping => {\n    desserts.push([\nfruit,topping]);\n    });})"
+    },
+      {"optionId": 2,
+        "content": "const fruits = ['apple', 'orange', 'grape', 'pineapple'];\nconst toppings = ['syrup', 'cream', 'jam', 'chocolate'];\nconst desserts = [];\n\nfruits.forEach(fruit => {\n  toppings.forEach(topping => {\n    desserts.push([fruit, topping]); \n  });\n})"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  },
+  {
+    "questionId":13,
+    "principle": "shitcode thirteen: Always name your boolean value a flag",
+    "realPrinciple": "coding rule thirteen: Name boolean value based on judgement condition",
+    "options": [{
+      "optionId": 1,
+      "content": "let flag = true;"
+    },
+      {"optionId": 2,
+        "content": "let isDone = false;\nlet isEmpty = false;"
+      }],
+    "correctId":2,
+    "historyCorrectNum": 0,
+    "historyAnswerNum": 0
+  }
+  ]
+}
