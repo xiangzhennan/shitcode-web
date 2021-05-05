@@ -82,7 +82,7 @@ d. Front End - Angular - details of implementation
 
 e. Additional element - cookie/session or local storage
 
-f. Deployment details - Docker
+f. Deployment details - Docker - continuous integration
 
 <a name="_UX"></a>
 ## 5.  UX Design
