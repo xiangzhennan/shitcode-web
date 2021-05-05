@@ -69,7 +69,7 @@ Overall we have achieved as a group the objectives we set at the beginning of th
 | 7 | Use MangoDB to manage the storage of data | achieve | We stored our dynamic data (history correct num, history answer num) on MangoDB and designed a database model and schema for that. |
 | 8 | Deploy on Docker | achieve | We deployed our whole application on Docker which makes setting up instances of Node and Mongo very easy.<br/>Everyone can easily recreate our production system. |
 | 9 | Implement full testing | achieve | We completed unit test, functional test and user acceptance test to make sure all functions and interaction work correctly as expected. |
-| 10 | Make a positive influence on raising awareness of code quality | achieve | Over 75% of the users in our massive user acceptance test realized the big difference between good code and shit code through the game, and willing to pay more attention to code quality afterwards. |
+| 10 | Make a positive influence on raising awareness of code quality | achieve | Over 75% of the users in our massive user acceptance testing think through the game they have realized the big difference between good code and shit code and they are willing to pay more attention to code quality in the future. |
 
 <br/>
 
