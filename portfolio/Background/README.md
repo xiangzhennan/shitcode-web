@@ -118,7 +118,7 @@ In order to balance the serious and playful aspects of our game, we have made so
 </br>
 
 <a name="_3"></a>
-## 3. Definition, scope and challenge of the problem
+## 3. Definition and challenge of the problem
 
 <a name="_3.1"></a>
 ### - Problem definition & challenge
