@@ -14,7 +14,7 @@
     * [Connect component to API](#_connect)
     * [Technical challenge](#_problem)
 
-* [4. Front End - Angular](#_frontend)
+* [4. Front End - Angular - details of implementation](#_frontend)
     * [List of components](#_list)
     * [Welcome page](#_welcome)
     * [Question page](#_ques)
@@ -35,7 +35,7 @@
 
 * [5. Additional element - cookie/session or local storage](#_additional)
 
-* [6. Deployment details - Docker](#_deploy)
+* [6. Deployment details - Docker - continuous integration](#_deploy)
     * [Develop frontend with static data](#_6.1)
     * [Develop backend with no view](#_6.2)
     * [Integrate frontend and backend](#_6.3)
@@ -150,7 +150,7 @@ We used post request so that every data the server needs hides safely in request
 </br></br>
 
 <a name="_frontend"></a>
-## 4.  Front End - Angular
+## 4.  Front End - Angular - details of implementation
 
 We use AngularJS to build the user-facing side of the application.
 
@@ -620,7 +620,7 @@ Our group finally chose local storage, which also lives permanently on client si
 </br></br>
 
 <a name="_deploy"></a>
-## 6.  Deployment details - Docker
+## 6.  Deployment details - Docker - continuous integration
 
 To improve portability and ease deployment, we use Docker to manage the Node/Mongo environment and ensure that others can easily recreate our production system.
 
