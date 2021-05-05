@@ -237,7 +237,7 @@ The final design of report page is shown as below.
 
 - Click ``"replay"`` button to restart the game, which would clear your performance record in your current report.
 - Click ``"home"`` button to come back to the welcome page. If you click ``"play"`` button again, the question pages will show you previous existed answering state of your last play. You could click ``"get report"`` button, then ``"replay"`` button on the report page to replay the game if you want.
-- Click ``"review answers"`` button to come back to the question pages to check the answer of each question. You could click ``"next"`` button to check answers one by one. Or you could click specific questions on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
+- Click ``"review answers"`` button to come back to the question pages to check the answer of each question. You could click ``"next"`` button to check answers one by one. Or you could click specific question icons on the navigation bar to check the ones that you answer incorrectly before, which shows as below.
 
 <img src="img/report3.png" width="700" />
 
