@@ -1,5 +1,0 @@
-GitHub repo link of find-out-shitcode project (group 24):
-
-https://github.com/xiangzhennan/shitcode-web
-
-The final delivery is released on 'main' branch.
