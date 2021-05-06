@@ -49,7 +49,7 @@ A checklist against which our team could evaluate the success of our project is 
 To run our web application on Docker in local, you could clone/download the repo on `main` branch.
 
 * Change to the directory of the repo.
-* Type `cd shitcode` to where the source codes reside.
+    $ cd shitcode  // change to where the source codes reside.
 * Create a `.env` file in `shitcode` folder and save the credentials there.
 * Run `npm install` to get `node_modules` locally.
 * Run `ng build` to create and populate the build folder (dist).
