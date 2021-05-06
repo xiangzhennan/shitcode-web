@@ -45,18 +45,19 @@ A checklist against which our team could evaluate the success of our project is 
 ### Demo video
 [<img src="portfolio/images/demo_video.png" width="700" />](https://youtu.be/QZWNW-RlVLs)
 
-### Running instruction
+### Running instructions
 To run our web application on Docker in local, you could clone/download the repo on `main` branch.
 
-* Change to the directory of `shitcode` where the source codes reside.
+* Change to the directory of the repo.
+* Type `cd shitcode` to where the source codes reside.
+* Create a `.env` file in `shitcode` folder and save the credentials there.
 * Run `npm install` to get `node_modules` locally.
 * Run `ng build` to create and populate the build folder (dist).
 * Run `docker-compose up -d` to start the service running on Docker.
 * Open `http://localhost:3000/` to load the site and play with the game.
 * Run `docker-compose down` to stop the containers on Docker.
 
-The directory of `portfolio` is where we store the documents of report.
-
+The folder of `portfolio` is where we store the documents of report.
 
 <a name="_background"></a>
 ## 3.  Background and Motivation
