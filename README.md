@@ -48,10 +48,10 @@ A checklist against which our team could evaluate the success of our project is 
 ### Running instructions
 To run our web application on Docker in local, you could clone/download the repo on `main` branch. Then change to the directory of the repo.
 
-    $ cd shitcode   // change to where the source codes reside
-    $ nano .env     // create a file to save the credentials
-    $ npm install   // get node_modules locally
-    $ ng build      // create and populate the build folder (dist)
+    $ cd shitcode       // change to where the source codes reside
+    $ nano .env         // create a file to save the credentials
+    $ npm install       // get node_modules locally
+    $ ng build          // create and populate the build folder (dist)
     $ docker-compose up -d      // start the service running on Docker
     
 Open http://localhost:3000/ to load the site and play with the game.
