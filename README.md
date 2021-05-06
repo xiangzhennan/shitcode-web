@@ -46,16 +46,17 @@ A checklist against which our team could evaluate the success of our project is 
 [<img src="portfolio/images/demo_video.png" width="700" />](https://youtu.be/QZWNW-RlVLs)
 
 ### Running instructions
-To run our web application on Docker in local, you could clone/download the repo on `main` branch.
+To run our web application on Docker in local, you could clone/download the repo on `main` branch. Then change to the directory of the repo.
 
-* Change to the directory of the repo.
-    $ cd shitcode  // change to where the source codes reside.
-* Create a `.env` file in `shitcode` folder and save the credentials there.
-* Run `npm install` to get `node_modules` locally.
-* Run `ng build` to create and populate the build folder (dist).
-* Run `docker-compose up -d` to start the service running on Docker.
-* Open `http://localhost:3000/` to load the site and play with the game.
-* Run `docker-compose down` to stop the containers on Docker.
+    $ cd shitcode   // change to where the source codes reside
+    $ nano .env     // create a file to save the credentials
+    $ npm install   // get node_modules locally
+    $ ng build      // create and populate the build folder (dist)
+    $ docker-compose up -d      // start the service running on Docker
+    
+Open http://localhost:3000/ to load the site and play with the game.
+
+    $ docker-compose down       // stop the containers on Docker
 
 The folder of `portfolio` is where we store the documents of report.
 
